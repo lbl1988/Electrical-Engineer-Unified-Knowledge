@@ -141,7 +141,7 @@ $$HRU_5=\frac{13.8\times0.00448}{231}\times100\%=\frac{0.0618}{231}\times100\%=0
 ## 8. 关联条目
 
 - 上游：[TH-008 谐波机理](../10-theory/TH-008-harmonic-generation.md)（特征谐波产生机理）·[TH-006 变压器漏抗](../10-theory/TH-006-transformer-leakage-impedance.md)（谐波阻抗）
-- 下游：[PR-PQ-001 无功补偿与谐波治理](../30-practice/PR-PQ-001-pq-compensation-design.md)（APF/SVG选型）·[PR-ES-001 储能接入](../30-practice/PR-ES-001-energy-storage-integration.md)（PCS谐波）·[CASE-005 变压器谐波降容](../50-case/CASE-005-review-transformer-harmonic-derating.md)（K因子法）·[CASE-008 数据中心PCC校核](../50-case/CASE-008-composite-data-center.md)（A级机房谐波注入）
+- 下游：[PR-PQ-001 无功补偿与谐波治理](../30-practice/PR-PQ-001-pq-compensation-design.md)（APF/SVG选型）·[PR-ES-001 储能接入](../30-practice/PR-ES-001-energy-storage-integration.md)（PCS谐波）·[CASE-005 变压器谐波降容](../50-case/CASE-005-review-transformer-harmonic-derating.md)（K因子法）·[CASE-008 数据中心PCC校核](../50-case/CASE-008-composite-data-center.md)（A级机房谐波注入）·[CASE-025 2023无功补偿与谐波谐振真题](../50-case/CASE-025-exam-reactive-compensation-harmonic-resonance.md)（2023无功补偿与谐波谐振真题）
 - 平行：[CALC-RC-001 无功补偿](CALC-RC-001-reactive-compensation.md)（电抗率与谐波谐振）
 
 ## 9. 变更记录

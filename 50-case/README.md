@@ -51,6 +51,16 @@
 | [CASE-023](CASE-023-composite-metro-traction-substation.md) | 综合案例：轨道交通直流牵引变电所多专业协同设计 | GB 50157-2013, GB/T 10411-2007, GB 51151-2016, GB 50313-2013, GB 51298-2018, IEC 62128-1-2017 | CP 综合 | [PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md)·[CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[CALC-GR-001](../40-calc/CALC-GR-001-grounding-grid-design.md) |
 | [CASE-024](CASE-024-review-lightning-grounding-spd.md) | 校审驳回：防雷接地电阻不达标与SPD配合不当 | GB 50057-2010, GB/T 21413-2015, GB/T 21414-2015, GB/T 50065-2011, GB 50343-2012, GB 51348-2019 | DR 校审 | [PR-GR-001](../30-practice/PR-GR-001-lightning-protection-design.md)·[TH-009](../10-theory/TH-009-lightning-physics.md)·[CALC-GR-001](../40-calc/CALC-GR-001-grounding-grid-design.md)·[PR-GR-002](../30-practice/PR-GR-002-earthing-arrangement.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md) |
 
+## 三期第六批成果（5 条）
+
+| ID | 主题 | 主要标准依据 | 案例类型 | 支撑条目 |
+|---|---|---|---|---|
+| [CASE-025](CASE-025-exam-reactive-compensation-harmonic-resonance.md) | 2023供配电真题拆解：并联电容器无功补偿与谐波谐振校验 | GB 50227-2017, GB/T 14549-1993, GB 51348-2019, GB 50052-2009 | EX 真题 | [CALC-RC-001](../40-calc/CALC-RC-001-reactive-compensation.md)·[TH-008](../10-theory/TH-008-harmonic-generation.md)·[CALC-HM-001](../40-calc/CALC-HM-001-harmonic-power-flow.md)·[PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md) |
+| [CASE-026](CASE-026-review-ups-bypass-battery-autonomy.md) | 校审驳回：A级数据中心UPS蓄电池自主时间不足与维护旁路缺失 | GB 50174-2017, GB/T 7260.3-2016, GB 51348-2019, GB 50016-2014, GB/T 19638.1-2014 | DR 校审 | [CALC-BT-002](../40-calc/CALC-BT-002-ups-battery-autonomy.md)·[CALC-BT-001](../40-calc/CALC-BT-001-battery-capacity.md)·[TH-012](../10-theory/TH-012-protection-four-properties.md)·[PR-BE-001](../30-practice/PR-BE-001-emergency-lighting.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md) |
+| [CASE-027](CASE-027-accident-vacuum-chopping-overvoltage.md) | 事故复盘：真空断路器截流过电压致高压电动机绕组击穿 | GB 50053-2013, GB/T 18481.1-2002, DL/T 596-2021, GB 755-2019, GB/T 11024.1-2019 | AC 事故 | [TH-013](../10-theory/TH-013-switching-arc-physics.md)·[TH-007](../10-theory/TH-007-induction-motor-starting.md)·[CALC-PT-001](../40-calc/CALC-PT-001-protection-setting.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md) |
+| [CASE-028](CASE-028-composite-offshore-wind-substation.md) | 综合案例：海上风电场升压站电气-结构-海工多专业协同设计 | GB/T 19963.1-2021, NB/T 31003-2011, GB 50053-2013, GB 50229-2019, GB/T 14285-2023, GB/T 22516-2017 | CP 综合 | [TH-011](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[CALC-GR-001](../40-calc/CALC-GR-001-grounding-grid-design.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md)·[PR-GR-001](../30-practice/PR-GR-001-lightning-protection-design.md) |
+| [CASE-029](CASE-029-review-diesel-generator-room-ventilation.md) | 校审驳回：柴油发电机房通风散热不足与排烟系统设计不当 | GB 50053-2013, GB 50016-2014, GB 50019-2015, GB 50229-2019, GB/T 2820.5-2009, GB 50067-2014 | DR 校审 | [CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[TH-007](../10-theory/TH-007-induction-motor-starting.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md) |
+
 ## 案例间引用网（数据贯通闭环）
 
 ```
@@ -78,6 +88,11 @@ CALC-SC-002 高压短路（c系数最大/最小） ─→ CASE-022 2021真题（
 CALC-GR-001 接地网（共用+杂散）        ─→ CASE-021 跨步电压致死 ─→ CASE-023 杂散电流防护 ─→ CASE-024 防雷共用接地
 PR-GR-001 防雷分类（SPD三级配合）      ─→ CASE-024 防雷接地校审 ─→ CASE-007 避雷针接地真题（同源 IEEE 80）
 PR-ES-001 储能接入（再生制动）         ─→ CASE-023 轨道交通牵引变电所 ─→ CASE-013 光储充微电网（同源再生能量回馈）
+CALC-RC-001 无功补偿（功率因数法）     ─→ CASE-025 2023无功补偿真题（谐振校验） ─→ CASE-005 变压器谐波降容（同源谐波治理）
+CALC-BT-002 UPS蓄电池（功率法）        ─→ CASE-026 UPS自主时间校审（Kt系数） ─→ CASE-008 数据中心2N（同源UPS备电）
+TH-013 开关电弧（真空截流+重燃）       ─→ CASE-027 截流过电压致电机击穿 ─→ CASE-016 电弧光短路（同源开关瞬态）
+TH-011 同步机暂态（风机变流器贡献）    ─→ CASE-028 海上风电升压站 ─→ CASE-022 2021短路真题（同源短路计算）
+CALC-DG-001 柴发容量（通风散热）       ─→ CASE-029 柴发房通风排烟校审 ─→ CASE-014 消防泵柴发（同源柴发容量）
 ```
 
 ## 案例子域代码（front matter `subdomain` 字段）
@@ -91,16 +106,16 @@ PR-ES-001 储能接入（再生制动）         ─→ CASE-023 轨道交通牵
 
 > 子域代码仅入 front matter `subdomain`，**不嵌入文件名**（遵守 `CASE-{三位序号}-{英文短名}.md` 格式）。
 
-## 累计统计（五批共 24 条）
+## 累计统计（六批共 29 条）
 
-| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 第五批 | 累计 |
-|---|---|---|---|---|---|---|
-| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 1（CASE-022） | 5 |
-| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 1（CASE-024） | 8 |
-| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 2（CASE-020/021） | 6 |
-| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 1（CASE-023） | 5 |
-| **合计** | **4** | **5** | **5** | **5** | **5** | **24** |
+| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 第五批 | 第六批 | 累计 |
+|---|---|---|---|---|---|---|---|
+| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 1（CASE-022） | 1（CASE-025） | 6 |
+| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 1（CASE-024） | 2（CASE-026/029） | 10 |
+| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 2（CASE-020/021） | 1（CASE-027） | 7 |
+| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 1（CASE-023） | 1（CASE-028） | 6 |
+| **合计** | **4** | **5** | **5** | **5** | **5** | **5** | **29** |
 
 ## 后续规划（三期续）
 
-案例库累计 24 条已跨过 20 条里程碑，接近 30 条目标。后续扩展方向：考试真题年份覆盖 2022-2026 含发输变电方向（短路分量衰减、派克方程、弧光过电压）、校审问题库扩 UPS/谐波/直流系统各域、事故案例扩充短路爆炸/弧光过电压、综合案例储能电站全流程/海上风电/数据中心冷却协同。
+案例库累计 29 条已跨过 25 条里程碑，接近 30 条目标。后续扩展方向：考试真题年份覆盖 2019/2025 含发输变电方向（短路分量衰减、派克方程、弧光过电压）、校审问题库扩直流系统/电缆载流/中性点接地各域、事故案例扩充短路爆炸/铁磁谐振/电缆终端击穿、综合案例储能电站全流程/海上风电送出系统/数据中心冷却协同。

@@ -116,7 +116,7 @@ $$U_{min}=32\times10.5=336\ \text{V} \ge U_{UPS,min}=320\ \text{V}\ \checkmark$$
 ## 8. 关联条目
 
 - 上游：[CALC-BT-001 蓄电池容量](CALC-BT-001-battery-capacity.md)（应急照明能量法与直流换算法双体系）
-- 下游：[PR-EV-001 充电设施](../30-practice/PR-EV-001-ev-charging-infrastructure.md)（数据中心充电场景）·[CASE-008 数据中心2N UPS备电](../50-case/CASE-008-composite-data-center.md)（A级机房15min后备算例）、[CASE-019 电缆敷设防火分区](../50-case/CASE-019-review-cable-fire-compartmentation.md)（消防设备不间断供电校验）
+- 下游：[PR-EV-001 充电设施](../30-practice/PR-EV-001-ev-charging-infrastructure.md)（数据中心充电场景）·[CASE-008 数据中心2N UPS备电](../50-case/CASE-008-composite-data-center.md)（A级机房15min后备算例）、[CASE-019 电缆敷设防火分区](../50-case/CASE-019-review-cable-fire-compartmentation.md)（消防设备不间断供电校验）·[CASE-026 UPS蓄电池自主时间校审](../50-case/CASE-026-review-ups-bypass-battery-autonomy.md)（UPS蓄电池自主时间校审）
 - 平行：[CALC-DG-001 柴油发电机](CALC-DG-001-diesel-generator-capacity.md)（柴发+UPS级联）
 
 ## 9. 变更记录

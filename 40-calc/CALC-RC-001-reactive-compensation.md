@@ -126,7 +126,7 @@ $$\nu(7\%)=\frac{1}{\sqrt{0.07}}=3.78$$
 ## 8. 关联条目
 
 - 上游：[TH-010 无功功率](../10-theory/TH-010-reactive-power.md)（公式来源）、[TH-008 谐波机理](../10-theory/TH-008-harmonic-generation.md)（电抗率判据的扰动源）、[CALC-LD-001 负荷计算](CALC-LD-001-demand-factor-method.md)（输入数据）
-- 下游：[PR-PQ-001 无功补偿与谐波治理设计](../30-practice/PR-PQ-001-pq-compensation-design.md)
+- 下游：[PR-PQ-001 无功补偿与谐波治理设计](../30-practice/PR-PQ-001-pq-compensation-design.md)、[CASE-025 2023无功补偿与谐波谐振真题](../50-case/CASE-025-exam-reactive-compensation-harmonic-resonance.md)（2023无功补偿与谐波谐振真题）
 - 平行：[mapping MAP-G 谐波对照](../20-standards/mapping-中外对照表.md)、[CALC-HM-001 谐波潮流计算](CALC-HM-001-harmonic-power-flow.md)（谐波电流叠加与电压校核，与本条电抗率谐振判据互补）
 
 ## 9. 变更记录

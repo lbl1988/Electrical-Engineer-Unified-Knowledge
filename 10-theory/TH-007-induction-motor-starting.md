@@ -55,6 +55,7 @@ $$\Delta U\% \approx \frac{K_{st}S_M}{S_{sc}+K_{st}S_M}\times100\%$$
 ## 5. 关联条目与变更记录
 
 - 关联：[TH-002 相量法](TH-002-phasor-analysis.md)、[TH-006 变压器阻抗](TH-006-transformer-leakage-impedance.md)、[CALC-MS-001 电机启动压降校验](../40-calc/CALC-MS-001-motor-starting-voltage-drop.md)（$K_{st}=6\sim 8$ 与 $\Delta U\%$ 公式在此条目具体化）、[CASE-017 2020电机启动压降校验真题](../50-case/CASE-017-exam-motor-starting-voltage-drop.md)（启动容量推导与方式决策）
+- 下游案例：[CASE-027](../50-case/CASE-027-accident-vacuum-chopping-overvoltage.md)（电机励磁电感）、[CASE-029](../50-case/CASE-029-review-diesel-generator-room-ventilation.md)（大电机启动对柴发要求）
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|
