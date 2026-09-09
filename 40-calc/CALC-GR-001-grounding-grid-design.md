@@ -190,7 +190,7 @@ $$S_{\min} = \frac{I_g \sqrt{t}}{k} = \frac{12600 \times \sqrt{0.5}}{210} = \fra
 
 - 上游：[TH-005 跨步/接触电压](../10-theory/TH-005-touch-step-voltage.md)（人体效应与电位分布理论）、[TH-004 人体电流效应](../10-theory/TH-004-current-effects-human-body.md)（fibrillation 电流阈值）
 - 平行：[PR-GR-002 接地制式](../30-practice/PR-GR-002-earthing-arrangement.md)（TN-S 系统等电位联结）、[PR-GR-001 防雷分类](../30-practice/PR-GR-001-lightning-protection-design.md)（防雷接地共用）
-- 下游：[PR-DD-002 变电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（接地工程实施）、[mapping MAP-D](../20-standards/mapping-中外对照表.md)（GB/T 50065 与 IEEE 80 差异对照）
+- 下游：[PR-DD-002 变电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（接地工程实施）、[mapping MAP-D](../20-standards/mapping-中外对照表.md)（GB/T 50065 与 IEEE 80 差异对照）、[CASE-007 避雷针接地校验](../50-case/CASE-007-exam-lightning-grounding.md)（IEEE 80系数法真题）、[CASE-009 医疗IT接触电压](../50-case/CASE-009-review-neutral-grounding.md)（医疗2类场所接地）
 
 ## 9. 变更记录
 

@@ -91,7 +91,7 @@ $$U' = I_{k1}\times\frac{Z_{PE}\,\Vert\, Z_{bond}}{1} = 13\,900\times\frac{0.030
 ## 8. 关联条目
 
 - 上游：[TH-005 接触/跨步电压](../10-theory/TH-005-touch-step-voltage.md)、[TH-004 人体电流效应](../10-theory/TH-004-current-effects-human-body.md)（50V 限值来源）
-- 下游：[CALC-PT-001 保护整定](../40-calc/CALC-PT-001-protection-setting.md)（切断时间与灵敏度）、[mapping MAP-C](../20-standards/mapping-中外对照表.md)（PE 截面三体系）
+- 下游：[CALC-PT-001 保护整定](../40-calc/CALC-PT-001-protection-setting.md)（切断时间与灵敏度）、[mapping MAP-C](../20-standards/mapping-中外对照表.md)（PE 截面三体系）、[CASE-009 医疗2类场所IT系统](../50-case/CASE-009-review-neutral-grounding.md)（接地制式选择校审）
 - 平行：[PR-GR-001 防雷分类](PR-GR-001-lightning-protection-design.md)（共用接地衔接）
 
 ## 9. 变更记录
