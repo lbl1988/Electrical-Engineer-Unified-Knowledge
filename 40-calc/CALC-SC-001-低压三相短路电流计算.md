@@ -161,7 +161,7 @@ $$S_{min} = \frac{I_{k2}''\sqrt{t}}{k} = \frac{21\,500\times\sqrt{0.4}}{143} = \
 ## 8. 关联条目
 
 - 上游：[TH-短路物理基础（待建）](../10-theory/)、[STD-CN-001 标准索引](../20-standards/cn-01-强制性通用规范与主干标准.md)
-- 下游：[CALC-PT-001 保护整定与灵敏度校验](CALC-PT-001-protection-setting.md)、[PR-DD-001 低压电器选型](../30-practice/PR-DD-001-lv-breaker-selection.md)、[CALC-VL-001 电压偏差](CALC-VL-001-voltage-deviation-and-loss.md)（$S_{sc}$ 来源）、[CALC-MS-001 电机启动压降](CALC-MS-001-motor-starting-voltage-drop.md)（$S_{sc}$ 来源）、[PR-EV-001 EV 充电](../30-practice/PR-EV-001-ev-charging-infrastructure.md)（$S_{sc}$ 用于谐波电压畸变）、[CASE-016 0.4kV柜电弧光短路烧伤](../50-case/CASE-016-accident-arc-flash-burn.md)（弧光电流估算）、[CASE-017 2020电机启动压降校验](../50-case/CASE-017-exam-motor-starting-voltage-drop.md)（母线短路容量来源）
+- 下游：[CALC-PT-001 保护整定与灵敏度校验](CALC-PT-001-protection-setting.md)、[PR-DD-001 低压电器选型](../30-practice/PR-DD-001-lv-breaker-selection.md)、[CALC-VL-001 电压偏差](CALC-VL-001-voltage-deviation-and-loss.md)（$S_{sc}$ 来源）、[CALC-MS-001 电机启动压降](CALC-MS-001-motor-starting-voltage-drop.md)（$S_{sc}$ 来源）、[PR-EV-001 EV 充电](../30-practice/PR-EV-001-ev-charging-infrastructure.md)（$S_{sc}$ 用于谐波电压畸变）、[CASE-016 0.4kV柜电弧光短路烧伤](../50-case/CASE-016-accident-arc-flash-burn.md)（弧光电流估算）、[CASE-017 2020电机启动压降校验](../50-case/CASE-017-exam-motor-starting-voltage-drop.md)（母线短路容量来源）、[CASE-021 施工现场跨步电压致死](../50-case/CASE-021-accident-step-voltage-electrocution.md)（单相接地故障电流估算）
 - 平行：[CALC-SC-002 单相短路/灵敏度计算（待建）]、[MAP-D 中外短路计算对照](../20-standards/mapping-中外对照表.md)
 
 ## 9. 变更记录

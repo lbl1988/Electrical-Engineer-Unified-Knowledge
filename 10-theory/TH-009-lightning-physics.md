@@ -58,7 +58,7 @@ $$d = 10\,I^{0.65}\quad(I\ \text{单位 kA},\ d\ \text{单位 m})$$
 
 ## 5. 关联条目与变更记录
 
-- 关联：[TH-005 接触/跨步电压](TH-005-touch-step-voltage.md)、[TH-001 似稳近似](TH-001-quasi-static-approximation.md)（雷电波头为 ns~μs 级，波过程不可忽略）
+- 关联：[TH-005 接触/跨步电压](TH-005-touch-step-voltage.md)、[TH-001 似稳近似](TH-001-quasi-static-approximation.md)（雷电波头为 ns~μs 级，波过程不可忽略）、[CASE-024 防雷接地电阻不达标+SPD配合](../50-case/CASE-024-review-lightning-grounding-spd.md)（雷电流注入与地电位升校算）
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|

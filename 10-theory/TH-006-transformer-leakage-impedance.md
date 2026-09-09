@@ -53,7 +53,7 @@ $$Z_T = \frac{u_k}{100}\cdot\frac{U_{rT}^2}{S_{rT}},\qquad R_T=\frac{P_{krT}}{3I
 
 ## 5. 关联条目与变更记录
 
-- 关联：[TH-003 对称分量法](TH-003-symmetrical-components.md)、[TH-007 电机启动](TH-007-induction-motor-starting.md)（启动压降同受系统阻抗支配）
+- 关联：[TH-003 对称分量法](TH-003-symmetrical-components.md)、[TH-007 电机启动](TH-007-induction-motor-starting.md)（启动压降同受系统阻抗支配）、[CASE-020 油浸变压器内部短路起火](../50-case/CASE-020-accident-oil-transformer-fire.md)（内部匝间短路电流估算）、[CASE-022 2021短路电流与保护整定](../50-case/CASE-022-exam-short-circuit-protection.md)（变压器阻抗归算至故障点）
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|
