@@ -107,7 +107,7 @@ updated: 2026-09-08
 
 ## 8. 关联条目
 
-- 上游：[GB 55024-2022 条目定位](../20-standards/cn-01-强制性通用规范与主干标准.md)（§1 强制规范表）
+- 上游：[GB 55024-2022 条目定位](../20-standards/cn-01-强制性通用规范与主干标准.md)（§1 强制规范表）、[TH-019 输电线路参数与长线方程](../10-theory/TH-019-transmission-line-parameters-long-line.md)（长线路末端压降与暂态稳定对一级负荷供电可靠性约束）
 - 下游：[CALC-LD-001 负荷计算](../40-calc/CALC-LD-001-demand-factor-method.md)（消防负荷单独成表口径）、[PR-BE-001 应急照明](PR-BE-001-emergency-lighting.md)
 - 下游案例：[CASE-038 冷却负荷分级](../50-case/CASE-038-composite-data-center-cooling-collaboration.md)、[CASE-039 应急电源分级](../50-case/CASE-039-review-ats-switching-time-mismatch.md)、[CASE-045 消防负荷分级](../50-case/CASE-045-exam-emergency-lighting-battery-capacity.md)、[CASE-050 照明负荷](../50-case/CASE-050-exam-illuminance-lpd-calculation.md)
 - 平行：[CALC-BT-001 蓄电池](../40-calc/CALC-BT-001-battery-capacity.md)

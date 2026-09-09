@@ -130,7 +130,7 @@ $$Z_{set,3}=\frac{110/\sqrt3}{0.85\times0.85\times300}\times\frac{1}{\cos(30°-7
 
 ## 8. 关联条目
 
-- 上游：[TH-012 继保四性](../10-theory/TH-012-protection-four-properties.md)（选择性/灵敏性/速动性量化）·[TH-003 对称分量](../10-theory/TH-003-symmetrical-components.md)（接地距离零序补偿）
+- 上游：[TH-012 继保四性](../10-theory/TH-012-protection-four-properties.md)（选择性/灵敏性/速动性量化）·[TH-003 对称分量](../10-theory/TH-003-symmetrical-components.md)（接地距离零序补偿）·[TH-019 输电线路参数与长线方程](../10-theory/TH-019-transmission-line-parameters-long-line.md)（z0 与沿线分布是距离整定基础）
 - 下游：[PR-PE-001 继电保护配置](../30-practice/PR-PE-001-relay-protection-config.md)（线路保护配置）
 - 平行：[CALC-PT-001 低压保护整定](CALC-PT-001-protection-setting.md)（低压侧同源）·[CALC-SC-002 高压短路](CALC-SC-002-hv-short-circuit-iec60909.md)（$I_k''$ 数据源）
 - 下游案例：[CASE-051 距离保护整定](../50-case/CASE-051-review-distance-protection-coordination-cascade-trip.md)

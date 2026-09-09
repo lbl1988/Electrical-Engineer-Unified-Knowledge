@@ -21,6 +21,16 @@
 | [TH-013](TH-013-switching-arc-physics.md) | 开关电弧物理与交流电流零点熄弧 | CALC-SC-002（高压短路开断容量校验）、PR-PE-001（断路器开断能力） |
 | [TH-014](TH-014-magnetic-circuit-saturation.md) | 磁路与铁磁饱和 | TH-006（变压器漏抗）、CALC-SC-001（$X_m\gg X_\sigma$ 忽略条件） |
 
+## 第二批条目（2026-09-09 增补，理论层 14→19）
+
+| ID | 主题 | 支撑的工程条目 |
+|---|---|---|
+| [TH-015](TH-015-synchronous-machine-park-equations.md) | 同步电机暂态深入（Park 方程） | CALC-SC-002（次暂态电势与衰减时间常数）、CASE-022/040/051 |
+| [TH-016](TH-016-synchronous-machine-power-angle-stability.md) | 同步电机功角稳定基础 | PR-PE-001（失步保护整定）、CASE-043/048/051 |
+| [TH-017](TH-017-cable-wave-process-vfto.md) | 电缆波过程与 VFTO | PR-GR-001（GIS 行波保护）、CASE-016/032/049 |
+| [TH-018](TH-018-instantaneous-power-pq-theory.md) | 瞬时功率 p-q 理论（赤木变换） | PR-PQ-001（APF 控制算法）、CALC-HM-001、CASE-005/041 |
+| [TH-019](TH-019-transmission-line-parameters-long-line.md) | 输电线路参数与长线方程 | CALC-PT-002（距离整定）、CALC-SC-002、CASE-028/054 |
+
 ## 后续规划（三期）
 
-电缆波过程与 VFTO、同步电机功角稳定基础、瞬时功率 p-q 理论、电力电子器件物理、电化学电池机理。
+理论层补足至 30：电力系统稳定性分类（电压/频率）、输电线路参数已落（TH-019）、中性点接地方式、过电压机理、电缆热场、开关电器选型、变压器并列运行、电力电子变换器、微电网控制。

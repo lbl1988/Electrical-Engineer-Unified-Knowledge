@@ -120,7 +120,7 @@ $$\boxed{N=k\,N_gA_e=1\times4.0\times0.0319=0.128\ \text{次/a}}$$
 
 ## 8. 关联条目
 
-- 上游：[TH-009 雷电物理](../10-theory/TH-009-lightning-physics.md)（滚球-雷电流关系与波形参数）
+- 上游：[TH-009 雷电物理](../10-theory/TH-009-lightning-physics.md)（滚球-雷电流关系与波形参数）、[TH-017 电缆波过程与 VFTO](../10-theory/TH-017-cable-wave-process-vfto.md)（GIS 行波保护与 VFTO 节点选择）
 - 下游：接地网设计（规划 PR-GR-003）、SPD 选型级联（规划 PR-GR-004）、[CASE-007 避雷针接地真题](../50-case/CASE-007-exam-lightning-grounding.md)（IEEE 80 系数法）、[CASE-024 防雷接地不达标+SPD配合](../50-case/CASE-024-review-lightning-grounding-spd.md)（一类防雷共用接地+SPD三级配合校审）、[CASE-028 海上风电海上升压站](../50-case/CASE-028-composite-offshore-wind-substation.md)（海上平台防雷）
 - 下游案例：[CASE-044 避雷器选型](../50-case/CASE-044-review-capacitor-overvoltage-spd-coordination.md)
 - 平行：[PR-GR-002 低压接地制式与等电位](PR-GR-002-earthing-arrangement.md)
