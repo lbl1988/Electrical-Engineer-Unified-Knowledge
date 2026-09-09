@@ -167,7 +167,7 @@ $$\text{年收益} = 1400 \times 330 \text{日} = 46.2\ \text{万元}$$
 
 - 上游：[cn-04 新兴领域储能标准包](../20-standards/cn-04-新兴领域标准包.md)（GB/T 51048-2025 等 6 项）、[TH-008 谐波](../10-theory/TH-008-harmonic-generation.md)（PCS 谐波机理）、[TH-014 磁路饱和](../10-theory/TH-014-magnetic-circuit-saturation.md)（变压器/PCS 铁芯设计）
 - 下游：[PR-PQ-001 无功补偿与谐波治理](PR-PQ-001-pq-compensation-design.md)（PCS 谐波治理）、[PR-EV-001 电动汽车充电](PR-EV-001-ev-charging-infrastructure.md)（光储充一体化场景）、[PR-CM-001 消防联动](PR-CM-001-fire-protection-interlocking.md)（储能舱消防联动）、[CASE-023 轨道交通牵引变电所协同](../50-case/CASE-023-composite-metro-traction-substation.md)（再生制动逆变回馈+超级电容储能方案对比）、[CASE-033 储能电站全流程](../50-case/CASE-033-composite-energy-station-full-process.md)（储能电站全流程）
-- 下游案例：[CASE-043 构网型PCS并离网](../50-case/CASE-043-composite-pv-storage-diesel-microgrid.md)、[CASE-048 新能源储能调频](../50-case/CASE-048-composite-renewable-collector-station-protection.md)
+- 下游案例：[CASE-043 构网型PCS并离网](../50-case/CASE-043-composite-pv-storage-diesel-microgrid.md)、[CASE-048 新能源储能调频](../50-case/CASE-048-composite-renewable-collector-station-protection.md)、[CASE-054 光伏并离网](../50-case/CASE-054-review-pv-anti-islanding-reverse-power.md)
 - 平行：[PR-PE-001 继电保护配置](PR-PE-001-relay-protection-config.md)（新型电源对保护的影响）、[GB/T 47968-2026 构网型变流器](../20-standards/cn-04-新兴领域标准包.md)（构网型 PCS 选型）
 - 案例支撑：[CASE-004 储能综合案例](../50-case/CASE-004-composite-energy-storage.md)（1MW/2MWh多专业协同，沿用本条数据链）
 - 计算支撑：[CALC-HM-001 谐波潮流计算](../40-calc/CALC-HM-001-harmonic-power-flow.md)（PCS谐波电流叠加与电能质量校核）

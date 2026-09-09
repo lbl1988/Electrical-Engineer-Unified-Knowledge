@@ -101,6 +101,16 @@
 | [CASE-048](CASE-048-composite-renewable-collector-station-protection.md) | 综合案例：新能源汇集站光伏+风电并网保护与电能质量多专业协同 | GB/T 19964-2024, GB/T 19963.1-2021, GB/T 14285-2023, GB/T 14549-1993, GB/T 24337-2009, GB/T 36129-2018 | CP 综合 | [TH-008](../10-theory/TH-008-harmonic-generation.md)·[TH-011](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)·[TH-012](../10-theory/TH-012-protection-four-properties.md)·[CALC-RC-001](../40-calc/CALC-RC-001-reactive-compensation.md)·[CALC-PT-001](../40-calc/CALC-PT-001-protection-setting.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md)·[PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md)·[PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md) |
 | [CASE-049](CASE-049-review-cable-joint-construction-defect.md) | 校审驳回：10kV交联电缆中间接头施工工艺缺陷致电场集中与绝缘击穿 | GB 50168-2018, GB 50217-2018, GB/T 12706.2-2020, DL/T 596-2021 | DR 校审 | [TH-013](../10-theory/TH-013-switching-arc-physics.md)·[CALC-CD-001](../40-calc/CALC-CD-001-cable-ampacity-correction.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md) |
 
+## 三期第十一批成果（5 条）
+
+| ID | 主题 | 主要标准依据 | 案例类型 | 支撑条目 |
+|---|---|---|---|---|
+| [CASE-050](CASE-050-exam-illuminance-lpd-calculation.md) | 2016供配电真题拆解：办公建筑照度计算与照明功率密度（LPD）校验 | GB 50034-2024, GB/T 5700-2008, GB 51348-2019 | EX 真题 | [CALC-LT-001](../40-calc/CALC-LT-001-lumen-method.md)·[PR-PS-001](../30-practice/PR-PS-001-load-classification.md) |
+| [CASE-051](CASE-051-review-distance-protection-coordination-cascade-trip.md) | 校审驳回：110kV输电线路距离保护整定未计分支系数致下级变电站越级跳闸 | GB/T 14285-2023, DL/T 559-2018, GB 50062-2008, DL/T 584-2017 | DR 校审 | [TH-012](../10-theory/TH-012-protection-four-properties.md)·[CALC-PT-002](../40-calc/CALC-PT-002-distance-protection-setting.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md) |
+| [CASE-052](CASE-052-accident-dc-short-circuit-battery-fire.md) | 事故复盘：变电站直流系统正极电缆短路致阀控铅酸蓄电池组起火 | DL/T 5044-2012, GB 50059-2011, DL/T 637-2019, GB 50171-2012 | AC 事故 | [CALC-BT-001](../40-calc/CALC-BT-001-battery-capacity.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[TH-013](../10-theory/TH-013-switching-arc-physics.md) |
+| [CASE-053](CASE-053-composite-rail-transit-traction-rectifier.md) | 综合案例：城市轨道交通牵引供电12脉波整流机组选型与钢轨电位限制 | GB 50157-2013, GB/T 10411-2018, GB/T 14549-1993, CJJ 49-2019 | CP 综合 | [TH-008](../10-theory/TH-008-harmonic-generation.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md) |
+| [CASE-054](CASE-054-review-pv-anti-islanding-reverse-power.md) | 校审驳回：工商业光伏并网未配置防孤岛保护与防逆流装置致倒送电风险 | GB/T 19964-2012, GB 50797-2012, NB/T 10394-2020, DL/T 2022-2019 | DR 校审 | [PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md)·[PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md) |
+
 ## 案例间引用网（数据贯通闭环）
 
 ```
@@ -153,6 +163,11 @@ TH-012 继保四性（直流绝缘监测）          ─→ CASE-046 直流绝�
 TH-013 开关电弧（电弧光能量）            ─→ CASE-047 电弧光保护缺失烧伤 ─→ CASE-016 电弧光烧伤（同源电弧光）
 TH-008 谐波机理（新能源并网）            ─→ CASE-048 新能源汇集站并网保护 ─→ CASE-028 海上风电（同源新能源）
 TH-013 开关电弧（电缆接头电场）          ─→ CASE-049 电缆中间接头工艺校审 ─→ CASE-032 电缆终端击穿（同源电缆附件）
+CALC-LT-001 照度计算（利用系数法）          ─→ CASE-050 2016照度LPD真题 ─→ CASE-001 负荷分级真题（同源供配电照明）
+TH-012 继保四性（距离保护选择性）          ─→ CASE-051 距离保护越级跳闸校审 ─→ CASE-036 CT极性接反（同源保护配合）
+CALC-BT-001 蓄电池容量（直流内阻短路）      ─→ CASE-052 直流短路蓄电池起火 ─→ CASE-046 直流绝缘监测（同源直流系统）
+TH-008 谐波机理（12脉波整流）              ─→ CASE-053 轨道交通牵引整流 ─→ CASE-023 轨道交通牵引变电所（同源轨道交通）
+TH-006 电力系统稳定性（孤岛运行）          ─→ CASE-054 光伏防孤岛防逆流校审 ─→ CASE-048 新能源汇集站（同源新能源并网）
 ```
 
 ## 案例子域代码（front matter `subdomain` 字段）
@@ -166,15 +181,15 @@ TH-013 开关电弧（电缆接头电场）          ─→ CASE-049 电缆中�
 
 > 子域代码仅入 front matter `subdomain`，**不嵌入文件名**（遵守 `CASE-{三位序号}-{英文短名}.md` 格式）。
 
-## 累计统计（十批共 49 条）
+## 累计统计（十一批共 54 条）
 
-| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 第五批 | 第六批 | 第七批 | 第八批 | 第九批 | 第十批 | 累计 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 1（CASE-022） | 1（CASE-025） | 1（CASE-030） | 1（CASE-035） | 1（CASE-040） | 1（CASE-045） | 10 |
-| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 1（CASE-024） | 2（CASE-026/029） | 2（CASE-031/034） | 2（CASE-036/039） | 2（CASE-041/044） | 2（CASE-046/049） | 18 |
-| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 2（CASE-020/021） | 1（CASE-027） | 1（CASE-032） | 1（CASE-037） | 1（CASE-042） | 1（CASE-047） | 11 |
-| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 1（CASE-023） | 1（CASE-028） | 1（CASE-033） | 1（CASE-038） | 1（CASE-043） | 1（CASE-048） | 10 |
-| **合计** | **4** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **49** |
+| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 第五批 | 第六批 | 第七批 | 第八批 | 第九批 | 第十批 | 第十一批 | 累计 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 1（CASE-022） | 1（CASE-025） | 1（CASE-030） | 1（CASE-035） | 1（CASE-040） | 1（CASE-045） | 1（CASE-050） | 11 |
+| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 1（CASE-024） | 2（CASE-026/029） | 2（CASE-031/034） | 2（CASE-036/039） | 2（CASE-041/044） | 2（CASE-046/049） | 2（CASE-051/054） | 20 |
+| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 2（CASE-020/021） | 1（CASE-027） | 1（CASE-032） | 1（CASE-037） | 1（CASE-042） | 1（CASE-047） | 1（CASE-052） | 12 |
+| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 1（CASE-023） | 1（CASE-028） | 1（CASE-033） | 1（CASE-038） | 1（CASE-043） | 1（CASE-048） | 1（CASE-053） | 11 |
+| **合计** | **4** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **54** |
 
 ## 后续规划（三期续）
 

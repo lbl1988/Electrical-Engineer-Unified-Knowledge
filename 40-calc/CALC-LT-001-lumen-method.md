@@ -109,6 +109,7 @@ LPD 4.0 W/m² 大幅低于 GB/T 50034-2024 普通办公室现行值（LED 基准
 - 上游：[CHG-001 GB/T 50034-2024 换版记录](../20-standards/changelog/CHG-001-GBT50034-2024.md)（LED 基准/健康照明新增条款）
 - 下游：应急照明设计（[PR-BE-001](../30-practice/PR-BE-001-emergency-lighting.md)）、室外功能照明（规划）
 - 平行：[CALC-LT-002 照度逐点校验法](CALC-LT-002-point-illuminance-method.md)（最低照度与均匀度，与本条平均照度互补）
+- 下游案例：[CASE-050 照度计算真题](../50-case/CASE-050-exam-illuminance-lpd-calculation.md)
 
 ## 9. 变更记录
 
