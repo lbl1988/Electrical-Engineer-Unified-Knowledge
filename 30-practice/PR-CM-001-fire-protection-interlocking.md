@@ -171,7 +171,7 @@ updated: 2026-09-09
 
 ## 8. 关联条目
 
-- 上游：[PR-PS-001 负荷分级](PR-PS-001-load-classification.md)（消防负荷一/特级）、[CALC-DG-001 柴油发电机容量](../40-calc/CALC-DG-001-diesel-generator-capacity.md)（应急电源容量与启动顺序）
+- 上游：[PR-PS-001 负荷分级](PR-PS-001-load-classification.md)（消防负荷一/特级）、[CALC-DG-001 柴油发电机容量](../40-calc/CALC-DG-001-diesel-generator-capacity.md)（应急电源容量与启动顺序）、[TH-043 AI 在电气工程应用基础](../10-theory/TH-043-ai-foundations-in-electrical-engineering.md)（电池热失控早期预警，PINN+Arrhenius 模型）
 - 下游：[PR-BE-001 应急照明](PR-BE-001-emergency-lighting.md)（联动点亮）、消防设备供电末端 ATS 选型（DD 域规划）、[CASE-014 消防泵末端切换](../50-case/CASE-014-review-fire-pump-end-transfer.md)（消防供电末端切换）、[CASE-013 光储充消防联动](../50-case/CASE-013-composite-pv-es-eva-microgrid.md)（储能可燃气体探测）、[CASE-020 油浸变压器短路起火](../50-case/CASE-020-accident-oil-transformer-fire.md)（水喷雾控制回路双电源+耐火电缆）、[CASE-023 轨道交通牵引变电所协同](../50-case/CASE-023-composite-metro-traction-substation.md)（地下变电所气体灭火+双出口）、[CASE-028 海上风电海上升压站](../50-case/CASE-028-composite-offshore-wind-substation.md)（变压器海水水雾消防）、[CASE-029 柴发房通风排烟校审](../50-case/CASE-029-review-diesel-generator-room-ventilation.md)（柴发房消防）、[CASE-033 储能电站全流程](../50-case/CASE-033-composite-energy-station-full-process.md)（储能消防PACK级）
 - 下游案例：[CASE-038 气体灭火切空调](../50-case/CASE-038-composite-data-center-cooling-collaboration.md)、[CASE-039 消防泵联动](../50-case/CASE-039-review-ats-switching-time-mismatch.md)、[CASE-043 储能消防联动](../50-case/CASE-043-composite-pv-storage-diesel-microgrid.md)
 - 平行：[CALC-BT-001 蓄电池容量](../40-calc/CALC-BT-001-battery-capacity.md)（双失电蓄电池持续）、[PR-GR-001 防雷设计](PR-GR-001-lightning-protection-design.md)（消防控制室防雷接地）

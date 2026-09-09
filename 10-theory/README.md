@@ -71,6 +71,16 @@
 | [TH-038](TH-038-high-renewable-frequency-stability-inertia.md)    | 新能源高占比系统频率稳定与惯量支撑（等效惯量/RoCoF/VSG 虚拟惯量/频率最低点估算）             | PR-ES-001（储能 VSG 调频与 RoCoF 保护）               |
 | [TH-039](TH-039-generator-breaker-and-gis-selection.md)           | 高压断路器选型深入（发电机断路器 GCB 直流分量/TRV/GIS 绝缘配合与扩建约束）               | PR-PE-001（GCB 保护配合）、PR-DD-002（GIS 间隔布置与扩建预留） |
 
-## 后续规划（四期方向）
+## 第七批条目（2026-09-09 增补，理论层 39→44，四期方向扩展）
 
-理论层 39 条已覆盖电磁/电路/电机/系统/电力电子/接地/保护/直流输电/柔性输电/微电网/分布式电源/次同步谐振/励磁系统/有载调压/频率稳定/断路器选型全主干。后续按需扩展方向：交直流混联电网稳定、电力市场与碳交易工程映射、配电网高渗透率 DG 承载力、人工智能在电气工程中的应用基础。
+| ID | 主题 | 支撑的工程条目 |
+|---|---|---|
+| [TH-040](TH-040-hybrid-ac-dc-grid-stability.md) | 交直流混联电网稳定（多馈入短路比 MISCR/换相失败连锁/LCC-VSC 互补） | PR-ES-001（VSC 与构网型 PCS 共享控制）、PR-PQ-001（MIDC 受端动态无功）、PR-PE-001（直流闭锁潮流转移）、PR-DD-002（STATCOM 选型） |
+| [TH-041](TH-041-distribution-grid-high-penetration-dg-hosting-capacity.md) | 配电网高渗透率 DG 承载力（静态/动态承载力/电压灵敏度法/LVRT 约束） | PR-ES-001（储能提升承载力）、PR-PQ-001（DG 谐波叠加）、PR-PE-001（DG 短路方向）、PR-DD-002（馈线选型） |
+| [TH-042](TH-042-electricity-market-and-carbon-trading-engineering-mapping.md) | 电力市场与碳交易工程映射（LMP/辅助服务/CCER/储能套利） | PR-ES-001（储能经济性）、PR-PS-001（需求响应）、PR-PQ-001（无功辅服）、PR-EV-001（V2G 套利） |
+| [TH-043](TH-043-ai-foundations-in-electrical-engineering.md) | 人工智能在电气工程应用基础（监督学习/RL/PINN/数字孪生） | PR-ES-001（储能 SOH）、PR-PQ-001（负荷预测）、PR-PE-001（故障诊断）、PR-PS-001（负荷预测）、PR-CM-001（热失控预警） |
+| [TH-044](TH-044-power-electronics-dominated-system-low-inertia-wideband-oscillation.md) | 电力电子化电力系统低惯量与宽频振荡（PLL 耦合/阻抗分析/CIO） | PR-ES-001（构网型 vs 跟网型）、PR-PE-001（短路特征变化）、PR-PQ-001（宽频阻抗谐振）、PR-DD-002（滤波器配置） |
+
+## 后续规划（五期方向）
+
+理论层 44 条已覆盖电磁/电路/电机/系统/电力电子/接地/保护/直流输电/柔性输电/微电网/分布式电源/次同步谐振/励磁系统/有载调压/频率稳定/断路器选型/交直流混联/DG 承载力/电力市场/AI 基础/电力电子化振荡全主干。后续按需扩展方向：电力系统动态等值与降阶方法、新型电力设备故障物理（电池热失控/电缆水树老化/变压器套管爆裂）、可再生能源出力预测与不确定性建模、电力系统恢复控制与黑启动优化。

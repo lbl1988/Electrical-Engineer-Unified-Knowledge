@@ -107,7 +107,7 @@ updated: 2026-09-08
 
 ## 8. 关联条目
 
-- 上游：[GB 55024-2022 条目定位](../20-standards/cn-01-强制性通用规范与主干标准.md)（§1 强制规范表）、[TH-019 输电线路参数与长线方程](../10-theory/TH-019-transmission-line-parameters-long-line.md)（长线路末端压降与暂态稳定对一级负荷供电可靠性约束）、[TH-020 电力系统稳定性分类](../10-theory/TH-020-power-system-stability-classification.md)（频率稳定与低频减载对一级负荷解锁时序的约束）、[TH-029 微电网控制与并离网切换](../10-theory/TH-029-microgrid-control-and-grid-mode-switching.md)（微电网孤岛容量有限按负荷重要性分级投入，特级/一级优先保电）
+- 上游：[GB 55024-2022 条目定位](../20-standards/cn-01-强制性通用规范与主干标准.md)（§1 强制规范表）、[TH-019 输电线路参数与长线方程](../10-theory/TH-019-transmission-line-parameters-long-line.md)（长线路末端压降与暂态稳定对一级负荷供电可靠性约束）、[TH-020 电力系统稳定性分类](../10-theory/TH-020-power-system-stability-classification.md)（频率稳定与低频减载对一级负荷解锁时序的约束）、[TH-029 微电网控制与并离网切换](../10-theory/TH-029-microgrid-control-and-grid-mode-switching.md)（微电网孤岛容量有限按负荷重要性分级投入，特级/一级优先保电）、[TH-041 配电网高渗透率 DG 承载力](../10-theory/TH-041-distribution-grid-high-penetration-dg-hosting-capacity.md)（负荷分级保电策略与 DG 承载力协调，可中断负荷参与辅助服务）、[TH-042 电力市场与碳交易工程映射](../10-theory/TH-042-electricity-market-and-carbon-trading-engineering-mapping.md)（可中断负荷参与辅助服务与需求响应价格机制）、[TH-043 AI 在电气工程应用基础](../10-theory/TH-043-ai-foundations-in-electrical-engineering.md)（负荷预测精度与分级保电策略优化）
 - 下游：[CALC-LD-001 负荷计算](../40-calc/CALC-LD-001-demand-factor-method.md)（消防负荷单独成表口径）、[PR-BE-001 应急照明](PR-BE-001-emergency-lighting.md)
 - 下游案例：[CASE-038 冷却负荷分级](../50-case/CASE-038-composite-data-center-cooling-collaboration.md)、[CASE-039 应急电源分级](../50-case/CASE-039-review-ats-switching-time-mismatch.md)、[CASE-045 消防负荷分级](../50-case/CASE-045-exam-emergency-lighting-battery-capacity.md)、[CASE-050 照明负荷](../50-case/CASE-050-exam-illuminance-lpd-calculation.md)
 - 平行：[CALC-BT-001 蓄电池](../40-calc/CALC-BT-001-battery-capacity.md)
