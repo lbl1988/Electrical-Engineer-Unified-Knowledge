@@ -54,6 +54,7 @@ $$I_k^{(2)} = \frac{\sqrt{3}}{2} I_k^{(3)} \approx 0.866\,I_k^{(3)}$$
 ## 5. 关联条目与变更记录
 
 - 关联：[TH-002 相量法](TH-002-phasor-analysis.md)、[TH-006 变压器漏抗](TH-006-transformer-leakage-impedance.md)、[CASE-022 2021短路电流与保护整定](../50-case/CASE-022-exam-short-circuit-protection.md)（两相短路=0.866×三相，灵敏度校验）
+- 下游案例：[CASE-036 CT极性接反](../50-case/CASE-036-review-ct-polarity-differential-malfunction.md)
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|

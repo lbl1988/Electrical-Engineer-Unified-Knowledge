@@ -132,6 +132,7 @@ F级绝缘、75kW电机在40℃环境下满载及1.2倍过载时温升满足要�
 
 - 上游：[TH-007 电机启动](../10-theory/TH-007-induction-motor-starting.md)（启动损耗与温升）
 - 下游：[CALC-MS-001 电机启动压降](CALC-MS-001-motor-starting-voltage-drop.md)·[CALC-PT-001 保护整定](CALC-PT-001-protection-setting.md)（过载保护配合）
+- 下游案例：[CASE-035](../50-case/CASE-035-exam-motor-protection-setting.md)（电机热稳定校验）
 - 平行：[PR-PS-001 负荷分级](../30-practice/PR-PS-001-load-classification.md)
 
 ## 9. 变更记录

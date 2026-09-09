@@ -71,6 +71,16 @@
 | [CASE-033](CASE-033-composite-energy-station-full-process.md) | 综合案例：5MW/10MWh工商业储能电站全流程设计（消防+EMS+并网保护） | GB/T 51048-2025, GB/T 36547-2024, GB 44240-2024, GB/T 42288-2022, NB/T 10988-2022, GB/T 14285-2023 | CP 综合 | [PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[TH-012](../10-theory/TH-012-protection-four-properties.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md)·[PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md) |
 | [CASE-034](CASE-034-review-neutral-resistor-grounding.md) | 校审驳回：10kV系统中性点经小电阻接地电阻器选型不当 | GB/T 50065-2011, GB 50052-2009, GB/T 14285-2023, DL/T 5222-2021, IEEE C62.92.2-1995 | DR 校审 | [TH-005](../10-theory/TH-005-touch-step-voltage.md)·[TH-012](../10-theory/TH-012-protection-four-properties.md)·[CALC-GR-001](../40-calc/CALC-GR-001-grounding-grid-design.md)·[PR-GR-002](../30-practice/PR-GR-002-earthing-arrangement.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md) |
 
+## 三期第八批成果（5 条）
+
+| ID | 主题 | 主要标准依据 | 案例类型 | 支撑条目 |
+|---|---|---|---|---|
+| [CASE-035](CASE-035-exam-motor-protection-setting.md) | 2018供配电真题拆解：高压电动机保护整定与热稳定校验 | GB 50055-2011, GB/T 14285-2023, DL/T 5222-2021, GB 50062-2008 | EX 真题 | [TH-007](../10-theory/TH-007-induction-motor-starting.md)·[TH-012](../10-theory/TH-012-protection-four-properties.md)·[CALC-PT-001](../40-calc/CALC-PT-001-protection-setting.md)·[CALC-MS-002](../40-calc/CALC-MS-002-motor-temperature-rise.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md) |
+| [CASE-036](CASE-036-review-ct-polarity-differential-malfunction.md) | 校审驳回：变压器差动保护低压侧CT极性接反致空投误动 | GB/T 14285-2023, GB 50062-2008, GB 50150-2016, DL/T 587-2016 | DR 校审 | [TH-012](../10-theory/TH-012-protection-four-properties.md)·[TH-003](../10-theory/TH-003-symmetrical-components.md)·[TH-014](../10-theory/TH-014-magnetic-circuit-saturation.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md) |
+| [CASE-037](CASE-037-accident-ferroresonance-pt-burnout.md) | 事故复盘：10kV不接地系统铁磁谐振过电压致电压互感器烧毁 | GB/T 50065-2011, GB 50053-2013, GB/T 14549-1993, DL/T 620-1997 | AC 事故 | [TH-009](../10-theory/TH-009-lightning-physics.md)·[TH-013](../10-theory/TH-013-switching-arc-physics.md)·[TH-014](../10-theory/TH-014-magnetic-circuit-saturation.md)·[PR-GR-002](../30-practice/PR-GR-002-earthing-arrangement.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md) |
+| [CASE-038](CASE-038-composite-data-center-cooling-collaboration.md) | 综合案例：A级数据中心冷却系统电气-暖通-消防多专业协同设计 | GB 50174-2017, GB 50019-2015, GB 50016-2014, GB 50116-2013, GB 51348-2019 | CP 综合 | [CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[PR-PS-001](../30-practice/PR-PS-001-load-classification.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-BE-001](../30-practice/PR-BE-001-emergency-lighting.md) |
+| [CASE-039](CASE-039-review-ats-switching-time-mismatch.md) | 校审驳回：应急电源ATS切换时间与UPS备电时序不匹配 | GB 50052-2009, GB 51348-2019, GB 50016-2014, GB 51309-2018, GB/T 21436-2008 | DR 校审 | [CALC-BT-001](../40-calc/CALC-BT-001-battery-capacity.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[PR-PS-001](../30-practice/PR-PS-001-load-classification.md)·[PR-BE-001](../30-practice/PR-BE-001-emergency-lighting.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md) |
+
 ## 案例间引用网（数据贯通闭环）
 
 ```
@@ -108,6 +118,11 @@ TH-012 继保四性（直流绝缘=可靠性基础） ─→ CASE-031 直流绝�
 TH-013 开关电弧（电树枝+场强集中）     ─→ CASE-032 电缆终端击穿事故 ─→ CASE-006 电缆接头火灾（同源电缆附件）
 PR-ES-001 储能接入（PACK级消防+EMS）    ─→ CASE-033 储能电站全流程 ─→ CASE-004 用户侧储能（同源储能扩展）
 TH-005 接触/跨步（中性点接地方式）      ─→ CASE-034 小电阻接地校审 ─→ CASE-009 医疗接地制式（同源中性点接地）
+CALC-PT-001 保护整定（电机速断+过负荷）  ─→ CASE-035 2018电机保护真题 ─→ CASE-017 电机启动压降真题（同源电机保护）
+TH-012 继保四性（差动CT极性）            ─→ CASE-036 CT极性接反误动校审 ─→ CASE-022 差动整定真题（同源差动保护）
+TH-014 磁路饱和（铁磁谐振）              ─→ CASE-037 铁磁谐振PT烧毁 ─→ CASE-003 空投涌流（同源PT/变压器非线性）
+CALC-LD-001 负荷计算（冷却负荷）          ─→ CASE-038 数据中心冷却协同 ─→ CASE-008 数据中心2N（同源数据中心）
+CALC-BT-001 蓄电池容量（UPS分级）        ─→ CASE-039 ATS切换时序校审 ─→ CASE-026 UPS自主时间（同源应急电源）
 ```
 
 ## 案例子域代码（front matter `subdomain` 字段）
@@ -121,15 +136,15 @@ TH-005 接触/跨步（中性点接地方式）      ─→ CASE-034 小电阻�
 
 > 子域代码仅入 front matter `subdomain`，**不嵌入文件名**（遵守 `CASE-{三位序号}-{英文短名}.md` 格式）。
 
-## 累计统计（七批共 34 条）
+## 累计统计（八批共 39 条）
 
-| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 第五批 | 第六批 | 第七批 | 累计 |
-|---|---|---|---|---|---|---|---|---|
-| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 1（CASE-022） | 1（CASE-025） | 1（CASE-030） | 7 |
-| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 1（CASE-024） | 2（CASE-026/029） | 2（CASE-031/034） | 12 |
-| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 2（CASE-020/021） | 1（CASE-027） | 1（CASE-032） | 8 |
-| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 1（CASE-023） | 1（CASE-028） | 1（CASE-033） | 7 |
-| **合计** | **4** | **5** | **5** | **5** | **5** | **5** | **5** | **34** |
+| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 第五批 | 第六批 | 第七批 | 第八批 | 累计 |
+|---|---|---|---|---|---|---|---|---|---|
+| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 1（CASE-022） | 1（CASE-025） | 1（CASE-030） | 1（CASE-035） | 8 |
+| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 1（CASE-024） | 2（CASE-026/029） | 2（CASE-031/034） | 2（CASE-036/039） | 14 |
+| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 2（CASE-020/021） | 1（CASE-027） | 1（CASE-032） | 1（CASE-037） | 9 |
+| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 1（CASE-023） | 1（CASE-028） | 1（CASE-033） | 1（CASE-038） | 8 |
+| **合计** | **4** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **39** |
 
 ## 后续规划（三期续）
 

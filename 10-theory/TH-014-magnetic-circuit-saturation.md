@@ -78,6 +78,7 @@ $$\Phi = \frac{F}{R_m},\qquad F=Ni,\qquad R_m=\frac{l}{\mu A}$$
 ## 5. 关联条目与变更记录
 
 - 关联：[TH-002 相量法](TH-002-phasor-analysis.md)（饱和后相量法失效边界）、[TH-006 变压器漏抗](TH-006-transformer-leakage-impedance.md)（漏磁/主磁通分离）、[TH-008 谐波](TH-008-harmonic-generation.md)（饱和励磁电流 3 次谐波）
+- 下游案例：[CASE-036 差动涌流](../50-case/CASE-036-review-ct-polarity-differential-malfunction.md)、[CASE-037 铁磁谐振PT](../50-case/CASE-037-accident-ferroresonance-pt-burnout.md)
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|

@@ -154,6 +154,7 @@ updated: 2026-09-09
 
 - 上游：[PR-PS-001 负荷分级](PR-PS-001-load-classification.md)（负荷等级与电源路数判定）、[CALC-LD-001 负荷计算](../40-calc/CALC-LD-001-demand-factor-method.md)（$S_{30}$ → 变压器容量）
 - 下游：[PR-DD-001 断路器选型](PR-DD-001-lv-breaker-selection.md)（开关柜内 ACB/MCCB）、[CALC-CD-001 电缆载流量](../40-calc/CALC-CD-001-cable-ampacity-correction.md)（馈线选型）、[PR-GR-002 接地制式](PR-GR-002-earthing-arrangement.md)（接地系统）
+- 下游案例：[CASE-038 数据中心UPS柴发布置](../50-case/CASE-038-composite-data-center-cooling-collaboration.md)
 - 平行：[PR-GR-001 防雷分类](../30-practice/PR-GR-001-lightning-protection-design.md)（变电所防雷）、[CASE-015 变电所未深入负荷中心致电压降超标](../50-case/CASE-015-review-substation-location-voltage.md)（所址-总图接口校审）、[CASE-017 2020电机启动压降校验](../50-case/CASE-017-exam-motor-starting-voltage-drop.md)（启动方式与配电所布置联动）、[CASE-018 工业变电所多专业协同](../50-case/CASE-018-composite-industrial-substation.md)（油坑/通风/防火分区接口）、[CASE-028 海上风电海上升压站](../50-case/CASE-028-composite-offshore-wind-substation.md)（海上平台设备布置）、[CASE-029 柴发房通风排烟校审](../50-case/CASE-029-review-diesel-generator-room-ventilation.md)（柴发房布置空间）
 
 ## 9. 变更记录
