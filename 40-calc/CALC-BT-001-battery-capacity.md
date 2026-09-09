@@ -113,7 +113,7 @@ $$C_c=\frac{1.40\times30}{0.55}=76.4\ \text{Ah}\ \Rightarrow\ \text{选 } GFM\te
 
 - 上游：[PR-BE-001 应急照明设计](../30-practice/PR-BE-001-emergency-lighting.md)（持续时间与系统选型依据）、TH 域电池基础（规划）
 - 下游：直流系统设备选型（DD 域规划）、[CALC-BT-002 UPS蓄电池autonomy校核](CALC-BT-002-ups-battery-autonomy.md)（数据中心UPS功率法，区别于本条能量法/换算法）、[CASE-019 电缆敷设防火分区](../50-case/CASE-019-review-cable-fire-compartmentation.md)（应急照明集中电源持续供电校验）、[CASE-026 UPS蓄电池自主时间校审](../50-case/CASE-026-review-ups-bypass-battery-autonomy.md)（UPS蓄电池自主时间校审）、[CASE-031 直流电源绝缘监测](../50-case/CASE-031-review-dc-insulation-monitoring.md)（直流电源绝缘监测）
-- 下游案例：[CASE-039 UPS分级放电](../50-case/CASE-039-review-ats-switching-time-mismatch.md)
+- 下游案例：[CASE-039 UPS分级放电](../50-case/CASE-039-review-ats-switching-time-mismatch.md)、[CASE-045 应急照明蓄电池](../50-case/CASE-045-exam-emergency-lighting-battery-capacity.md)、[CASE-046 直流蓄电池](../50-case/CASE-046-review-dc-insurance-monitoring-capacitance-mismatch.md)
 - 平行：[cn-04 新兴领域储能标准包](../20-standards/cn-04-新兴领域标准包.md)（储能电站级电池计算另见 GB/T 51048-2025，勿与本条混淆边界）
 
 ## 9. 变更记录

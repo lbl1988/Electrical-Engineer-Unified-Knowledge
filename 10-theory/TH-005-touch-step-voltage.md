@@ -56,7 +56,7 @@ $$E_{touch} = \frac{(1000+1.5\,C_s\rho_s)\times0.116}{\sqrt{t}}\ \text{V},\qquad
 ## 5. 关联条目与变更记录
 
 - 关联：[TH-004 人体电流效应](TH-004-current-effects-human-body.md)（耐受公式的数据来源）、[CASE-016 0.4kV柜电弧光短路烧伤](../50-case/CASE-016-accident-arc-flash-burn.md)（弧光压力波与转移电位风险）
-- 下游案例：[CASE-034 中性点小电阻接地](../50-case/CASE-034-review-neutral-resistor-grounding.md)（中性点接地跨步电压）
+- 下游案例：[CASE-034 中性点小电阻接地](../50-case/CASE-034-review-neutral-resistor-grounding.md)（中性点接地跨步电压）、[CASE-046 直流绝缘监测](../50-case/CASE-046-review-dc-insurance-monitoring-capacitance-mismatch.md)
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|

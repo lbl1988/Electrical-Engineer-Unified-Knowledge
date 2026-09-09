@@ -108,7 +108,7 @@ $X_q'' \geq X_d''$（q 轴阻尼效应通常弱于 d 轴），不对称短路分
 ## 5. 关联条目与变更记录
 
 - 关联：[TH-003 对称分量法](TH-003-symmetrical-components.md)（不对称短路理论基础）、[TH-006 变压器漏抗](TH-006-transformer-leakage-impedance.md)（同为漏磁路径电抗）、[CALC-SC-001 低压短路](../40-calc/CALC-SC-001-低压三相短路电流计算.md)（低压系统中电动机反馈部分）、[CASE-022 2021短路电流与保护整定](../50-case/CASE-022-exam-short-circuit-protection.md)（远端/近端短路区分与c系数取值）
-- 下游案例：[CASE-028](../50-case/CASE-028-composite-offshore-wind-substation.md)（风机变流器短路贡献）、[CASE-040 短路分量衰减](../50-case/CASE-040-exam-short-circuit-dc-component-breaker.md)、[CASE-043 构网型PCS](../50-case/CASE-043-composite-pv-storage-diesel-microgrid.md)
+- 下游案例：[CASE-028](../50-case/CASE-028-composite-offshore-wind-substation.md)（风机变流器短路贡献）、[CASE-040 短路分量衰减](../50-case/CASE-040-exam-short-circuit-dc-component-breaker.md)、[CASE-043 构网型PCS](../50-case/CASE-043-composite-pv-storage-diesel-microgrid.md)、[CASE-048 风机短路贡献](../50-case/CASE-048-composite-renewable-collector-station-protection.md)
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|

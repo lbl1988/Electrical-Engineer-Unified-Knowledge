@@ -174,7 +174,7 @@ $$\Delta I_{kM}'' / I_k'' = 0.10 / 12.6 = 0.8\%$$
 - 上游：[TH-011 同步电机次暂态电抗](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)（发电机近端短路的理论基础）
 - 平行：[CALC-SC-001 低压短路计算](CALC-SC-001-低压三相短路电流计算.md)（同方法、不同电压等级）、[TH-003 对称分量法](../10-theory/TH-003-symmetrical-components.md)（不对称短路扩展）
 - 下游：[PR-DD-002 变电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（设备选型校验）、[PR-PE-001 继电保护配置与整定配合](../30-practice/PR-PE-001-relay-protection-config.md)（$I_k''$ 与 CT 校验数据源）、[CASE-020 油浸变压器短路起火](../50-case/CASE-020-accident-oil-transformer-fire.md)（内部匝间短路电流估算）、[CASE-022 2021短路电流与保护整定真题](../50-case/CASE-022-exam-short-circuit-protection.md)（c系数最大/最小双工况）、[CASE-023 轨道交通直流牵引变电所](../50-case/CASE-023-composite-metro-traction-substation.md)（直流系统短路等效）、[CASE-028 海上风电海上升压站](../50-case/CASE-028-composite-offshore-wind-substation.md)（海上风电短路校验）、[CASE-030 2019电缆载流量截面真题](../50-case/CASE-030-exam-cable-ampacity-section.md)（热稳定短路电流）、[CASE-032 电缆终端击穿事故](../50-case/CASE-032-accident-cable-termination-breakdown.md)（击穿后短路）、[CASE-033 储能电站全流程](../50-case/CASE-033-composite-energy-station-full-process.md)（并网点短路）
-- 下游案例：[CASE-037 铁磁谐振](../50-case/CASE-037-accident-ferroresonance-pt-burnout.md)、[CASE-040 断路器开断校验](../50-case/CASE-040-exam-short-circuit-dc-component-breaker.md)
+- 下游案例：[CASE-037 铁磁谐振](../50-case/CASE-037-accident-ferroresonance-pt-burnout.md)、[CASE-040 断路器开断校验](../50-case/CASE-040-exam-short-circuit-dc-component-breaker.md)、[CASE-049 电缆接头热稳定](../50-case/CASE-049-review-cable-joint-construction-defect.md)
 
 ## 9. 变更记录
 

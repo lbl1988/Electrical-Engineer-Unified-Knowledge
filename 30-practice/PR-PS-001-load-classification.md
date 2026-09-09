@@ -109,7 +109,7 @@ updated: 2026-09-08
 
 - 上游：[GB 55024-2022 条目定位](../20-standards/cn-01-强制性通用规范与主干标准.md)（§1 强制规范表）
 - 下游：[CALC-LD-001 负荷计算](../40-calc/CALC-LD-001-demand-factor-method.md)（消防负荷单独成表口径）、[PR-BE-001 应急照明](PR-BE-001-emergency-lighting.md)
-- 下游案例：[CASE-038 冷却负荷分级](../50-case/CASE-038-composite-data-center-cooling-collaboration.md)、[CASE-039 应急电源分级](../50-case/CASE-039-review-ats-switching-time-mismatch.md)
+- 下游案例：[CASE-038 冷却负荷分级](../50-case/CASE-038-composite-data-center-cooling-collaboration.md)、[CASE-039 应急电源分级](../50-case/CASE-039-review-ats-switching-time-mismatch.md)、[CASE-045 消防负荷分级](../50-case/CASE-045-exam-emergency-lighting-battery-capacity.md)
 - 平行：[CALC-BT-001 蓄电池](../40-calc/CALC-BT-001-battery-capacity.md)
 - 案例支撑：[CASE-001 真题拆解](../50-case/CASE-001-exam-load-classification.md)（负荷分级＋需要系数法）、[CASE-002 校审驳回](../50-case/CASE-002-review-emergency-lighting.md)（应急照明负荷分级）、[CASE-013 光储充微电网](../50-case/CASE-013-composite-pv-es-eva-microgrid.md)（负荷分级恢复策略）、[CASE-014 消防泵末端切换](../50-case/CASE-014-review-fire-pump-end-transfer.md)（一级负荷末端切换）
 

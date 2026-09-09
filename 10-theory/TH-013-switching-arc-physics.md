@@ -96,7 +96,7 @@ $$u\_{TRV}(t) = U\_p\left(1-\cos\omega\_n t\right)+\frac{di}{dt}\bigg|\_0\cdot L
 ## 5. 关联条目与变更记录
 
 - 关联：[TH-001 似稳场近似](TH-001-quasi-static-approximation.md)（灭弧过程涉及行波，已超越似稳）、[TH-006 变压器漏抗](TH-006-transformer-leakage-impedance.md)（$L\_s$ 影响 TRV）、[CALC-SC-002 高压短路](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)（$I\_k''$ 数据源）、[CASE-006 电缆接头火灾](../50-case/CASE-006-accident-cable-joint-fire.md)（接触电阻-电弧机理）、[CASE-016 0.4kV柜电弧光短路烧伤](../50-case/CASE-016-accident-arc-flash-burn.md)（弧光电压-电流特性+入射能量估算）
-- 下游案例：[CASE-027](../50-case/CASE-027-accident-vacuum-chopping-overvoltage.md)（真空截流过电压致电机击穿）、[CASE-032](../50-case/CASE-032-accident-cable-termination-breakdown.md)（电树枝+场强集中）、[CASE-037 铁磁谐振](../50-case/CASE-037-accident-ferroresonance-pt-burnout.md)、[CASE-042 电容器合闸涌流](../50-case/CASE-042-accident-capacitor-inrush-fuse-burst.md)、[CASE-044 电容器过电压](../50-case/CASE-044-review-capacitor-overvoltage-spd-coordination.md)
+- 下游案例：[CASE-027](../50-case/CASE-027-accident-vacuum-chopping-overvoltage.md)（真空截流过电压致电机击穿）、[CASE-032](../50-case/CASE-032-accident-cable-termination-breakdown.md)（电树枝+场强集中）、[CASE-037 铁磁谐振](../50-case/CASE-037-accident-ferroresonance-pt-burnout.md)、[CASE-042 电容器合闸涌流](../50-case/CASE-042-accident-capacitor-inrush-fuse-burst.md)、[CASE-044 电容器过电压](../50-case/CASE-044-review-capacitor-overvoltage-spd-coordination.md)、[CASE-047 电弧光能量](../50-case/CASE-047-accident-arc-flash-protection-missing-burn.md)、[CASE-049 电缆接头电场](../50-case/CASE-049-review-cable-joint-construction-defect.md)
 
 | 版本  | 日期         | 修改内容                            | 修改人    |
 | --- | ---------- | ------------------------------- | ------ |

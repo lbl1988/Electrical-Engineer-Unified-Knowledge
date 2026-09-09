@@ -67,6 +67,7 @@ $$I_B = \frac{U_{touch}}{Z_B(U,\ \text{皮肤状态，路径})}$$
 ## 5. 关联条目与变更记录
 
 - 关联：[TH-005 接触/跨步电压](TH-005-touch-step-voltage.md)、[mapping MAP-B 对照](../20-standards/mapping-中外对照表.md)、[CASE-016 0.4kV柜电弧光短路烧伤](../50-case/CASE-016-accident-arc-flash-burn.md)（电弧入射能量与烧伤阈值校算）
+- 下游案例：[CASE-047 电弧光烧伤](../50-case/CASE-047-accident-arc-flash-protection-missing-burn.md)
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|

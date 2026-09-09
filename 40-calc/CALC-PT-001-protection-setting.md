@@ -142,7 +142,7 @@ $$I_{k1}=\frac{220}{0.01586}=13.9\ \text{kA},\qquad K_{sen}^{(1)}=\frac{13\,900}
 
 - 上游：[CALC-SC-001 短路计算](CALC-SC-001-低压三相短路电流计算.md)（d2 点数据来源）、[TH-003 对称分量法](../10-theory/TH-003-symmetrical-components.md)（$I_{k2}=0.866I_{k3}$ 来源）、[TH-007 电机启动](../10-theory/TH-007-induction-motor-starting.md)（尖峰公式来源）
 - 下游：[PR-DD-001 断路器选型](../30-practice/PR-DD-001-lv-breaker-selection.md)、[CALC-MS-001 电机启动压降](CALC-MS-001-motor-starting-voltage-drop.md)（瞬时整定躲启动尖峰）、[PR-PE-001 继电保护整定](../30-practice/PR-PE-001-relay-protection-config.md)（低压四段式与高压三段式同源）、[CASE-016 0.4kV柜电弧光短路烧伤](../50-case/CASE-016-accident-arc-flash-burn.md)（ACB脱扣器拒动复盘）、[CASE-021 施工现场跨步电压致死](../50-case/CASE-021-accident-step-voltage-electrocution.md)（末级漏电保护拒动）、[CASE-022 2021短路电流与保护整定真题](../50-case/CASE-022-exam-short-circuit-protection.md)（10kV馈线限时电流速断按灵敏度反推整定）、[CASE-027 真空截流过电压致电机击穿](../50-case/CASE-027-accident-vacuum-chopping-overvoltage.md)（操作过电压保护选型）
-- 下游案例：[CASE-035 电机保护](../50-case/CASE-035-exam-motor-protection-setting.md)
+- 下游案例：[CASE-035 电机保护](../50-case/CASE-035-exam-motor-protection-setting.md)、[CASE-048 新能源并网保护](../50-case/CASE-048-composite-renewable-collector-station-protection.md)
 - 平行：[CALC-LD-001 负荷计算](CALC-LD-001-demand-factor-method.md)（$I_B$ 来源）、[CALC-PT-002 距离保护整定](CALC-PT-002-distance-protection-setting.md)（高压线路距离保护，与低压三段式同源）、[CALC-MS-002 电机温升](CALC-MS-002-motor-temperature-rise.md)（过载保护与温升配合）
 
 ## 9. 变更记录
