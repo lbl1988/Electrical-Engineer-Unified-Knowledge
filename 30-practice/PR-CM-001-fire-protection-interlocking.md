@@ -172,7 +172,7 @@ updated: 2026-09-09
 ## 8. 关联条目
 
 - 上游：[PR-PS-001 负荷分级](PR-PS-001-load-classification.md)（消防负荷一/特级）、[CALC-DG-001 柴油发电机容量](../40-calc/CALC-DG-001-diesel-generator-capacity.md)（应急电源容量与启动顺序）
-- 下游：[PR-BE-001 应急照明](PR-BE-001-emergency-lighting.md)（联动点亮）、消防设备供电末端 ATS 选型（DD 域规划）
+- 下游：[PR-BE-001 应急照明](PR-BE-001-emergency-lighting.md)（联动点亮）、消防设备供电末端 ATS 选型（DD 域规划）、[CASE-014 消防泵末端切换](../50-case/CASE-014-review-fire-pump-end-transfer.md)（消防供电末端切换）、[CASE-013 光储充消防联动](../50-case/CASE-013-composite-pv-es-eva-microgrid.md)（储能可燃气体探测）
 - 平行：[CALC-BT-001 蓄电池容量](../40-calc/CALC-BT-001-battery-capacity.md)（双失电蓄电池持续）、[PR-GR-001 防雷设计](PR-GR-001-lightning-protection-design.md)（消防控制室防雷接地）
 
 ## 9. 变更记录

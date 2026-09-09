@@ -186,7 +186,7 @@ $$S_{peak,seq} = 237.3 + \frac{30}{0.85\times 0.9} + \frac{80}{0.85\times 0.9} =
 ## 8. 关联条目
 
 - 上游：[CALC-LD-001](CALC-LD-001-demand-factor-method.md)（负荷基础）、[TH-011 同步电机暂态电抗](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)（$X_d'$ 物理来源）
-- 下游：[PR-PS-001 负荷分级](../30-practice/PR-PS-001-load-classification.md)（一级负荷应急电源配置）、[CALC-MS-001 电机启动压降](CALC-MS-001-motor-starting-voltage-drop.md)（与市电工况压降校验同源）
+- 下游：[PR-PS-001 负荷分级](../30-practice/PR-PS-001-load-classification.md)（一级负荷应急电源配置）、[CALC-MS-001 电机启动压降](CALC-MS-001-motor-starting-voltage-drop.md)（与市电工况压降校验同源）、[CASE-014 消防泵柴发容量校核](../50-case/CASE-014-review-fire-pump-end-transfer.md)（持续+启动峰值双重校验）
 - 平行：[CALC-BT-001 蓄电池容量](CALC-BT-001-battery-capacity.md)（蓄电池与发电机共同构成应急电源体系）、[PR-BE-001 应急照明](../30-practice/PR-BE-001-emergency-lighting.md)（应急电源切换）
 
 ## 9. 变更记录
