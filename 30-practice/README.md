@@ -14,11 +14,13 @@
 | [PR-BE-001](PR-BE-001-emergency-lighting.md) | 消防应急照明和疏散指示系统设计要点 | GB 51309-2018 | 设计, 验收 | [CALC-BT-001](../40-calc/CALC-BT-001-battery-capacity.md)·[CALC-LT-001](../40-calc/CALC-LT-001-lumen-method.md) |
 | [PR-PQ-001](PR-PQ-001-pq-compensation-design.md) | 无功补偿与谐波治理设计要点 | GB 51348-2019, GB/T 14549-1993 | 设计, 运维 | [CALC-RC-001](../40-calc/CALC-RC-001-reactive-compensation.md)·[CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[TH-008](../10-theory/TH-008-harmonic-generation.md) |
 
-## 二期第二批成果（1 条）
+## 二期第二批成果（3 条）
 
 | ID | 主题 | 主要标准依据 | 生命周期 | 支撑的计算/理论条目 |
 |---|---|---|---|---|
 | [PR-DD-002](PR-DD-002-substation-layout-and-equipment-selection.md) | 10/0.4kV 变配电所布置与设备选型 | GB 50053-2013, GB 50060-2008, DL/T 5222-2021 | 设计 | [CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[CALC-SC-001](../40-calc/CALC-SC-001-低压三相短路电流计算.md)·[CALC-RC-001](../40-calc/CALC-RC-001-reactive-compensation.md)·[PR-DD-001](PR-DD-001-lv-breaker-selection.md) |
+| [PR-PE-001](PR-PE-001-relay-protection-config.md) | 电力线路与变压器继电保护配置与整定配合 | GB/T 14285-2006, DL/T 587-2016, DL/T 5222-2021, DL/T 5137-2019 | 设计, 运维 | [TH-012](../10-theory/TH-012-protection-four-properties.md)·[TH-003](../10-theory/TH-003-symmetrical-components.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[CALC-PT-001](../40-calc/CALC-PT-001-protection-setting.md)·[PR-DD-002](PR-DD-002-substation-layout-and-equipment-selection.md) |
+| [PR-EV-001](PR-EV-001-ev-charging-infrastructure.md) | 电动汽车充电设施供配电与安全配置 | GB/T 50966-2024, GB/T 51313-2018, GB/T 18487.1-2023, GB 51348-2019 | 规划, 设计, 验收 | [CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[TH-008](../10-theory/TH-008-harmonic-generation.md)·[PR-PS-001](PR-PS-001-load-classification.md)·[PR-DD-001](PR-DD-001-lv-breaker-selection.md)·[PR-GR-002](PR-GR-002-earthing-arrangement.md)·[PR-PQ-001](PR-PQ-001-pq-compensation-design.md) |
 
 ## 条目间引用网（示例闭环）
 
@@ -30,6 +32,6 @@ TH-009 雷电物理 ─→ PR-GR-001 防雷分类（N=kNgAe 算例）
 
 ## 后续规划（二期第三批～三期）
 
-继电保护配置与整定配合、电动机控制与启动方式、消防联动设计深化、电动汽车充电设施配置、储能接入设计、光伏并网设计。
+电动机控制与启动方式、消防联动设计深化、储能接入设计、光伏并网设计、电动汽车换电站设计、地铁牵引供电。
 
 条目编号：`PR/DD/MD/PE/BE/ES/PQ/CM-{三位序号}-{英文短名}.md`。计算类条目放 [40-calc/](../40-calc/)。

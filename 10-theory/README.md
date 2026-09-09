@@ -17,7 +17,8 @@
 | [TH-009](TH-009-lightning-physics.md) | 雷电放电物理与参数 | PR-GR-001（滚球法） |
 | [TH-010](TH-010-reactive-power.md) | 无功功率物理意义 | CALC-RC-001（QC 公式） |
 | [TH-011](TH-011-synchronous-machine-subtransient-reactance.md) | 同步电机暂态与次暂态电抗 | CALC-SC-002（高压短路 I_k″）、电动机反馈电流 |
+| [TH-012](TH-012-protection-four-properties.md) | 继电保护四性（可靠性/选择性/灵敏性/速动性） | PR-PE-001（继电保护整定配合）、CALC-PT-001（低压保护四段式） |
 
 ## 后续规划（二期第三批~三期）
 
-磁路与铁磁饱和、电缆波过程与 VFTO、开关电弧物理、同步电机功角稳定基础、保护四性、瞬时功率 p-q 理论。
+磁路与铁磁饱和、电缆波过程与 VFTO、开关电弧物理、同步电机功角稳定基础、瞬时功率 p-q 理论。

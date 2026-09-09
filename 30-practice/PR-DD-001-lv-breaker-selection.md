@@ -99,7 +99,7 @@ updated: 2026-09-08
 ## 8. 关联条目
 
 - 上游：[CALC-SC-001 短路计算](../40-calc/CALC-SC-001-低压三相短路电流计算.md)、[CALC-PT-001 保护整定](../40-calc/CALC-PT-001-protection-setting.md)（本条目全部校验数据的来源）
-- 下游：成套设备订货技术条件（DD 域规划）
+- 下游：成套设备订货技术条件（DD 域规划）、[PR-EV-001 电动汽车充电设施](PR-EV-001-ev-charging-infrastructure.md)（B 型 RCD 与三段保护选型）
 - 平行：[PR-PS-001 负荷分级](PR-PS-001-load-classification.md)（进线容量来源）
 
 ## 9. 变更记录

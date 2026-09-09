@@ -116,7 +116,7 @@ $$S_{30}=\sqrt{395.1^2+299.2^2}=\sqrt{156\,104+89\,521}=495.6\ \text{kVA},\qquad
 ## 8. 关联条目
 
 - 上游：[TH-010 无功功率](../10-theory/TH-010-reactive-power.md)、[TH-007 电机启动](../10-theory/TH-007-induction-motor-starting.md)（尖峰电流）
-- 下游：[CALC-RC-001 无功补偿](CALC-RC-001-reactive-compensation.md)、[CALC-SC-001 短路计算](CALC-SC-001-低压三相短路电流计算.md)（同一变压器参数延续）、[CALC-PT-001 保护整定](CALC-PT-001-protection-setting.md)
+- 下游：[CALC-RC-001 无功补偿](CALC-RC-001-reactive-compensation.md)、[CALC-SC-001 短路计算](CALC-SC-001-低压三相短路电流计算.md)（同一变压器参数延续）、[CALC-PT-001 保护整定](CALC-PT-001-protection-setting.md)、[CALC-VL-001 电压偏差](CALC-VL-001-voltage-deviation-and-loss.md)、[CALC-MS-001 电机启动压降](CALC-MS-001-motor-starting-voltage-drop.md)、[PR-PE-001 继电保护](../30-practice/PR-PE-001-relay-protection-config.md)、[PR-EV-001 EV 充电](../30-practice/PR-EV-001-ev-charging-infrastructure.md)（$P_{30}/Q_{30}$ 数据源）
 - 平行：[PR-PS-001 负荷分级](../30-practice/PR-PS-001-load-classification.md)（消防负荷口径）
 
 ## 9. 变更记录

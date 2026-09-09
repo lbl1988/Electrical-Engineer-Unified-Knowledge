@@ -173,7 +173,7 @@ $$\Delta I_{kM}'' / I_k'' = 0.10 / 12.6 = 0.8\%$$
 
 - 上游：[TH-011 同步电机次暂态电抗](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)（发电机近端短路的理论基础）
 - 平行：[CALC-SC-001 低压短路计算](CALC-SC-001-低压三相短路电流计算.md)（同方法、不同电压等级）、[TH-003 对称分量法](../10-theory/TH-003-symmetrical-components.md)（不对称短路扩展）
-- 下游：[PR-DD-002 变电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（设备选型校验）、未来 PR-PT-002 高压继电保护配置
+- 下游：[PR-DD-002 变电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（设备选型校验）、[PR-PE-001 继电保护配置与整定配合](../30-practice/PR-PE-001-relay-protection-config.md)（$I_k''$ 与 CT 校验数据源）
 
 ## 9. 变更记录
 

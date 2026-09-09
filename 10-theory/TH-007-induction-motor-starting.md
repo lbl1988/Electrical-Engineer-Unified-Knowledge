@@ -54,7 +54,7 @@ $$\Delta U\% \approx \frac{K_{st}S_M}{S_{sc}+K_{st}S_M}\times100\%$$
 
 ## 5. 关联条目与变更记录
 
-- 关联：[TH-002 相量法](TH-002-phasor-analysis.md)、[TH-006 变压器阻抗](TH-006-transformer-leakage-impedance.md)
+- 关联：[TH-002 相量法](TH-002-phasor-analysis.md)、[TH-006 变压器阻抗](TH-006-transformer-leakage-impedance.md)、[CALC-MS-001 电机启动压降校验](../40-calc/CALC-MS-001-motor-starting-voltage-drop.md)（$K_{st}=6\sim 8$ 与 $\Delta U\%$ 公式在此条目具体化）
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|
