@@ -158,7 +158,7 @@ $$2.45\% \leq 5\% \quad \checkmark \text{（动力允许）}$$
 ## 8. 关联条目
 
 - 上游：[CALC-LD-001 负荷计算](CALC-LD-001-demand-factor-method.md)（$I_B$ 来源）、[TH-006 变压器漏抗](../10-theory/TH-006-transformer-leakage-impedance.md)（阻抗与载流量的理论背景）
-- 下游：[PR-DD-001 断路器选型](../30-practice/PR-DD-001-lv-breaker-selection.md)（$I_z' \geq I_r$ 配合）、[CALC-VL-001 电压偏差](CALC-VL-001-voltage-deviation-and-loss.md)（电压损失计算）、[CASE-012 2022电缆截面真题](../50-case/CASE-012-exam-cable-voltage-drop.md)（载流量+热稳定+电压降三重校验）
+- 下游：[PR-DD-001 断路器选型](../30-practice/PR-DD-001-lv-breaker-selection.md)（$I_z' \geq I_r$ 配合）、[CALC-VL-001 电压偏差](CALC-VL-001-voltage-deviation-and-loss.md)（电压损失计算）、[CASE-012 2022电缆截面真题](../50-case/CASE-012-exam-cable-voltage-drop.md)（载流量+热稳定+电压降三重校验）、[CASE-019 电缆敷设防火分区](../50-case/CASE-019-review-cable-fire-compartmentation.md)（消防/普通电缆同桥架选型与分隔）
 - 平行：[CALC-SC-001 短路计算](CALC-SC-001-低压三相短路电流计算.md)（热稳定输入）、[CALC-PT-001 保护整定](CALC-PT-001-protection-setting.md)（$I_z'$ 与 $I_r$ 配合校验）
 
 ## 9. 变更记录

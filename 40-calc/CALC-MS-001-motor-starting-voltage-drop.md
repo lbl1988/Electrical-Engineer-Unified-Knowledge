@@ -182,7 +182,7 @@ $$\Delta U_{bus,st}'\% = 1.45\%+(3.97\%-2.83\%)=2.59\% < 3\%\ \checkmark$$
 ## 8. 关联条目
 
 - 上游：[TH-007 电机启动理论](../10-theory/TH-007-induction-motor-starting.md)（$K_{st}=6\sim 8$ 来源、$\Delta U\%\approx K_{st}S_M/(S_{sc}+K_{st}S_M)$ 推导）
-- 下游：[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（启动方式与配电所布置联动）、[CALC-PT-001](CALC-PT-001-protection-setting.md)（瞬时整定躲启动尖峰）
+- 下游：[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（启动方式与配电所布置联动）、[CALC-PT-001](CALC-PT-001-protection-setting.md)（瞬时整定躲启动尖峰）、[CASE-017 2020电机启动压降校验真题](../50-case/CASE-017-exam-motor-starting-voltage-drop.md)（系统短路容量法+星-三角启动方式决策）
 - 平行：[CALC-VL-001](CALC-VL-001-voltage-deviation-and-loss.md)（稳态压降）、[CALC-SC-001](CALC-SC-001-低压三相短路电流计算.md)（$S_{sc}$ 来源）、[CALC-MS-002 电机温升](CALC-MS-002-motor-temperature-rise.md)（启动损耗与温升校核）
 
 ## 9. 变更记录

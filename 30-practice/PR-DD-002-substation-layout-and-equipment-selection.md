@@ -154,10 +154,11 @@ updated: 2026-09-09
 
 - 上游：[PR-PS-001 负荷分级](PR-PS-001-load-classification.md)（负荷等级与电源路数判定）、[CALC-LD-001 负荷计算](../40-calc/CALC-LD-001-demand-factor-method.md)（$S_{30}$ → 变压器容量）
 - 下游：[PR-DD-001 断路器选型](PR-DD-001-lv-breaker-selection.md)（开关柜内 ACB/MCCB）、[CALC-CD-001 电缆载流量](../40-calc/CALC-CD-001-cable-ampacity-correction.md)（馈线选型）、[PR-GR-002 接地制式](PR-GR-002-earthing-arrangement.md)（接地系统）
-- 平行：[PR-GR-001 防雷分类](PR-GR-001-lightning-protection-design.md)（变电所防雷）
+- 平行：[PR-GR-001 防雷分类](PR-GR-001-lightning-protection-design.md)（变电所防雷）、[CASE-015 变电所未深入负荷中心致电压降超标](../50-case/CASE-015-review-substation-location-voltage.md)（所址-总图接口校审）、[CASE-017 2020电机启动压降校验](../50-case/CASE-017-exam-motor-starting-voltage-drop.md)（启动方式与配电所布置联动）、[CASE-018 工业变电所多专业协同](../50-case/CASE-018-composite-industrial-substation.md)（油坑/通风/防火分区接口）
 
 ## 9. 变更记录
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|
 | 0.1 | 2026-09-09 | 创建；含 2×630kVA 变电所完整布置与母线选型校验 | KB 管理员 |
+| 0.2 | 2026-09-09 | 关联条目补 CASE-015/017/018（所址、启动方式、多专业接口） | KB 管理员 |

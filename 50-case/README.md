@@ -31,6 +31,16 @@
 | [CASE-013](CASE-013-composite-pv-es-eva-microgrid.md) | 综合案例：工业园区光储充微电网协同设计 | GB 50797-2012, GB/T 51048-2025, GB/T 50966-2024, GB/T 19964-2024, GB/T 36547-2024 | CP 综合 | [TH-008](../10-theory/TH-008-harmonic-generation.md)·[TH-012](../10-theory/TH-012-protection-four-properties.md)·[TH-011](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)·[PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md)·[PR-EV-001](../30-practice/PR-EV-001-ev-charging-infrastructure.md)·[PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md)·[PR-PS-001](../30-practice/PR-PS-001-load-classification.md) |
 | [CASE-014](CASE-014-review-fire-pump-end-transfer.md) | 校审驳回：消防泵房未设末端双电源自动切换 | GB 50016-2014(2018), GB 50052-2009, GB 55024-2022, GB 51348-2019, GB 50055-2011 | DR 校审 | [TH-007](../10-theory/TH-007-induction-motor-starting.md)·[TH-012](../10-theory/TH-012-protection-four-properties.md)·[PR-PS-001](../30-practice/PR-PS-001-load-classification.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[PR-DD-001](../30-practice/PR-DD-001-lv-breaker-selection.md)·[CALC-VL-001](../40-calc/CALC-VL-001-voltage-deviation-and-loss.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md) |
 
+## 三期第四批成果（5 条）
+
+| ID | 主题 | 主要标准依据 | 案例类型 | 支撑条目 |
+|---|---|---|---|---|
+| [CASE-015](CASE-015-review-substation-location-voltage.md) | 校审驳回：变配电所未深入负荷中心致电压降超标 | GB 50053-2013, GB 51348-2019, GB 50052-2009, GB/T 12325-2008, GB 50217-2018 | DR 校审 | [CALC-VL-001](../40-calc/CALC-VL-001-voltage-deviation-and-loss.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md) |
+| [CASE-016](CASE-016-accident-arc-flash-burn.md) | 事故复盘：0.4kV低压柜带电作业电弧光短路烧伤 | GB 26859-2011, GB/T 16176-2014, GB 50054-2011, GB/T 13869-2017, IEEE 1584-2018 | AC 事故 | [TH-013](../10-theory/TH-013-switching-arc-physics.md)·[TH-004](../10-theory/TH-004-current-effects-human-body.md)·[TH-005](../10-theory/TH-005-touch-step-voltage.md)·[CALC-SC-001](../40-calc/CALC-SC-001-低压三相短路电流计算.md)·[CALC-PT-001](../40-calc/CALC-PT-001-protection-setting.md)·[PR-DD-001](../30-practice/PR-DD-001-lv-breaker-selection.md) |
+| [CASE-017](CASE-017-exam-motor-starting-voltage-drop.md) | 2020供配电真题拆解：电动机启动压降校验与启动方式选择 | GB 50055-2011, GB 51348-2019, GB/T 12325-2008, GB 50052-2009, GB/T 1032-2012 | EX 真题 | [TH-007](../10-theory/TH-007-induction-motor-starting.md)·[CALC-MS-001](../40-calc/CALC-MS-001-motor-starting-voltage-drop.md)·[CALC-VL-001](../40-calc/CALC-VL-001-voltage-deviation-and-loss.md)·[CALC-SC-001](../40-calc/CALC-SC-001-低压三相短路电流计算.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md) |
+| [CASE-018](CASE-018-composite-industrial-substation.md) | 综合案例：工业园区10/0.4kV变电所多专业协同设计 | GB 50053-2013, GB 50016-2014, GB 50019-2015, GB 50058-2014, GB 50217-2018, GB 50116-2013 | CP 综合 | [PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-DD-001](../30-practice/PR-DD-001-lv-breaker-selection.md)·[CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[CALC-GR-001](../40-calc/CALC-GR-001-grounding-grid-design.md) |
+| [CASE-019](CASE-019-review-cable-fire-compartmentation.md) | 校审驳回：电缆敷设跨越防火分区未做防火封堵 | GB 50016-2014(2018), GB 51348-2019, GB 50217-2018, GB 51309-2018, GB 55037-2022, GB/T 19216.21-2017 | DR 校审 | [PR-DD-001](../30-practice/PR-DD-001-lv-breaker-selection.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[CALC-CD-001](../40-calc/CALC-CD-001-cable-ampacity-correction.md)·[CALC-BT-001](../40-calc/CALC-BT-001-battery-capacity.md)·[CALC-BT-002](../40-calc/CALC-BT-002-ups-battery-autonomy.md) |
+
 ## 案例间引用网（数据贯通闭环）
 
 ```
@@ -46,7 +56,12 @@ TH-005 接触/跨步（IT系统）            ─→ CASE-009 医疗2类场所 �
 TH-013 开关电弧（短路热效应）          ─→ CASE-010 PE截面校审 ─→ CASE-012 电缆截面真题
 TH-012 继保四性（直流电源波动）        ─→ CASE-011 直流接地事故 ─→ CASE-013 微电网离网切换
 TH-002 相量分析（电压损失）           ─→ CASE-012 电缆电压降 ─→ CASE-014 消防泵启动电压降
-CALC-DG-001 柴发容量（持续+启动）      ─→ CASE-014 消防泵柴发 ─→ CASE-008 数据中心 ─→ CASE-013 微电网
+CALC-DG-001 柴发容量（持续+启动）      ─→ CASE-014 消防泵柴发 ─→ CASE-008 数据中心 ─→ CASE-013 微电网 ─→ CASE-018 工业变电所
+PR-DD-002 变电所布置（所址-油坑-通风） ─→ CASE-015 变电所未深入负荷中心 ─→ CASE-017 电机启动压降 ─→ CASE-018 多专业协同
+TH-013 开关电弧（弧光能量）            ─→ CASE-016 低压柜电弧光短路烧伤 ─→ CASE-006 电缆接头火灾（同源电弧机理）
+CALC-MS-001 电机启动压降（短路容量法） ─→ CASE-017 2020启动压降真题 ─→ CASE-014 消防泵启动压降
+CALC-CD-001 电缆载流量（同桥架分隔）   ─→ CASE-019 电缆敷设防火分区 ─→ CASE-012 电缆截面真题（载流量三重校验）
+GB 51309/50016 消防电缆完整性          ─→ CASE-019 防火分区校审 ─→ CASE-002 应急照明蓄电池 ─→ CASE-014 消防泵末端切换
 ```
 
 ## 案例子域代码（front matter `subdomain` 字段）
@@ -60,16 +75,16 @@ CALC-DG-001 柴发容量（持续+启动）      ─→ CASE-014 消防泵柴发
 
 > 子域代码仅入 front matter `subdomain`，**不嵌入文件名**（遵守 `CASE-{三位序号}-{英文短名}.md` 格式）。
 
-## 累计统计（三批共 14 条）
+## 累计统计（四批共 19 条）
 
-| 子域 | 第一批 | 第二批 | 第三批 | 累计 |
-|---|---|---|---|---|
-| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 3 |
-| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 5 |
-| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 3 |
-| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 3 |
-| **合计** | **4** | **5** | **5** | **14** |
+| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 累计 |
+|---|---|---|---|---|---|
+| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 4 |
+| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 7 |
+| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 4 |
+| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 4 |
+| **合计** | **4** | **5** | **5** | **5** | **19** |
 
 ## 后续规划（三期续）
 
-校审问题库扩展（累计 5 条→20+ 条，覆盖防雷/接地/电缆/变配电所/UPS/谐波/消防各域）、事故案例扩充（变电站火灾/电击伤亡/短路爆炸/弧光过电压）、考试真题年份覆盖（2020-2026，含发输变电方向）、综合案例（工业变电所/轨道交通牵引/储能电站全流程）。
+案例库累计 19 条已跨过 14→19 增量里程碑，目标 30+ 条。后续扩展方向：校审问题库扩防雷/接地/UPS/谐波各域、事故案例扩充变电站火灾/电击伤亡/短路爆炸/弧光过电压、考试真题年份覆盖 2020-2026 含发输变电方向、综合案例工业变电所/轨道交通牵引/储能电站全流程。
