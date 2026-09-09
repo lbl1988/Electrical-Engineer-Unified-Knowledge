@@ -31,6 +31,16 @@
 | [TH-018](TH-018-instantaneous-power-pq-theory.md) | 瞬时功率 p-q 理论（赤木变换） | PR-PQ-001（APF 控制算法）、CALC-HM-001、CASE-005/041 |
 | [TH-019](TH-019-transmission-line-parameters-long-line.md) | 输电线路参数与长线方程 | CALC-PT-002（距离整定）、CALC-SC-002、CASE-028/054 |
 
+## 第三批条目（2026-09-09 增补，理论层 19→24）
+
+| ID | 主题 | 支撑的工程条目 |
+|---|---|---|
+| [TH-020](TH-020-power-system-stability-classification.md) | 电力系统稳定性分类（功角/电压/频率/次同步振荡） | PR-PS-001（低频减载与一级负荷解锁时序）、PR-PE-001（失步/低频低压减载协调）、PR-ES-001（构网型 PCS 与电网稳定） |
+| [TH-021](TH-021-neutral-grounding-and-zero-sequence-network.md) | 中性点接地方式与零序网络 | PR-PE-001（接地保护整定与 k0）、PR-GR-002（低压 TN/TT/IT 与一次侧接地协调） |
+| [TH-022](TH-022-overvoltage-mechanism-and-insulation-coordination.md) | 过电压机理与绝缘配合 | PR-GR-001（雷电行波与 MOA 保护距离）、PR-DD-002（设备绝缘水平与避雷器配置） |
+| [TH-023](TH-023-transformer-parallel-operation-and-circulating-current.md) | 变压器并列运行条件与环流 | PR-DD-002（多台变压器并列与负载分配） |
+| [TH-024](TH-024-power-electronic-converters-and-pwm.md) | 电力电子变换器基础拓扑与 PWM | PR-PQ-001（SVG/APF 硬件与 SVPWM）、PR-ES-001（PCS 拓扑与构网/跟网控制） |
+
 ## 后续规划（三期）
 
-理论层补足至 30：电力系统稳定性分类（电压/频率）、输电线路参数已落（TH-019）、中性点接地方式、过电压机理、电缆热场、开关电器选型、变压器并列运行、电力电子变换器、微电网控制。
+理论层补足至 30：电缆热场、开关电器选型、微电网控制、高压直流输电（LCC/VSC-HVDC）、柔性交流输电（FACTS）、分布式电源并网保护、接地变压器与接地电阻选型、同步电机进相与调相运行、异步电机变频调速控制策略。
