@@ -90,6 +90,7 @@ GB 51309-2018 将应急照明推向**集中控制型＋A 型灯具＋蓄电池�
 - 上游：[PR-PS-001 负荷分级](PR-PS-001-load-classification.md)（应急照明为一级/消防负荷）、[CALC-BT-001 蓄电池容量](../40-calc/CALC-BT-001-battery-capacity.md)
 - 下游：消防联动逻辑表（BE 域规划）、验收试验方案（规划）
 - 平行：[CALC-LT-001 照度计算](../40-calc/CALC-LT-001-lumen-method.md)（正常照明体系，勿混）
+- 案例支撑：[CASE-002 校审驳回](../50-case/CASE-002-review-emergency-lighting.md)（仅配双电源未设蓄电池整改）
 
 ## 9. 变更记录
 

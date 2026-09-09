@@ -168,6 +168,7 @@ $$\text{年收益} = 1400 \times 330 \text{日} = 46.2\ \text{万元}$$
 - 上游：[cn-04 新兴领域储能标准包](../20-standards/cn-04-新兴领域标准包.md)（GB/T 51048-2025 等 6 项）、[TH-008 谐波](../10-theory/TH-008-harmonic-generation.md)（PCS 谐波机理）、[TH-014 磁路饱和](../10-theory/TH-014-magnetic-circuit-saturation.md)（变压器/PCS 铁芯设计）
 - 下游：[PR-PQ-001 无功补偿与谐波治理](PR-PQ-001-pq-compensation-design.md)（PCS 谐波治理）、[PR-EV-001 电动汽车充电](PR-EV-001-ev-charging-infrastructure.md)（光储充一体化场景）、[PR-CM-001 消防联动](PR-CM-001-fire-protection-interlocking.md)（储能舱消防联动）
 - 平行：[PR-PE-001 继电保护配置](PR-PE-001-relay-protection-config.md)（新型电源对保护的影响）、[GB/T 47968-2026 构网型变流器](../20-standards/cn-04-新兴领域标准包.md)（构网型 PCS 选型）
+- 案例支撑：[CASE-004 储能综合案例](../50-case/CASE-004-composite-energy-storage.md)（1MW/2MWh多专业协同，沿用本条数据链）
 
 ## 9. 变更记录
 

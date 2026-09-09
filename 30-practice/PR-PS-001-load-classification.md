@@ -110,6 +110,7 @@ updated: 2026-09-08
 - 上游：[GB 55024-2022 条目定位](../20-standards/cn-01-强制性通用规范与主干标准.md)（§1 强制规范表）
 - 下游：[CALC-LD-001 负荷计算](../40-calc/CALC-LD-001-demand-factor-method.md)（消防负荷单独成表口径）、[PR-BE-001 应急照明](PR-BE-001-emergency-lighting.md)
 - 平行：[CALC-BT-001 蓄电池](../40-calc/CALC-BT-001-battery-capacity.md)
+- 案例支撑：[CASE-001 真题拆解](../50-case/CASE-001-exam-load-classification.md)（负荷分级＋需要系数法）、[CASE-002 校审驳回](../50-case/CASE-002-review-emergency-lighting.md)（应急照明负荷分级）
 
 ## 9. 变更记录
 
