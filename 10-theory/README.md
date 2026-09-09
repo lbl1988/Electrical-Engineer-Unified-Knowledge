@@ -51,6 +51,16 @@
 | [TH-028](TH-028-facts-flexible-ac-transmission.md) | 柔性交流输电（FACTS：SVC/STATCOM/UPFC） | PR-PQ-001（SVG/STATCOM 无功与暂态稳定）、PR-ES-001（VSG 共享） |
 | [TH-029](TH-029-microgrid-control-and-grid-mode-switching.md) | 微电网控制与并离网切换（下垂/同期/黑启动） | PR-ES-001（构网型 PCS 黑启动）、PR-PS-001（孤岛分级保电）、PR-PE-001（双模式保护） |
 
-## 后续规划（三期）
+## 第五批条目（2026-09-09 增补，理论层 29→34，跨过 30 条里程碑）
 
-理论层补足至 30：分布式电源并网保护、接地变压器与接地电阻选型、同步电机进相与调相运行、异步电机变频调速控制策略。
+| ID | 主题 | 支撑的工程条目 |
+|---|---|---|
+| [TH-030](TH-030-distributed-generation-protection-and-islanding-detection.md) | 分布式电源并网保护与孤岛检测（防孤岛盲区/AFD/LVRT/HVRT/逆功率） | PR-PE-001（DG 接入保护方向改变）、PR-ES-001（PCS 防孤岛与 LVRT） |
+| [TH-031](TH-031-grounding-transformer-and-resistor-selection.md) | 接地变压器与接地电阻选型（ZNyn/NGR 阻值与热稳定） | PR-GR-002（接地变与 NGR 选型）、PR-PE-001（零序过流灵敏度）、PR-DD-002（布置空间） |
+| [TH-032](TH-032-synchronous-machine-leading-and-condensing-operation.md) | 同步电机进相与调相运行（V 曲线/进相稳定/端部温升/调相机容量） | PR-PQ-001（调相机作为旋转 STATCOM）、PR-ES-001（调相机替代方案） |
+| [TH-033](TH-033-induction-motor-vfd-control-strategy.md) | 异步电机变频调速控制策略（V/f/FOC/DTC/节能估算） | PR-PQ-001（变频器谐波源与滤波器选型） |
+| [TH-034](TH-034-transformer-inrush-current-and-differential-protection.md) | 变压器励磁涌流机理与差动保护防涌流（暂态磁通/二次谐波制动/和应涌流） | PR-PE-001（差动防涌流判据） |
+
+## 后续规划（四期）
+
+理论层 34 条已覆盖电磁/电路/电机/系统/电力电子/接地/保护/直流输电/柔性输电/微电网/分布式电源全主干。后续按需扩展：高压断路器选型深入、电力系统次同步谐振（SSR/SSCI）机理、发电机励磁系统建模与 AVR/PSS、变压器有载调压与动态无功协调、新能源高占比系统频率稳定与惯量支撑。

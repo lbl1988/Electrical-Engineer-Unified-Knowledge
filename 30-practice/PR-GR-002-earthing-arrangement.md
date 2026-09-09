@@ -90,7 +90,7 @@ $$U' = I_{k1}\times\frac{Z_{PE}\,\Vert\, Z_{bond}}{1} = 13\,900\times\frac{0.030
 
 ## 8. 关联条目
 
-- 上游：[TH-005 接触/跨步电压](../10-theory/TH-005-touch-step-voltage.md)、[TH-004 人体电流效应](../10-theory/TH-004-current-effects-human-body.md)（50V 限值来源）、[TH-021 中性点接地方式与零序网络](../10-theory/TH-021-neutral-grounding-and-zero-sequence-network.md)（低压 TN/TT/IT 制式与变电所一次侧中性点接地协调）
+- 上游：[TH-005 接触/跨步电压](../10-theory/TH-005-touch-step-voltage.md)、[TH-004 人体电流效应](../10-theory/TH-004-current-effects-human-body.md)（50V 限值来源）、[TH-021 中性点接地方式与零序网络](../10-theory/TH-021-neutral-grounding-and-zero-sequence-network.md)（低压 TN/TT/IT 制式与变电所一次侧中性点接地协调）、[TH-031 接地变压器与接地电阻选型](../10-theory/TH-031-grounding-transformer-and-resistor-selection.md)（接地变 ZNyn 联结与 NGR 电阻值/热稳定选型）
 - 下游：[CALC-PT-001 保护整定](../40-calc/CALC-PT-001-protection-setting.md)（切断时间与灵敏度）、[mapping MAP-C](../20-standards/mapping-中外对照表.md)（PE 截面三体系）、[CASE-009 医疗2类场所IT系统](../50-case/CASE-009-review-neutral-grounding.md)（接地制式选择校审）、[CASE-034 中性点小电阻接地](../50-case/CASE-034-review-neutral-resistor-grounding.md)（小电阻接地方式）
 - 下游案例：[CASE-037 铁磁谐振接地](../50-case/CASE-037-accident-ferroresonance-pt-burnout.md)
 - 平行：[PR-GR-001 防雷分类](PR-GR-001-lightning-protection-design.md)（共用接地衔接）
