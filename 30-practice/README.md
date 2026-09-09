@@ -56,3 +56,16 @@ TH-009 雷电物理 ─→ PR-GR-001 防雷分类（N=kNgAe 算例）
 ## 后续规划（三期第二批）
 
 继电保护整定配合深化、分布式电源接入设计、配电网自动化与 SCADA、变电所综合自动化系统。
+
+## 三期第二批成果（4 条）
+
+| ID | 主题 | 主要标准依据 | 生命周期 | 支撑的计算/理论条目 |
+|---|---|---|---|---|
+| [PR-PE-002](PR-PE-002-relay-protection-coordination-deepening.md) | 继电保护整定配合深化（阶梯时限/零序方向/距离保护与重合闸配合） | GB/T 14285-2006, DL/T 553-2013, DL/T 587-2016 | 设计, 运维 | [TH-012](../10-theory/TH-012-protection-four-properties.md)·[TH-003](../10-theory/TH-003-symmetrical-components.md)·[TH-030](../10-theory/TH-030-distributed-generation-protection-and-islanding-detection.md)·[TH-034](../10-theory/TH-034-transformer-inrush-current-and-differential-protection.md)·[CALC-PT-001](../40-calc/CALC-PT-001-protection-setting.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md) |
+| [PR-ES-002](PR-ES-002-distributed-generation-grid-connection.md) | 分布式电源接入配电网设计（光伏/风电/微燃机） | GB/T 36121-2018, GB/T 19964-2024, GB/T 19963-2019, GB/T 33593-2017, GB/T 40567-2021 | 规划, 设计, 验收 | [TH-041](../10-theory/TH-041-distribution-grid-high-penetration-dg-hosting-capacity.md)·[TH-030](../10-theory/TH-030-distributed-generation-protection-and-islanding-detection.md)·[TH-024](../10-theory/TH-024-power-electronic-converters-and-pwm.md)·[TH-008](../10-theory/TH-008-harmonic-generation.md)·[CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md) |
+| [PR-DD-004](PR-DD-004-distribution-automation-and-scada.md) | 配电网自动化与 SCADA 系统设计 | GB/T 35695-2017, DL/T 814-2020, DL/T 721-2014, GB/T 36572-2018 | 规划, 设计, 运维 | [TH-012](../10-theory/TH-012-protection-four-properties.md)·[TH-030](../10-theory/TH-030-distributed-generation-protection-and-islanding-detection.md)·[TH-043](../10-theory/TH-043-ai-foundations-in-electrical-engineering.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md) |
+| [PR-DD-005](PR-DD-005-substation-automation-system.md) | 变电所综合自动化系统设计 | DL/T 5149-2020, DL/T 5216-2017, DL/T 860-2015, DL/T 634.5101-2020, GB/T 36049-2018 | 设计, 验收, 运维 | [TH-012](../10-theory/TH-012-protection-four-properties.md)·[TH-024](../10-theory/TH-024-power-electronic-converters-and-pwm.md)·[TH-017](../10-theory/TH-017-cable-wave-process-and-vfto.md)·[TH-043](../10-theory/TH-043-ai-foundations-in-electrical-engineering.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[CALC-PT-001](../40-calc/CALC-PT-001-protection-setting.md) |
+
+## 后续规划（四期）
+
+光伏并网深化、电动汽车换电站、地铁牵引供电、智慧园区能管系统、电力市场参与方案。
