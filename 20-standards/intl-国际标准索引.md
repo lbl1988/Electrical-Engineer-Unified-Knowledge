@@ -74,7 +74,7 @@
 |---|---|---|
 | IEEE 3002.2 | 2018 | Load Analysis（原灰皮书 Gray Book 一部分） |
 | IEEE 3002.3 | 2020 | Short-Circuit Studies（原棕/灰皮书短路章节） |
-| IEEE 3002.7 | 2021? | Coordination Studies（⚠️ 版本以 IEEE SA 为准） |
+| IEEE 3002.7 | 2018 | Motor-Starting Studies（原紫皮书关联；2019-04-26 出版，Active，IEEE SA 核验 2026-09-09） |
 | IEEE 3002.8 | 2018 | Harmonic Studies（原 Emerald Book 关联） |
 | IEEE 3004.1~3004.5 | 2013/2022 | Protection（原 Buff Book：馈线/变压器/电机保护分册） |
 | IEEE 3003 系列 | 2016~ | Grounding（原绿皮书 Green Book 工业接地分册化） |

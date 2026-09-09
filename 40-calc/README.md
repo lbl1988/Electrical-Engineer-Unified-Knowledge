@@ -26,8 +26,16 @@ CALC-LD-001 负荷计算（P30=395.1kW, cosφ=0.797）
    └─→ PR-DD-001 断路器选型（ACB 50kA/105kA, 级差 8.5 倍全选择性）
 ```
 
-## 后续规划（二期第二批～三期）
+## 后续规划（二期第三批～三期）
 
-高压短路电流计算（IEC 60909 远端/近端网络）、电缆载流量计算（GB/T 16895.6 校正系数体系）、接地网设计计算（IEEE 80/GB/T 50065）、电压偏差与电压损失计算、电机启动压降校验、照度点照度校验法、柴油发电机容量选择、UPS 蓄电池 autonomy 校核。
+电压偏差与电压损失计算、电机启动压降校验、照度逐点校验法、柴油发电机容量选择、UPS 蓄电池 autonomy 校核。
+
+## 二期第二批成果（3 条）
+
+| ID | 主题 | 核心公式/方法 | 主要标准依据 | 下游应用条目 |
+|---|---|---|---|---|
+| [CALC-CD-001](CALC-CD-001-cable-ampacity-correction.md) | 电缆载流量计算与校正系数 | $I_z' = I_z \times K_t \times K_g \times K_{soil}$ | GB/T 16895.6-2014 (IEC 60364-5-52), GB 50217-2018 | [PR-DD-001](../30-practice/PR-DD-001-lv-breaker-selection.md)·[CALC-SC-001](CALC-SC-001-低压三相短路电流计算.md)（热稳定） |
+| [CALC-SC-002](CALC-SC-002-hv-short-circuit-iec60909.md) | 高压系统三相短路电流计算（IEC 60909 网络法） | $I_k'' = c \cdot U_n / (\sqrt{3} \cdot Z_k)$，MV $c=1.10$ | GB/T 15544.1-2013, DL/T 5222-2021 | [PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[TH-011](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md) |
+| [CALC-GR-001](CALC-GR-001-grounding-grid-design.md) | 变电站接地网设计计算（GB/T 50065 / IEEE 80） | $R_g \approx 0.5\rho/\sqrt{A}$；$E_{t,\lim}=(116+0.7\rho_s)/\sqrt{t}$ | GB/T 50065-2011, IEEE 80-2013 | [PR-GR-002](../30-practice/PR-GR-002-earthing-arrangement.md)·[TH-005](../10-theory/TH-005-touch-step-voltage.md) |
 
 条目编号：`CALC-{域}-{三位序号}-{英文短名}.md`，域：SC 短路/LD 负荷/PT 保护/BT 蓄电池/LT 照明/RC 无功/HV 高压/CA 电缆/GR 接地。

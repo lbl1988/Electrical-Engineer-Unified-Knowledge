@@ -16,7 +16,8 @@
 | [TH-008](TH-008-harmonic-generation.md) | 谐波产生机理与特征谐波 | CALC-RC-001（电抗率） |
 | [TH-009](TH-009-lightning-physics.md) | 雷电放电物理与参数 | PR-GR-001（滚球法） |
 | [TH-010](TH-010-reactive-power.md) | 无功功率物理意义 | CALC-RC-001（QC 公式） |
+| [TH-011](TH-011-synchronous-machine-subtransient-reactance.md) | 同步电机暂态与次暂态电抗 | CALC-SC-002（高压短路 I_k″）、电动机反馈电流 |
 
-## 后续规划（二期第二批~三期）
+## 后续规划（二期第三批~三期）
 
-电机暂态（Xd''/Xq''）、磁路与铁磁饱和、电缆波过程与 VFTO、开关电弧物理、同步电机功角稳定基础、保护四性、瞬时功率 p-q 理论。
+磁路与铁磁饱和、电缆波过程与 VFTO、开关电弧物理、同步电机功角稳定基础、保护四性、瞬时功率 p-q 理论。
