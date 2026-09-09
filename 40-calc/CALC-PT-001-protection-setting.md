@@ -142,7 +142,7 @@ $$I_{k1}=\frac{220}{0.01586}=13.9\ \text{kA},\qquad K_{sen}^{(1)}=\frac{13\,900}
 
 - 上游：[CALC-SC-001 短路计算](CALC-SC-001-低压三相短路电流计算.md)（d2 点数据来源）、[TH-003 对称分量法](../10-theory/TH-003-symmetrical-components.md)（$I_{k2}=0.866I_{k3}$ 来源）、[TH-007 电机启动](../10-theory/TH-007-induction-motor-starting.md)（尖峰公式来源）
 - 下游：[PR-DD-001 断路器选型](../30-practice/PR-DD-001-lv-breaker-selection.md)、[CALC-MS-001 电机启动压降](CALC-MS-001-motor-starting-voltage-drop.md)（瞬时整定躲启动尖峰）、[PR-PE-001 继电保护整定](../30-practice/PR-PE-001-relay-protection-config.md)（低压四段式与高压三段式同源）
-- 平行：[CALC-LD-001 负荷计算](CALC-LD-001-demand-factor-method.md)（$I_B$ 来源）
+- 平行：[CALC-LD-001 负荷计算](CALC-LD-001-demand-factor-method.md)（$I_B$ 来源）、[CALC-PT-002 距离保护整定](CALC-PT-002-distance-protection-setting.md)（高压线路距离保护，与低压三段式同源）、[CALC-MS-002 电机温升](CALC-MS-002-motor-temperature-rise.md)（过载保护与温升配合）
 
 ## 9. 变更记录
 

@@ -171,6 +171,7 @@ $$V_5\% = \frac{\sqrt3\times h\, I_h\, U_n}{S_{sc}\times 10^3}\times 100\%$$
 - 上游：[CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)（建筑负荷基础）、[TH-008 谐波](../10-theory/TH-008-harmonic-generation.md)（车载整流器谐波）、[PR-PS-001](PR-PS-001-load-classification.md)（大型站一级负荷）
 - 下游：[PR-DD-001](PR-DD-001-lv-breaker-selection.md)（B 型 RCD 选型）、[PR-GR-002](PR-GR-002-earthing-arrangement.md)（共用接地与 LEB）、[CALC-PT-001](../40-calc/CALC-PT-001-protection-setting.md)（进线三段整定）
 - 平行：[PR-PQ-001 无功补偿与谐波治理](PR-PQ-001-pq-compensation-design.md)（APF 选型）、[PR-DD-002](PR-DD-002-substation-layout-and-equipment-selection.md)（独立变电所布置）
+- 计算支撑：[CALC-BT-002 UPS蓄电池autonomy校核](../40-calc/CALC-BT-002-ups-battery-autonomy.md)（充电站UPS备用时间）、[CALC-HM-001 谐波潮流计算](../40-calc/CALC-HM-001-harmonic-power-flow.md)（充电桩整流器谐波校核）
 
 ## 9. 变更记录
 

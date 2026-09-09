@@ -112,7 +112,7 @@ $$C_c=\frac{1.40\times30}{0.55}=76.4\ \text{Ah}\ \Rightarrow\ \text{选 } GFM\te
 ## 8. 关联条目
 
 - 上游：[PR-BE-001 应急照明设计](../30-practice/PR-BE-001-emergency-lighting.md)（持续时间与系统选型依据）、TH 域电池基础（规划）
-- 下游：直流系统设备选型（DD 域规划）、充电装置计算（规划 CALC-BT-002）
+- 下游：直流系统设备选型（DD 域规划）、[CALC-BT-002 UPS蓄电池autonomy校核](CALC-BT-002-ups-battery-autonomy.md)（数据中心UPS功率法，区别于本条能量法/换算法）
 - 平行：[cn-04 新兴领域储能标准包](../20-standards/cn-04-新兴领域标准包.md)（储能电站级电池计算另见 GB/T 51048-2025，勿与本条混淆边界）
 
 ## 9. 变更记录

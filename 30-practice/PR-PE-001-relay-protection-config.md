@@ -192,6 +192,7 @@ $$ALF\text{ 实际} = \frac{18700}{800}=23.4<40\ \checkmark$$
 - 下游：[CALC-SC-002 高压短路](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)（$I_k''$ 数据源）、[PR-DD-002](PR-DD-002-substation-layout-and-equipment-selection.md)（断路器选型开断容量校验）
 - 平行：[CALC-PT-001 低压保护整定](../40-calc/CALC-PT-001-protection-setting.md)（低压侧四段式同源）、[PR-GR-002 接地制式](PR-GR-002-earthing-arrangement.md)（单相接地保护与接地制式联动）
 - 案例支撑：[CASE-003 事故复盘](../50-case/CASE-003-accident-transformer-inrush.md)（变压器空投涌流致差动误动）、[CASE-004 储能综合](../50-case/CASE-004-composite-energy-storage.md)（PCS限流特性保护配置）
+- 计算支撑：[CALC-PT-002 距离保护整定](../40-calc/CALC-PT-002-distance-protection-setting.md)（高压线路三段式距离保护整定）
 
 ## 9. 变更记录
 

@@ -42,8 +42,18 @@ CALC-LD-001 负荷计算（P30=395.1kW, cosφ=0.797）
 |---|---|---|---|---|
 | [CALC-DG-001](CALC-DG-001-diesel-generator-capacity.md) | 柴油发电机容量选择与启动校验 | $S_G\geq P/\cos\varphi_G$；$S_G\geq S_{peak}/K_{overload}$；$\Delta U\%=K_{st}S_M/(S_G/X_d'+K_{st}S_M)$ | GB/T 2820.1-2023, GB 51348-2019, GB 50052-2009 | [PR-PS-001](../30-practice/PR-PS-001-load-classification.md)·[CALC-MS-001](CALC-MS-001-motor-starting-voltage-drop.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md)（火灾联动启动顺序） |
 
-## 后续规划（三期）
+## 三期第二批成果（5 条）
 
-照度逐点校验法、UPS 蓄电池 autonomy 校核、距离保护整定、电动机温升计算、谐波潮流计算。
+| ID | 主题 | 核心公式/方法 | 主要标准依据 | 下游应用条目 |
+|---|---|---|---|---|
+| [CALC-LT-002](CALC-LT-002-point-illuminance-method.md) | 照度逐点校验法（点照度法） | $E_p=I_\theta\cos\theta/h^2\cdot MF$；$U_0=E_{min}/E_{avg}$ | GB/T 50034-2024, 《照明设计手册》第三版 | [PR-BE-001](../30-practice/PR-BE-001-emergency-lighting.md)（疏散照度逐点校验） |
+| [CALC-BT-002](CALC-BT-002-ups-battery-autonomy.md) | UPS蓄电池autonomy校核（功率法） | $P_{dc}=P_{IT}/\eta_{UPS}$；$C_{10}\ge P_{bat}t/(U_{cell,avg}N_{cell}DoD\eta)$ | GB 50174-2017, GB/T 7260.3-2003, DL/T 5044-2014 | [PR-EV-001](../30-practice/PR-EV-001-ev-charging-infrastructure.md)·[CALC-DG-001](CALC-DG-001-diesel-generator-capacity.md) |
+| [CALC-PT-002](CALC-PT-002-distance-protection-setting.md) | 高压线路距离保护整定（三段式） | $Z_{set,1}=K_{rel}Z_L$；$Z_{set,2}=K_{rel}(Z_L+Z_{set,1}^{next})$；$K_{sen}=Z_{set}/Z_{fault}$ | GB/T 14285-2006, DL/T 584-2017, DL/T 559-2018 | [PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md)·[CALC-SC-002](CALC-SC-002-hv-short-circuit-iec60909.md) |
+| [CALC-MS-002](CALC-MS-002-motor-temperature-rise.md) | 电动机温升计算与绝缘等级校核 | $\Delta\theta=\Sigma P\cdot R_{th}$；$\theta_{hot}=\theta_{amb}+\Delta\theta+\Delta\theta_{hot}$ | GB 755-2019, GB/T 1032-2020, GB 50055-2011 | [CALC-MS-001](CALC-MS-001-motor-starting-voltage-drop.md)·[CALC-PT-001](CALC-PT-001-protection-setting.md) |
+| [CALC-HM-001](CALC-HM-001-harmonic-power-flow.md) | 谐波潮流计算与电能质量校核 | $U_h=I_hZ_1/h$；$HRU_h=U_h/U_1$；$THD_u=\sqrt{\sum U_h^2}/U_1$ | GB/T 14549-1993, GB/T 15543-2008 | [PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md)·[PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md) |
 
-条目编号：`CALC-{域}-{三位序号}-{英文短名}.md`，域：SC 短路/LD 负荷/PT 保护/BT 蓄电池/LT 照明/RC 无功/HV 高压/CA 电缆/GR 接地/VL 电压/MS 电机启动/DG 柴油发电机。
+## 后续规划（三期续）
+
+短路电流交流分量衰减（直流分量/非周期分量）、暂态电动势与派克方程、接地故障电流计算、弧光接地过电压、电动机软启动器选型计算。
+
+条目编号：`CALC-{域}-{三位序号}-{英文短名}.md`，域：SC 短路/LD 负荷/PT 保护/BT 蓄电池/LT 照明/RC 无功/HV 高压/CA 电缆/GR 接地/VL 电压/MS 电机启动/DG 柴油发电机/HM 谐波。
