@@ -1,6 +1,6 @@
 # 电气工程全域知识库（kb）
 
-> 覆盖国内与国际标准、基础理论与工程实践的全域电气工程知识库。**版本：手册速查索引 v5.2，2026-09-09。**
+> 覆盖国内与国际标准、基础理论与工程实践的全域电气工程知识库。**版本：RAG 向量索引与图谱构建 v6.0，2026-09-10。**
 > 顶层设计见 [《电气工程全域知识库构建方案》V1.1](../电气工程全域知识库构建方案.md)。
 
 ## 1. 五层知识模型
@@ -31,6 +31,7 @@ L0 元数据层（术语·编号·模板·规范）← 00-meta/
 
 - **查标准** → [cn-01 强制规范与主干标准](20-standards/cn-01-强制性通用规范与主干标准.md) ｜ [cn-02 供配电考纲 74 本](20-standards/cn-02-供配电考纲口径索引.md) ｜ [cn-03 发输变电 67 本](20-standards/cn-03-发输变电考纲口径索引.md) ｜ [cn-04 新兴领域包](20-standards/cn-04-新兴领域标准包.md) ｜ [intl 国际索引](20-standards/intl-国际标准索引.md)
 - **查手册速查** → [手册速查索引（10 册/公式/典型值）](20-standards/handbook-quick-reference-index.md)
+- **RAG 检索** → [元数据索引](20-standards/rag-metadata-index.md) ｜ [知识图谱邻接表](20-standards/knowledge-graph-adjacency.md) ｜ [使用指南](20-standards/rag-usage-guide.md)
 - **中外差异** → [mapping-中外对照表（20 张）](20-standards/mapping-中外对照表.md)
 - **换版动态** → [changelog/](20-standards/changelog/)（GB/T 50034-2024、GB/T 51048-2025、GB/T 50966-2024、GB 55038-2025、IEC 60364-1:2025）
 - **查术语** → [00-术语表（504 词条）](00-meta/00-术语表.md)
