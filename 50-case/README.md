@@ -61,6 +61,16 @@
 | [CASE-028](CASE-028-composite-offshore-wind-substation.md) | 综合案例：海上风电场升压站电气-结构-海工多专业协同设计 | GB/T 19963.1-2021, NB/T 31003-2011, GB 50053-2013, GB 50229-2019, GB/T 14285-2023, GB/T 22516-2017 | CP 综合 | [TH-011](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[CALC-GR-001](../40-calc/CALC-GR-001-grounding-grid-design.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md)·[PR-GR-001](../30-practice/PR-GR-001-lightning-protection-design.md) |
 | [CASE-029](CASE-029-review-diesel-generator-room-ventilation.md) | 校审驳回：柴油发电机房通风散热不足与排烟系统设计不当 | GB 50053-2013, GB 50016-2014, GB 50019-2015, GB 50229-2019, GB/T 2820.5-2009, GB 50067-2014 | DR 校审 | [CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[TH-007](../10-theory/TH-007-induction-motor-starting.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md) |
 
+## 三期第七批成果（5 条）
+
+| ID | 主题 | 主要标准依据 | 案例类型 | 支撑条目 |
+|---|---|---|---|---|
+| [CASE-030](CASE-030-exam-cable-ampacity-section.md) | 2019供配电真题拆解：10kV电缆载流量温度修正与截面选择 | GB 50217-2018, GB/T 16895.6-2014, GB/T 12706.2-2020, GB/T 15544.1-2013, GB 50052-2009 | EX 真题 | [CALC-CD-001](../40-calc/CALC-CD-001-cable-ampacity-correction.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[CALC-VL-001](../40-calc/CALC-VL-001-voltage-deviation-and-loss.md)·[PR-DD-001](../30-practice/PR-DD-001-lv-breaker-selection.md) |
+| [CASE-031](CASE-031-review-dc-insulation-monitoring.md) | 校审驳回：变电所直流操作电源系统未设绝缘监测装置 | DL/T 5044-2014, GB/T 14285-2023, DL/T 724-2000, GB 50053-2013, GB/T 50065-2011 | DR 校审 | [CALC-BT-001](../40-calc/CALC-BT-001-battery-capacity.md)·[TH-012](../10-theory/TH-012-protection-four-properties.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md) |
+| [CASE-032](CASE-032-accident-cable-termination-breakdown.md) | 事故复盘：10kV交联电缆终端应力锥安装不良致击穿爆炸 | GB 50168-2018, GB 50217-2018, GB/T 12706.2-2020, DL/T 596-2021 | AC 事故 | [TH-013](../10-theory/TH-013-switching-arc-physics.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[CALC-CD-001](../40-calc/CALC-CD-001-cable-ampacity-correction.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md) |
+| [CASE-033](CASE-033-composite-energy-station-full-process.md) | 综合案例：5MW/10MWh工商业储能电站全流程设计（消防+EMS+并网保护） | GB/T 51048-2025, GB/T 36547-2024, GB 44240-2024, GB/T 42288-2022, NB/T 10988-2022, GB/T 14285-2023 | CP 综合 | [PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[TH-012](../10-theory/TH-012-protection-four-properties.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md)·[PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md) |
+| [CASE-034](CASE-034-review-neutral-resistor-grounding.md) | 校审驳回：10kV系统中性点经小电阻接地电阻器选型不当 | GB/T 50065-2011, GB 50052-2009, GB/T 14285-2023, DL/T 5222-2021, IEEE C62.92.2-1995 | DR 校审 | [TH-005](../10-theory/TH-005-touch-step-voltage.md)·[TH-012](../10-theory/TH-012-protection-four-properties.md)·[CALC-GR-001](../40-calc/CALC-GR-001-grounding-grid-design.md)·[PR-GR-002](../30-practice/PR-GR-002-earthing-arrangement.md)·[PR-PE-001](../30-practice/PR-PE-001-relay-protection-config.md) |
+
 ## 案例间引用网（数据贯通闭环）
 
 ```
@@ -93,6 +103,11 @@ CALC-BT-002 UPS蓄电池（功率法）        ─→ CASE-026 UPS自主时间�
 TH-013 开关电弧（真空截流+重燃）       ─→ CASE-027 截流过电压致电机击穿 ─→ CASE-016 电弧光短路（同源开关瞬态）
 TH-011 同步机暂态（风机变流器贡献）    ─→ CASE-028 海上风电升压站 ─→ CASE-022 2021短路真题（同源短路计算）
 CALC-DG-001 柴发容量（通风散热）       ─→ CASE-029 柴发房通风排烟校审 ─→ CASE-014 消防泵柴发（同源柴发容量）
+CALC-CD-001 电缆载流量（温度×并列×热阻） ─→ CASE-030 2019电缆截面真题 ─→ CASE-012 电缆电压降真题（同源电缆选型）
+TH-012 继保四性（直流绝缘=可靠性基础） ─→ CASE-031 直流绝缘监测校审 ─→ CASE-011 直流接地事故（同源直流系统）
+TH-013 开关电弧（电树枝+场强集中）     ─→ CASE-032 电缆终端击穿事故 ─→ CASE-006 电缆接头火灾（同源电缆附件）
+PR-ES-001 储能接入（PACK级消防+EMS）    ─→ CASE-033 储能电站全流程 ─→ CASE-004 用户侧储能（同源储能扩展）
+TH-005 接触/跨步（中性点接地方式）      ─→ CASE-034 小电阻接地校审 ─→ CASE-009 医疗接地制式（同源中性点接地）
 ```
 
 ## 案例子域代码（front matter `subdomain` 字段）
@@ -106,16 +121,16 @@ CALC-DG-001 柴发容量（通风散热）       ─→ CASE-029 柴发房通风
 
 > 子域代码仅入 front matter `subdomain`，**不嵌入文件名**（遵守 `CASE-{三位序号}-{英文短名}.md` 格式）。
 
-## 累计统计（六批共 29 条）
+## 累计统计（七批共 34 条）
 
-| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 第五批 | 第六批 | 累计 |
-|---|---|---|---|---|---|---|---|
-| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 1（CASE-022） | 1（CASE-025） | 6 |
-| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 1（CASE-024） | 2（CASE-026/029） | 10 |
-| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 2（CASE-020/021） | 1（CASE-027） | 7 |
-| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 1（CASE-023） | 1（CASE-028） | 6 |
-| **合计** | **4** | **5** | **5** | **5** | **5** | **5** | **29** |
+| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 第五批 | 第六批 | 第七批 | 累计 |
+|---|---|---|---|---|---|---|---|---|
+| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 1（CASE-022） | 1（CASE-025） | 1（CASE-030） | 7 |
+| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 1（CASE-024） | 2（CASE-026/029） | 2（CASE-031/034） | 12 |
+| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 2（CASE-020/021） | 1（CASE-027） | 1（CASE-032） | 8 |
+| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 1（CASE-023） | 1（CASE-028） | 1（CASE-033） | 7 |
+| **合计** | **4** | **5** | **5** | **5** | **5** | **5** | **5** | **34** |
 
 ## 后续规划（三期续）
 
-案例库累计 29 条已跨过 25 条里程碑，接近 30 条目标。后续扩展方向：考试真题年份覆盖 2019/2025 含发输变电方向（短路分量衰减、派克方程、弧光过电压）、校审问题库扩直流系统/电缆载流/中性点接地各域、事故案例扩充短路爆炸/铁磁谐振/电缆终端击穿、综合案例储能电站全流程/海上风电送出系统/数据中心冷却协同。
+案例库累计 34 条已跨过 30 条里程碑。后续扩展方向：考试真题年份覆盖 2018/2025 含发输变电方向（短路分量衰减、派克方程、弧光过电压）、校审问题库扩电缆防火封堵/继电保护误动/应急电源切换各域、事故案例扩充铁磁谐振过电压/电容器组爆炸/直流系统短路、综合案例数据中心冷却协同/光储柴微电网/新能源汇集站。

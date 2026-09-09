@@ -153,7 +153,7 @@ $$\delta U_{end} = \delta U_{bus} - \Delta U_{line}\% = +2.67\% - 3.33\% = -0.66
 ## 8. 关联条目
 
 - 上游：[CALC-LD-001](CALC-LD-001-demand-factor-method.md)（提供 $P_{30}/Q_{30}$）、[CALC-RC-001](CALC-RC-001-reactive-compensation.md)（补偿后 $\cos\varphi$ 影响压降）
-- 下游：[CALC-MS-001](CALC-MS-001-motor-starting-voltage-drop.md)（启动尖峰工况单独校验）、[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（分接头与所址选择联动）、[CASE-012 2022电缆电压降真题](../50-case/CASE-012-exam-cable-voltage-drop.md)（三重校验）、[CASE-014 消防泵末端电压降](../50-case/CASE-014-review-fire-pump-end-transfer.md)（启动电压降≤-15%）、[CASE-015 变电所未深入负荷中心致电压降超标](../50-case/CASE-015-review-substation-location-voltage.md)（所址致电压降违规）、[CASE-017 2020电机启动压降校验](../50-case/CASE-017-exam-motor-starting-voltage-drop.md)（稳态+启动压降叠加）
+- 下游：[CALC-MS-001](CALC-MS-001-motor-starting-voltage-drop.md)（启动尖峰工况单独校验）、[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（分接头与所址选择联动）、[CASE-012 2022电缆电压降真题](../50-case/CASE-012-exam-cable-voltage-drop.md)（三重校验）、[CASE-014 消防泵末端电压降](../50-case/CASE-014-review-fire-pump-end-transfer.md)（启动电压降≤-15%）、[CASE-015 变电所未深入负荷中心致电压降超标](../50-case/CASE-015-review-substation-location-voltage.md)（所址致电压降违规）、[CASE-017 2020电机启动压降校验](../50-case/CASE-017-exam-motor-starting-voltage-drop.md)（稳态+启动压降叠加）、[CASE-030 2019电缆载流量截面真题](../50-case/CASE-030-exam-cable-ampacity-section.md)（电缆电压降校验）
 - 平行：[CALC-CD-001](CALC-CD-001-cable-ampacity-correction.md)（电缆选型载流量与压降双校）
 
 ## 9. 变更记录

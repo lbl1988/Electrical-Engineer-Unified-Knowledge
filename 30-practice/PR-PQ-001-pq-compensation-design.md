@@ -96,7 +96,7 @@ $P_{30}$=395.1kW、$\cos\varphi$=0.797 → **装设 120kvar（6×20，串 7%，4
 ## 8. 关联条目
 
 - 上游：[TH-008 谐波机理](../10-theory/TH-008-harmonic-generation.md)、[TH-010 无功功率](../10-theory/TH-010-reactive-power.md)
-- 下游：[CALC-RC-001 补偿计算](../40-calc/CALC-RC-001-reactive-compensation.md)、APF/SVG 选型（PQ 域规划）、[CASE-025 2023无功补偿与谐波谐振真题](../50-case/CASE-025-exam-reactive-compensation-harmonic-resonance.md)（2023无功补偿与谐波谐振真题）
+- 下游：[CALC-RC-001 补偿计算](../40-calc/CALC-RC-001-reactive-compensation.md)、APF/SVG 选型（PQ 域规划）、[CASE-025 2023无功补偿与谐波谐振真题](../50-case/CASE-025-exam-reactive-compensation-harmonic-resonance.md)（2023无功补偿与谐波谐振真题）、[CASE-033 储能电站全流程](../50-case/CASE-033-composite-energy-station-full-process.md)（储能PQ控制）
 - 平行：[mapping MAP-G/H/I](../20-standards/mapping-中外对照表.md)（中外电能质量体系差异）
 - 计算支撑：[CALC-HM-001 谐波潮流计算](../40-calc/CALC-HM-001-harmonic-power-flow.md)（谐波电流叠加与电压含有率校核，APF选型依据）
 
