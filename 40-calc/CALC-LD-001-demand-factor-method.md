@@ -117,7 +117,7 @@ $$S_{30}=\sqrt{395.1^2+299.2^2}=\sqrt{156\,104+89\,521}=495.6\ \text{kVA},\qquad
 
 - 上游：[TH-010 无功功率](../10-theory/TH-010-reactive-power.md)、[TH-007 电机启动](../10-theory/TH-007-induction-motor-starting.md)（尖峰电流）
 - 下游：[CALC-RC-001 无功补偿](CALC-RC-001-reactive-compensation.md)、[CALC-SC-001 短路计算](CALC-SC-001-低压三相短路电流计算.md)（同一变压器参数延续）、[CALC-PT-001 保护整定](CALC-PT-001-protection-setting.md)、[CALC-VL-001 电压偏差](CALC-VL-001-voltage-deviation-and-loss.md)、[CALC-MS-001 电机启动压降](CALC-MS-001-motor-starting-voltage-drop.md)、[PR-PE-001 继电保护](../30-practice/PR-PE-001-relay-protection-config.md)、[PR-EV-001 EV 充电](../30-practice/PR-EV-001-ev-charging-infrastructure.md)（$P_{30}/Q_{30}$ 数据源）
-- 下游案例：[CASE-038 数据中心冷却负荷](../50-case/CASE-038-composite-data-center-cooling-collaboration.md)
+- 下游案例：[CASE-038 数据中心冷却负荷](../50-case/CASE-038-composite-data-center-cooling-collaboration.md)、[CASE-043 微电网功率平衡](../50-case/CASE-043-composite-pv-storage-diesel-microgrid.md)
 - 平行：[PR-PS-001 负荷分级](../30-practice/PR-PS-001-load-classification.md)（消防负荷口径）、[CASE-018 工业变电所多专业协同](../50-case/CASE-018-composite-industrial-substation.md)（多装置负荷叠加与变压器容量校验）、[CASE-023 轨道交通牵引变电所协同](../50-case/CASE-023-composite-metro-traction-substation.md)（牵引负荷同时系数法+再生制动减负）
 
 ## 9. 变更记录

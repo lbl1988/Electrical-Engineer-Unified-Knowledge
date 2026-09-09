@@ -52,6 +52,7 @@ $$\dot{U}_L = j\omega L\,\dot{I} \quad\Rightarrow\quad X_L=\omega L,\ \angle\dot
 ## 5. 关联条目与变更记录
 
 - 关联：[TH-001 似稳近似](TH-001-quasi-static-approximation.md)（相量法成立的空间前提）、[TH-010 无功功率](TH-010-reactive-power.md)（功率三角形相量来源）
+- 下游案例：[CASE-040 断路器同期](../50-case/CASE-040-exam-short-circuit-dc-component-breaker.md)、[CASE-043 微电网同期合闸](../50-case/CASE-043-composite-pv-storage-diesel-microgrid.md)
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|

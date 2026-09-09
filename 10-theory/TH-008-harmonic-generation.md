@@ -52,7 +52,7 @@ $$h = kp\pm1\quad(k=1,2,3,\dots)$$
 ## 5. 关联条目与变更记录
 
 - 关联：[TH-002 相量法](TH-002-phasor-analysis.md)（逐次谐波的相量电路）、[TH-003 对称分量法](TH-003-symmetrical-components.md)（3n 次＝零序）
-- 下游案例：[CASE-025](../50-case/CASE-025-exam-reactive-compensation-harmonic-resonance.md)（2023无功补偿与谐波谐振真题）
+- 下游案例：[CASE-025](../50-case/CASE-025-exam-reactive-compensation-harmonic-resonance.md)（2023无功补偿与谐波谐振真题）、[CASE-041 无源滤波器失谐](../50-case/CASE-041-review-passive-filter-detuning-harmonic-amplification.md)
 
 | 版本 | 日期 | 修改内容 | 修改人 |
 |---|---|---|---|

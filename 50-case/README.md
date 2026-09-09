@@ -81,6 +81,16 @@
 | [CASE-038](CASE-038-composite-data-center-cooling-collaboration.md) | 综合案例：A级数据中心冷却系统电气-暖通-消防多专业协同设计 | GB 50174-2017, GB 50019-2015, GB 50016-2014, GB 50116-2013, GB 51348-2019 | CP 综合 | [CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[PR-PS-001](../30-practice/PR-PS-001-load-classification.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-BE-001](../30-practice/PR-BE-001-emergency-lighting.md) |
 | [CASE-039](CASE-039-review-ats-switching-time-mismatch.md) | 校审驳回：应急电源ATS切换时间与UPS备电时序不匹配 | GB 50052-2009, GB 51348-2019, GB 50016-2014, GB 51309-2018, GB/T 21436-2008 | DR 校审 | [CALC-BT-001](../40-calc/CALC-BT-001-battery-capacity.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[PR-PS-001](../30-practice/PR-PS-001-load-classification.md)·[PR-BE-001](../30-practice/PR-BE-001-emergency-lighting.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md) |
 
+## 三期第九批成果（5 条）
+
+| ID | 主题 | 主要标准依据 | 案例类型 | 支撑条目 |
+|---|---|---|---|---|
+| [CASE-040](CASE-040-exam-short-circuit-dc-component-breaker.md) | 2019发输变电真题拆解：短路电流非周期分量衰减与断路器开断能力校验 | GB/T 15544.1-2013, GB 50060-2008, IEC 60909-0, DL/T 5222-2021, GB/T 11022-2020 | EX 真题 | [TH-011](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[TH-002](../10-theory/TH-002-phasor-analysis.md)·[PR-DD-001](../30-practice/PR-DD-001-lv-breaker-selection.md) |
+| [CASE-041](CASE-041-review-passive-filter-detuning-harmonic-amplification.md) | 校审驳回：低压无源滤波器支路失谐致5次谐波电流放大 | GB/T 14549-1993, GB 50227-2017, GB/T 51348-2019, IEEE 519-2022, GB/T 12325-2008 | DR 校审 | [TH-008](../10-theory/TH-008-harmonic-generation.md)·[CALC-HM-001](../40-calc/CALC-HM-001-harmonic-power-flow.md)·[CALC-RC-001](../40-calc/CALC-RC-001-reactive-compensation.md)·[PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md) |
+| [CASE-042](CASE-042-accident-capacitor-inrush-fuse-burst.md) | 事故复盘：10kV并联电容器组合闸涌流与操作过电压致熔断器群爆 | GB 50227-2017, GB 50060-2008, GB/T 11024.1-2019, DL/T 604-2019, DL/T 5222-2021 | AC 事故 | [TH-013](../10-theory/TH-013-switching-arc-physics.md)·[TH-014](../10-theory/TH-014-magnetic-circuit-saturation.md)·[CALC-RC-001](../40-calc/CALC-RC-001-reactive-compensation.md)·[PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md) |
+| [CASE-043](CASE-043-composite-pv-storage-diesel-microgrid.md) | 综合案例：光储柴微电网并离网切换多专业协同设计 | GB/T 36547-2024, GB/T 51048-2025, GB/T 50966-2024, NB/T 10988-2022, GB/T 29319-2012, GB 50016-2014 | CP 综合 | [PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[TH-002](../10-theory/TH-002-phasor-analysis.md)·[TH-011](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md) |
+| [CASE-044](CASE-044-review-capacitor-overvoltage-spd-coordination.md) | 校审驳回：10kV并联电容器组过电压保护与避雷器参数配合不当 | GB 50227-2017, GB/T 11032-2020, DL/T 620-1997, GB 50060-2008, GB/T 14285-2023 | DR 校审 | [TH-013](../10-theory/TH-013-switching-arc-physics.md)·[TH-009](../10-theory/TH-009-lightning-physics.md)·[CALC-RC-001](../40-calc/CALC-RC-001-reactive-compensation.md)·[PR-PQ-001](../30-practice/PR-PQ-001-pq-compensation-design.md)·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-GR-001](../30-practice/PR-GR-001-lightning-protection-design.md) |
+
 ## 案例间引用网（数据贯通闭环）
 
 ```
@@ -123,6 +133,11 @@ TH-012 继保四性（差动CT极性）            ─→ CASE-036 CT极性接�
 TH-014 磁路饱和（铁磁谐振）              ─→ CASE-037 铁磁谐振PT烧毁 ─→ CASE-003 空投涌流（同源PT/变压器非线性）
 CALC-LD-001 负荷计算（冷却负荷）          ─→ CASE-038 数据中心冷却协同 ─→ CASE-008 数据中心2N（同源数据中心）
 CALC-BT-001 蓄电池容量（UPS分级）        ─→ CASE-039 ATS切换时序校审 ─→ CASE-026 UPS自主时间（同源应急电源）
+TH-011 同步机暂态（短路分量衰减）        ─→ CASE-040 发输变电断路器开断校验 ─→ CASE-022 2021短路真题（同源短路计算）
+TH-008 谐波机理（无源滤波器调谐）        ─→ CASE-041 无源滤波器失谐校审 ─→ CASE-025 无功补偿谐振（同源谐振）
+TH-013 开关电弧（电容器合闸涌流）        ─→ CASE-042 电容器组合闸涌流事故 ─→ CASE-027 真空截流过电压（同源操作过电压）
+PR-ES-001 储能接入（构网型PCS）          ─→ CASE-043 光储柴微电网并离网切换 ─→ CASE-013 光储充微电网（同源微电网）
+CALC-RC-001 无功补偿（电容器过电压）      ─→ CASE-044 电容器组避雷器配合校审 ─→ CASE-042 电容器涌流事故（同源电容器组）
 ```
 
 ## 案例子域代码（front matter `subdomain` 字段）
@@ -136,15 +151,15 @@ CALC-BT-001 蓄电池容量（UPS分级）        ─→ CASE-039 ATS切换时�
 
 > 子域代码仅入 front matter `subdomain`，**不嵌入文件名**（遵守 `CASE-{三位序号}-{英文短名}.md` 格式）。
 
-## 累计统计（八批共 39 条）
+## 累计统计（九批共 44 条）
 
-| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 第五批 | 第六批 | 第七批 | 第八批 | 累计 |
-|---|---|---|---|---|---|---|---|---|---|
-| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 1（CASE-022） | 1（CASE-025） | 1（CASE-030） | 1（CASE-035） | 8 |
-| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 1（CASE-024） | 2（CASE-026/029） | 2（CASE-031/034） | 2（CASE-036/039） | 14 |
-| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 2（CASE-020/021） | 1（CASE-027） | 1（CASE-032） | 1（CASE-037） | 9 |
-| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 1（CASE-023） | 1（CASE-028） | 1（CASE-033） | 1（CASE-038） | 8 |
-| **合计** | **4** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **39** |
+| 子域 | 第一批 | 第二批 | 第三批 | 第四批 | 第五批 | 第六批 | 第七批 | 第八批 | 第九批 | 累计 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| EX 真题 | 1（CASE-001） | 1（CASE-007） | 1（CASE-012） | 1（CASE-017） | 1（CASE-022） | 1（CASE-025） | 1（CASE-030） | 1（CASE-035） | 1（CASE-040） | 9 |
+| DR 校审 | 1（CASE-002） | 2（CASE-005/009） | 2（CASE-010/014） | 2（CASE-015/019） | 1（CASE-024） | 2（CASE-026/029） | 2（CASE-031/034） | 2（CASE-036/039） | 2（CASE-041/044） | 16 |
+| AC 事故 | 1（CASE-003） | 1（CASE-006） | 1（CASE-011） | 1（CASE-016） | 2（CASE-020/021） | 1（CASE-027） | 1（CASE-032） | 1（CASE-037） | 1（CASE-042） | 10 |
+| CP 综合 | 1（CASE-004） | 1（CASE-008） | 1（CASE-013） | 1（CASE-018） | 1（CASE-023） | 1（CASE-028） | 1（CASE-033） | 1（CASE-038） | 1（CASE-043） | 9 |
+| **合计** | **4** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **5** | **44** |
 
 ## 后续规划（三期续）
 
