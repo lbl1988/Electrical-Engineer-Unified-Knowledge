@@ -18,7 +18,9 @@
 | [TH-010](TH-010-reactive-power.md) | 无功功率物理意义 | CALC-RC-001（QC 公式） |
 | [TH-011](TH-011-synchronous-machine-subtransient-reactance.md) | 同步电机暂态与次暂态电抗 | CALC-SC-002（高压短路 I_k″）、电动机反馈电流 |
 | [TH-012](TH-012-protection-four-properties.md) | 继电保护四性（可靠性/选择性/灵敏性/速动性） | PR-PE-001（继电保护整定配合）、CALC-PT-001（低压保护四段式） |
+| [TH-013](TH-013-switching-arc-physics.md) | 开关电弧物理与交流电流零点熄弧 | CALC-SC-002（高压短路开断容量校验）、PR-PE-001（断路器开断能力） |
+| [TH-014](TH-014-magnetic-circuit-saturation.md) | 磁路与铁磁饱和 | TH-006（变压器漏抗）、CALC-SC-001（$X_m\gg X_\sigma$ 忽略条件） |
 
-## 后续规划（二期第三批~三期）
+## 后续规划（三期）
 
-磁路与铁磁饱和、电缆波过程与 VFTO、开关电弧物理、同步电机功角稳定基础、瞬时功率 p-q 理论。
+电缆波过程与 VFTO、同步电机功角稳定基础、瞬时功率 p-q 理论、电力电子器件物理、电化学电池机理。

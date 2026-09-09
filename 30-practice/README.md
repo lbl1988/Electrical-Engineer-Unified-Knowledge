@@ -30,8 +30,15 @@ CALC-LD-001 负荷计算 ─→ CALC-RC-001 无功补偿 ─→ PR-PQ-001 治理
 TH-009 雷电物理 ─→ PR-GR-001 防雷分类（N=kNgAe 算例）
 ```
 
-## 后续规划（二期第三批～三期）
+## 二期第三批成果（2 条）
 
-电动机控制与启动方式、消防联动设计深化、储能接入设计、光伏并网设计、电动汽车换电站设计、地铁牵引供电。
+| ID | 主题 | 主要标准依据 | 生命周期 | 支撑的计算/理论条目 |
+|---|---|---|---|---|
+| [PR-CM-001](PR-CM-001-fire-protection-interlocking.md) | 火灾自动报警与消防联动控制系统设计 | GB 50116-2013, GB 50166-2019, GB 55037-2022, GB 50016-2014 | 设计, 验收, 运维 | [PR-PS-001](PR-PS-001-load-classification.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[PR-BE-001](PR-BE-001-emergency-lighting.md)·[CALC-BT-001](../40-calc/CALC-BT-001-battery-capacity.md)·[PR-GR-001](PR-GR-001-lightning-protection-design.md) |
+| [PR-ES-001](PR-ES-001-energy-storage-integration.md) | 电化学储能电站接入设计 | GB/T 51048-2025, GB/T 36547-2024, GB 44240-2024, GB/T 42288-2022, GB 38755-2019 | 规划, 设计, 验收 | [cn-04](../20-standards/cn-04-新兴领域标准包.md)·[TH-008](../10-theory/TH-008-harmonic-generation.md)·[TH-014](../10-theory/TH-014-magnetic-circuit-saturation.md)·[PR-PQ-001](PR-PQ-001-pq-compensation-design.md)·[PR-EV-001](PR-EV-001-ev-charging-infrastructure.md)·[PR-PE-001](PR-PE-001-relay-protection-config.md)·[PR-CM-001](PR-CM-001-fire-protection-interlocking.md) |
+
+## 后续规划（三期）
+
+电动机控制与启动方式、光伏并网设计、电动汽车换电站设计、地铁牵引供电、智慧园区能管系统。
 
 条目编号：`PR/DD/MD/PE/BE/ES/PQ/CM-{三位序号}-{英文短名}.md`。计算类条目放 [40-calc/](../40-calc/)。

@@ -26,10 +26,6 @@ CALC-LD-001 负荷计算（P30=395.1kW, cosφ=0.797）
    └─→ PR-DD-001 断路器选型（ACB 50kA/105kA, 级差 8.5 倍全选择性）
 ```
 
-## 后续规划（二期第三批～三期）
-
-照度逐点校验法、柴油发电机容量选择、UPS 蓄电池 autonomy 校核、距离保护整定、电动机温升计算。
-
 ## 二期第二批成果（5 条）
 
 | ID | 主题 | 核心公式/方法 | 主要标准依据 | 下游应用条目 |
@@ -40,4 +36,14 @@ CALC-LD-001 负荷计算（P30=395.1kW, cosφ=0.797）
 | [CALC-VL-001](CALC-VL-001-voltage-deviation-and-loss.md) | 电压偏差与电压损失计算 | $\Delta U\% = (PR+QX)/U_n^2\times 100\%$；$\delta U = \delta U_0 + \Delta U_T - \Delta U_{line}$ | GB/T 12325-2008, GB 50052-2009, GB 51348-2019 | [CALC-MS-001](CALC-MS-001-motor-starting-voltage-drop.md)（启动尖峰叠加）·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（分接头选型）·[CALC-CD-001](CALC-CD-001-cable-ampacity-correction.md)（电缆选型双校） |
 | [CALC-MS-001](CALC-MS-001-motor-starting-voltage-drop.md) | 电动机启动压降校验 | $\Delta U_{st}\% \approx K_{st}S_M/(S_{sc}+K_{st}S_M)\times 100\%$ | GB 50055-2011, GB 51348-2019 | [PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)·[CALC-PT-001](CALC-PT-001-protection-setting.md)（躲启动尖峰） |
 
-条目编号：`CALC-{域}-{三位序号}-{英文短名}.md`，域：SC 短路/LD 负荷/PT 保护/BT 蓄电池/LT 照明/RC 无功/HV 高压/CA 电缆/GR 接地/VL 电压/MS 电机启动。
+## 二期第三批成果（1 条）
+
+| ID | 主题 | 核心公式/方法 | 主要标准依据 | 下游应用条目 |
+|---|---|---|---|---|
+| [CALC-DG-001](CALC-DG-001-diesel-generator-capacity.md) | 柴油发电机容量选择与启动校验 | $S_G\geq P/\cos\varphi_G$；$S_G\geq S_{peak}/K_{overload}$；$\Delta U\%=K_{st}S_M/(S_G/X_d'+K_{st}S_M)$ | GB/T 2820.1-2023, GB 51348-2019, GB 50052-2009 | [PR-PS-001](../30-practice/PR-PS-001-load-classification.md)·[CALC-MS-001](CALC-MS-001-motor-starting-voltage-drop.md)·[PR-CM-001](../30-practice/PR-CM-001-fire-protection-interlocking.md)（火灾联动启动顺序） |
+
+## 后续规划（三期）
+
+照度逐点校验法、UPS 蓄电池 autonomy 校核、距离保护整定、电动机温升计算、谐波潮流计算。
+
+条目编号：`CALC-{域}-{三位序号}-{英文短名}.md`，域：SC 短路/LD 负荷/PT 保护/BT 蓄电池/LT 照明/RC 无功/HV 高压/CA 电缆/GR 接地/VL 电压/MS 电机启动/DG 柴油发电机。
