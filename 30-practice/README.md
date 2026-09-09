@@ -42,3 +42,17 @@ TH-009 雷电物理 ─→ PR-GR-001 防雷分类（N=kNgAe 算例）
 电动机控制与启动方式、光伏并网设计、电动汽车换电站设计、地铁牵引供电、智慧园区能管系统。
 
 条目编号：`PR/DD/MD/PE/BE/ES/PQ/CM-{三位序号}-{英文短名}.md`。计算类条目放 [40-calc/](../40-calc/)。
+
+## 三期第一批成果（5 条）
+
+| ID | 主题 | 主要标准依据 | 生命周期 | 支撑的计算/理论条目 |
+|---|---|---|---|---|
+| [PR-PS-002](PR-PS-002-motor-control-and-starting.md) | 电动机控制与启动方式选择 | GB 50055-2011, GB 18613-2020, GB/T 15776-2023 | 设计, 采购, 验收 | [TH-033](../10-theory/TH-033-induction-motor-vfd-control-strategy.md)·[CALC-PT-001](../40-calc/CALC-PT-001-protection-setting.md)·[CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[PR-PQ-001](PR-PQ-001-pq-compensation-design.md) |
+| [PR-DD-003](PR-DD-003-cable-routing-and-installation.md) | 电缆敷设方式选择与载流量校正 | GB 50217-2018, GB 51348-2019, GB/T 42127-2022 | 设计, 施工, 验收 | [TH-025](../10-theory/TH-025-cable-thermal-field-and-ampacity.md)·[TH-019](../10-theory/TH-019-transmission-line-parameters.md)·[CALC-SC-001](../40-calc/CALC-SC-001-低压三相短路电流计算.md)·[CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md) |
+| [PR-PS-003](PR-PS-003-ups-and-battery-design.md) | UPS 配置与蓄电池组选择 | GB/T 7260-2023, GB/T 42084-2022, GB 50172-2024, GB 50174-2017 | 设计, 采购, 验收 | [TH-010](../10-theory/TH-010-reactive-power.md)·[TH-024](../10-theory/TH-024-power-electronic-converters-and-pwm.md)·[TH-008](../10-theory/TH-008-harmonic-generation.md)·[CALC-LD-001](../40-calc/CALC-LD-001-demand-factor-method.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md) |
+| [PR-PQ-002](PR-PQ-002-power-quality-monitoring-and-mitigation.md) | 电能质量监测系统设计与治理评估 | GB/T 15945-2008, GB/T 12325-2008, GB/T 14549-1993, GB/T 19862-2016 | 设计, 验收, 运维 | [TH-008](../10-theory/TH-008-harmonic-generation.md)·[TH-010](../10-theory/TH-010-reactive-power.md)·[TH-018](../10-theory/TH-018-instantaneous-power-pq-theory.md)·[CALC-SC-001](../40-calc/CALC-SC-001-低压三相短路电流计算.md)·[PR-PQ-001](PR-PQ-001-pq-compensation-design.md) |
+| [PR-GR-003](PR-GR-003-spd-selection-and-coordination.md) | SPD 选型与级间配合设计 | GB/T 18802.1-2023, GB 50057-2010, GB 51348-2019, GB/T 33588-2020 | 设计, 验收, 运维 | [TH-022](../10-theory/TH-022-overvoltage-and-insulation-coordination.md)·[TH-005](../10-theory/TH-005-touch-step-voltage.md)·[TH-017](../10-theory/TH-017-cable-wave-process-and-vfto.md)·[CALC-SC-001](../40-calc/CALC-SC-001-低压三相短路电流计算.md)·[PR-GR-001](PR-GR-001-lightning-protection-design.md)·[PR-GR-002](PR-GR-002-earthing-arrangement.md) |
+
+## 后续规划（三期第二批）
+
+继电保护整定配合深化、分布式电源接入设计、配电网自动化与 SCADA、变电所综合自动化系统。
