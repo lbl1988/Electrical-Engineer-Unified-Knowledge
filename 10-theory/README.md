@@ -41,6 +41,16 @@
 | [TH-023](TH-023-transformer-parallel-operation-and-circulating-current.md) | 变压器并列运行条件与环流 | PR-DD-002（多台变压器并列与负载分配） |
 | [TH-024](TH-024-power-electronic-converters-and-pwm.md) | 电力电子变换器基础拓扑与 PWM | PR-PQ-001（SVG/APF 硬件与 SVPWM）、PR-ES-001（PCS 拓扑与构网/跟网控制） |
 
+## 第四批条目（2026-09-09 增补，理论层 24→29）
+
+| ID | 主题 | 支撑的工程条目 |
+|---|---|---|
+| [TH-025](TH-025-cable-thermal-field-and-ampacity.md) | 电缆热场与载流量计算基础（IEC 60287 通解/群集校正/暂态 RC） | CALC-CD-001（截面选取与降容）、PR-DD-002（桥架/排管敷设群集） |
+| [TH-026](TH-026-switchgear-selection-and-breaking-capacity.md) | 开关电器选型与开断能力物理基础（四额定值/TRV/热稳定） | PR-DD-002（设备选型）、PR-PE-001（继保动作时间与热稳定耦合） |
+| [TH-027](TH-027-hvdc-transmission-lcc-vsc.md) | 高压直流输电（LCC/VSC-HVDC，换相失败/dq 解耦） | PR-ES-001（构网型 PCS 与 VSC-MMC）、PR-PQ-001（换相失败扰动） |
+| [TH-028](TH-028-facts-flexible-ac-transmission.md) | 柔性交流输电（FACTS：SVC/STATCOM/UPFC） | PR-PQ-001（SVG/STATCOM 无功与暂态稳定）、PR-ES-001（VSG 共享） |
+| [TH-029](TH-029-microgrid-control-and-grid-mode-switching.md) | 微电网控制与并离网切换（下垂/同期/黑启动） | PR-ES-001（构网型 PCS 黑启动）、PR-PS-001（孤岛分级保电）、PR-PE-001（双模式保护） |
+
 ## 后续规划（三期）
 
-理论层补足至 30：电缆热场、开关电器选型、微电网控制、高压直流输电（LCC/VSC-HVDC）、柔性交流输电（FACTS）、分布式电源并网保护、接地变压器与接地电阻选型、同步电机进相与调相运行、异步电机变频调速控制策略。
+理论层补足至 30：分布式电源并网保护、接地变压器与接地电阻选型、同步电机进相与调相运行、异步电机变频调速控制策略。

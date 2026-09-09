@@ -95,7 +95,7 @@ $P_{30}$=395.1kW、$\cos\varphi$=0.797 → **装设 120kvar（6×20，串 7%，4
 
 ## 8. 关联条目
 
-- 上游：[TH-008 谐波机理](../10-theory/TH-008-harmonic-generation.md)、[TH-010 无功功率](../10-theory/TH-010-reactive-power.md)、[TH-018 瞬时功率 p-q 理论](../10-theory/TH-018-instantaneous-power-pq-theory.md)（APF 控制算法的物理源头，赤木变换推导补偿电流参考值）、[TH-024 电力电子变换器基础拓扑与 PWM](../10-theory/TH-024-power-electronic-converters-and-pwm.md)（SVG/APF 硬件拓扑与 SVPWM 调制物理来源）
+- 上游：[TH-008 谐波机理](../10-theory/TH-008-harmonic-generation.md)、[TH-010 无功功率](../10-theory/TH-010-reactive-power.md)、[TH-018 瞬时功率 p-q 理论](../10-theory/TH-018-instantaneous-power-pq-theory.md)（APF 控制算法的物理源头，赤木变换推导补偿电流参考值）、[TH-024 电力电子变换器基础拓扑与 PWM](../10-theory/TH-024-power-electronic-converters-and-pwm.md)（SVG/APF 硬件拓扑与 SVPWM 调制物理来源）、[TH-028 柔性交流输电 FACTS](../10-theory/TH-028-facts-flexible-ac-transmission.md)（SVC/STATCOM 无功输出与暂态稳定重塑，SVG 即 STATCOM 别称）
 - 下游：[CALC-RC-001 补偿计算](../40-calc/CALC-RC-001-reactive-compensation.md)、APF/SVG 选型（PQ 域规划）、[CASE-025 2023无功补偿与谐波谐振真题](../50-case/CASE-025-exam-reactive-compensation-harmonic-resonance.md)（2023无功补偿与谐波谐振真题）、[CASE-033 储能电站全流程](../50-case/CASE-033-composite-energy-station-full-process.md)（储能PQ控制）
 - 下游案例：[CASE-041 无源滤波器](../50-case/CASE-041-review-passive-filter-detuning-harmonic-amplification.md)、[CASE-042 电容器涌流](../50-case/CASE-042-accident-capacitor-inrush-fuse-burst.md)、[CASE-044 电容器过电压保护](../50-case/CASE-044-review-capacitor-overvoltage-spd-coordination.md)、[CASE-048 新能源谐波SVG](../50-case/CASE-048-composite-renewable-collector-station-protection.md)、[CASE-053 牵引整流谐波](../50-case/CASE-053-composite-rail-transit-traction-rectifier.md)、[CASE-054 光伏电能质量](../50-case/CASE-054-review-pv-anti-islanding-reverse-power.md)
 - 平行：[mapping MAP-G/H/I](../20-standards/mapping-中外对照表.md)（中外电能质量体系差异）

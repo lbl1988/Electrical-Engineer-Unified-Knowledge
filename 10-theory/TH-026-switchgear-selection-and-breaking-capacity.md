@@ -1,0 +1,128 @@
+---
+id: TH-026
+title: 开关电器选型与开断能力物理基础
+domain: 基础理论
+subdomain: 开关电器
+voltage_levels: [LV, MV, HV]
+lifecycle: [设计, 选型, 运维]
+standards:
+  - { code: DL/T 5222-2021, clause: "6", note: "导体和电器选择设计规程，给出短路开断/关合/热稳定校验公式" }
+  - { code: GB 1984-2014, clause: "4", note: "高压交流断路器（idt IEC 62271-100），规定额定短路开断电流与 TRV 标准值" }
+  - { code: GB 14048.2-2020, clause: "4", note: "低压断路器（idt IEC 60947-2），含 Icu/Ics/Icm 定义与短路保护整定" }
+  - { code: GB/T 11022-2020, clause: "4", note: "高压开关设备通用规范（idt IEC 62271-1），绝缘水平与额定值" }
+status: draft
+reviewers: []
+version: 0.1
+updated: 2026-09-09
+---
+
+# 开关电器选型与开断能力物理基础
+
+## 1. 定义
+
+**开关电器**指接通与开断电路、并在故障时切除短路电流的装置。选型核心是**四个额定值匹配**：额定电压 $U_N$ ≥ 系统最高运行电压、额定电流 $I_N$ ≥ 负载最大持续电流、额定短路开断电流 $I_{brk}$ ≥ 安装点最大短路电流、额定短路关合电流 $I_{cm}$ ≥ 短路冲击电流 $i_p$。
+
+| 参数 | 符号 | 单位 | 含义 |
+|---|---|---|---|
+| 额定短路开断电流 | $I_{brk}$ | kA（有效值） | 断路器在额定电压下能开断的最大对称短路电流 |
+| 短路冲击电流 | $i_p$ | kA（峰值） | 短路后第一半波峰值，$i_p=\kappa\sqrt2 I_k''$ |
+| 额定短路关合电流 | $I_{cm}$ | kA（峰值） | 关合预存故障时能承受的峰值电流，标准 $I_{cm}=2.5\sim2.7\,I_{brk}$ |
+| 短时耐受电流 | $I_{tw}$ | kA（有效值） | 规定时间内（通常 1/2/3 s）能承受的热稳定电流 |
+| 恢复电压（TRV） | $u_c$ | kV | 电弧熄灭后断口两端出现的瞬态恢复电压 |
+
+## 2. 物理图像
+
+**电弧开断过程**（详见 [TH-013 开关电弧物理](TH-013-switching-arc-physics.md)）：
+
+```
+分闸指令 ─ 触头分离 ─ 电弧燃烧(数千~数万K) ─ 电流自然过零 ─ 弧隙介质恢复 ─ TRV 上升
+       t=0      t1             ↑                 t2            ↑          t3
+                              高温电导               介质强度 u_d(t)        u_d(t) > u_TRV(t) → 开断成功
+                                                                 u_d(t) < u_TRV(t) → 重燃失败
+```
+
+开断成功判据：**介质恢复速率（RRRV）> TRV 上升速率**。这是断路器开断能力与系统 TRV 严重度匹配的物理基础——开断电流相同，若 TRV 上升过快（近区故障、容性电流开断），仍可能重燃。
+
+**不同灭弧介质对比**：
+
+| 介质 | 绝缘强度（相对空气） | 灭弧能力 | 典型应用 |
+|---|---|---|---|
+| 空气 | 1 | 弱 | 低压断路器、老式 Air-Blast |
+| 真空（10⁻³ Pa） | 数十倍 | 强（扩散电弧） | 10~35 kV 真空断路器 |
+| SF₆（0.5 MPa） | 约 3 倍 | 极强（电负性吸附电子） | 72.5 kV 以上 GIS/SF₆ 断路器 |
+| 油 | 约 2 倍 | 中（油分解产氢吹弧） | 老式多油/少油断路器 |
+
+## 3. 推导
+
+### 3.1 短路开断电流与冲击电流关系
+
+短路发生后，对称分量 $I_k''$（详见 [CALC-SC-002 高压短路](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)）为有效值，冲击系数 $\kappa$ 取决于 $R/X$：
+
+$$
+\kappa=1.02+0.98\,e^{-3R/X}\quad \text{(IEC 60909 经验式)}
+$$
+
+| $R/X$ | $\kappa$ | 系统类型 |
+|---|---|---|
+| 0.05 | 1.80 | 大型变电站高压侧 |
+| 0.1 | 1.71 | 中压母线近端 |
+| 0.2 | 1.60 | 远端线路/低压系统 |
+| 0.3 | 1.51 | 长线路末端 |
+
+短路冲击峰值 $i_p=\kappa\sqrt2\,I_k''$。低压系统标准 $\kappa=1.8$，$i_p\approx 2.55\,I_k''$。
+
+### 3.2 关合电流校验
+
+关合预存故障时，断路器在合闸过程中须承受第一半波冲击。GB 1984 规定：
+
+$$
+I_{cm} = \kappa_{max}\sqrt2\,I_{brk}
+$$
+
+$\kappa_{max}$ 标准取值：$I_{brk}\le 25$ kA → $\kappa_{max}=2.7$；$I_{brk}>25$ kA → $\kappa_{max}=2.5$。选型校验：$I_{cm}\ge i_p$。
+
+### 3.3 热稳定校验（短时耐受）
+
+短路期间导体温升按绝热过程（短时发热，散热忽略）：
+
+$$
+\theta_f = \theta_i + \frac{I_{tw}^2\,t_{tw}}{k^2 S^2}
+$$
+
+其中 $S$ 为导体截面、$k$ 为材料系数（铜 143、铝 95）。校验条件：
+
+$$
+I_{tw}^2\,t_{tw} \ge I_k''^2\,t_k
+$$
+
+$t_k$ 为实际短路持续时间（继保动作时间 + 固有分闸时间，通常 0.1~0.5 s）。热稳定不满足须加大导体截面，详见 [CALC-CD-001 电缆热稳定](../40-calc/CALC-CD-001-cable-cross-section-and-derating.md)。
+
+### 3.4 TRV 预期标准值（GB 1984 附录）
+
+不同电压等级 TRV 标准值如下（代表性参数）：
+
+| 电压等级 | $u_c$（峰值） | RRRV（kV/μs） | 备注 |
+|---|---|---|---|
+| 12 kV | 20.6 | 0.34 | 标准工况 |
+| 40.5 kV | 82 | 1.0 | 标准工况 |
+| 126 kV | 200 | 1.6 | 标准工况 |
+| 252 kV | 400 | 2.0 | 标准工况 |
+
+近区故障（SLF）开断工况下，TRV 上升速率可达标准值的 5~10 倍（线路波过程叠加），是高压断路器最严苛的开断工况。
+
+## 4. 与工程实践的联系
+
+- **支撑条目 1**：[PR-BE-002 断路器选型](../30-practice/PR-BE-002-breaker-selection.md) 与 [PR-DD-002 变配电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)——本条给出四个额定值匹配原则与 TRV 校验，是设备选型表的物理源头。
+- **支撑条目 2**：[PR-PE-001 继电保护配置](../30-practice/PR-PE-001-relay-protection-config.md) 与 [TH-013 开关电弧物理](TH-013-switching-arc-physics.md)——继保动作时间 $t_k$ 直接影响热稳定校验，本条给出 $I_{tw}^2 t_{tw}\ge I_k''^2 t_k$ 的耦合关系。
+- **支撑条目 3**：[CALC-SC-001 低压短路](../40-calc/CALC-SC-001-low-voltage-three-phase-short-circuit.md) 与 [CALC-SC-002 高压短路](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)——短路电流计算是开断电流校验的输入。
+- **失效边界**：① $\kappa$ 经验式适用于 $R/X<1$ 的常规系统，超高压长线路 $R/X$ 较大时需精确时域仿真；② TRV 标准值对应"预期恢复电压"——系统接线改变（如加装并联电抗器、长电缆）会改变实际 TRV；③ 真空断路器截流过电压（详见 [CASE-031 真空截流致电机击穿](../50-case/CASE-031-accident-vcb-restrike-motor-breakdown.md)）需配套避雷器，开断能力校验本身不覆盖此类操作过电压；④ 发电机机端短路直流分量衰减慢，$\kappa$ 可能超过 2.7，须专用发电机断路器（GB/T 14824）；⑤ 重合闸工况下累计开断次数与触头磨损需单独校核。
+- **下游案例**：[CASE-020 油浸变压器内部短路](../50-case/CASE-020-accident-oil-immersed-transformer-internal-short-circuit.md)、[CASE-027 10kV 断路器开断能力校验](../50-case/CASE-027-exam-2019-hv-breaker-breaking-capacity.md)、[CASE-031 真空断流致电机击穿](../50-case/CASE-031-accident-vcb-restrike-motor-breakdown.md)、[CASE-040 2019 非周期分量与开断校验](../50-case/CASE-040-exam-2019-dc-component-breaker-rating.md)
+
+## 5. 关联条目与变更记录
+
+- 关联：[TH-013 开关电弧物理](TH-013-switching-arc-physics.md)（灭弧机理与零点熄弧）、[TH-017 电缆波过程与 VFTO](TH-017-cable-wave-process-vfto.md)（近区故障 TRV 波过程）、[TH-022 过电压与绝缘配合](TH-022-overvoltage-mechanism-and-insulation-coordination.md)（操作过电压与设备绝缘水平）、[TH-019 输电线路参数](TH-019-transmission-line-parameters-long-line.md)（波阻抗与近区故障）、[CALC-SC-002 高压短路](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)
+- 下游案例：见 §4 列表。
+
+| 版本 | 日期 | 修改内容 | 修改人 |
+|---|---|---|---|
+| 0.1 | 2026-09-09 | 创建；含四个额定值匹配、冲击系数经验式、热稳定绝热校验、TRV 标准值与近区故障失效边界 | KB 管理员 |
