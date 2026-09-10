@@ -31,8 +31,10 @@ services:
       - key: CORS_ORIGINS
         value: https://kb-static.onrender.com
 
-  - type: static
+  - type: web
     name: kb-static
+    runtime: python
+    plan: free
     buildCommand: pip install mkdocs mkdocs-material && mkdocs build
-    publishDir: _site
+    startCommand: cd _site && python -m http.server $PORT
     autoDeploy: true
