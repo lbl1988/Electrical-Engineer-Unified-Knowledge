@@ -1,27 +1,30 @@
-﻿# 电气工程全域知识库
+# 电气工程全域知识库
 
 > 注册电气工程师 · 理论 + 计算 + 实践 + 案例 四维知识体系
 
-**🟢 主站点（GitHub Pages，推荐）**：[https://lbl1988.github.io/Electrical-Engineer-Unified-Knowledge/](https://lbl1988.github.io/Electrical-Engineer-Unified-Knowledge/)
+**🟢 主站点（GitHub Pages，推荐）**：<https://lbl1988.github.io/Electrical-Engineer-Unified-Knowledge/>
 
-**🟢 镜像站点（Render）**：[https://electrical-engineer-unified-knowledge.onrender.com/](https://electrical-engineer-unified-knowledge.onrender.com/)
+**🟢 镜像站点（Render）**：<https://electrical-engineer-unified-knowledge.onrender.com/>
 
 ## 📊 知识库规模
 
-| 层 | 条目数 | 覆盖范围 |
-|---|---|---|
-| 基础理论（TH） | 60 | 电磁/电路/电机/系统/HVDC/FACTS/微电网/AI 基础 |
-| 计算方法（CALC） | 22 | 短路/谐波/接地/照明/蓄电池/柴油机 |
-| 工程实践（PR） | 29 | 光伏/储能/换电站/数据中心/医院/航空港/碳中和园区 |
-| 工程案例（CASE） | 60 | 2025/2018 真题、校审意见、事故复盘、综合协同 |
-| 元数据 | 504 术语 + 208 标准 + 20 中外对照 | 统一编号、术语索引、标准速查 |
-| **合计** | **171 条核心条目 + 元数据体系** | |
+| 层          | 条目数                       | 覆盖范围                             |
+| ---------- | ------------------------- | -------------------------------- |
+| 基础理论（TH）   | 60                        | 电磁/电路/电机/系统/HVDC/FACTS/微电网/AI 基础 |
+| 计算方法（CALC） | 22                        | 短路/谐波/接地/照明/蓄电池/柴油机              |
+| 工程实践（PR）   | 29                        | 光伏/储能/换电站/数据中心/医院/航空港/碳中和园区      |
+| 工程案例（CASE） | 60                        | 2025/2018 真题、校审意见、事故复盘、综合协同      |
+| 元数据        | 504 术语 + 208 标准 + 20 中外对照 | 统一编号、术语索引、标准速查                   |
+| **合计**     | **171 条核心条目 + 元数据体系**     | <br />                           |
 
 ## 🏗 技术栈
 
 - **静态站点生成器**：[MkDocs](https://www.mkdocs.org/)
+
 - **主题**：[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+
 - **Markdown 扩展**：Pymdownx（数学公式、代码高亮、任务列表等）
+
 - **部署**：GitHub Actions → GitHub Pages（push 自动构建发布）
 
 ## 🛠 本地开发
@@ -64,9 +67,8 @@ kb/
 2. 构建静态站点到 `_site/`
 3. 发布到 GitHub Pages
 
-查看 Actions 状态：https://github.com/lbl1988/Electrical-Engineer-Unified-Knowledge/actions
+查看 Actions 状态：<https://github.com/lbl1988/Electrical-Engineer-Unified-Knowledge/actions>
 
 ## 📄 许可证
 
 MIT License
-

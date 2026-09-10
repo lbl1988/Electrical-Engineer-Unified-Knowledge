@@ -1,12 +1,8 @@
-***
-
+---
 hide:
-
-- navigation
-
-- toc
-
-***
+  - navigation
+  - toc
+---
 
 <div class="kb-hero">
   <h1>电气工程全域知识库</h1>
