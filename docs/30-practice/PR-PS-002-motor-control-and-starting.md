@@ -125,7 +125,7 @@ $$\Delta P = P_N\left(1 - 0.7^3\right) = 75\times0.657 = 49.3\,\text{kW}$$
 
 ## 8. 关联条目
 
-- 上游：[TH-006 变压器漏抗与阻抗](../10-theory/TH-006-transformer-leakage-reactance-and-impedance.md)（$Z_{sys}$ 计算）、[TH-033 异步电机变频调速控制策略](../10-theory/TH-033-induction-motor-vfd-control-strategy.md)（VFD 控制原理与失效边界）、[TH-010 无功功率](../10-theory/TH-010-reactive-power.md)（$\cos\varphi$ 与无功补偿）
+- 上游：[TH-006 变压器漏抗与阻抗](../10-theory/TH-006-transformer-leakage-impedance.md)（$Z_{sys}$ 计算）、[TH-033 异步电机变频调速控制策略](../10-theory/TH-033-induction-motor-vfd-control-strategy.md)（VFD 控制原理与失效边界）、[TH-010 无功功率](../10-theory/TH-010-reactive-power.md)（$\cos\varphi$ 与无功补偿）
 - 平行：[PR-PQ-001 无功补偿与谐波治理](PR-PQ-001-pq-compensation-design.md)（变频器谐波治理）、[PR-PS-001 负荷分级](PR-PS-001-load-classification.md)（消防泵一级负荷供电）、[PR-DD-001 低压断路器选型](PR-DD-001-lv-breaker-selection.md)（电机馈线断路器选择）
 - 下游：[CALC-PT-001 保护整定](../40-calc/CALC-PT-001-protection-setting.md)（热继/断路器整定配合）、[CALC-LD-001 需要系数法](../40-calc/CALC-LD-001-demand-factor-method.md)（电机负荷容量）
 

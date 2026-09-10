@@ -156,7 +156,7 @@ $$\Delta I_{kM}'' / I_k'' = 0.10 / 12.6 = 0.8\%$$
 | 短时耐受 $I_{cw}$ (4s) | ≥ $I_k'' = 12.6$ kA | VC $I_{cw} = 25$kA/4s | 同上 | ✓ |
 | 电缆热稳定 $S_{\min}$ | $\geq \dfrac{I_k'' \sqrt{t}}{k}$ | $\dfrac{12600 \times \sqrt{0.5}}{143} = 62.3$ mm² | 120mm² ≥ 62.3mm² | ✓ |
 
-> $t = 0.5$ s 为继电保护 + 断路器全分闸时间（[PR 域保护配置](PR-PT-002-relay-protection-coordination.md) 待建）。
+> $t = 0.5$ s 为继电保护 + 断路器全分闸时间（[PR 域保护配置](../30-practice/PR-PE-002-relay-protection-coordination-deepening.md) 待建）。
 
 ### 7.7 与低压系统的衔接
 

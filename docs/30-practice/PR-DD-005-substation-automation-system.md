@@ -155,7 +155,7 @@ updated: 2026-09-09
 
 ## 8. 关联条目
 
-- 上游：[TH-012 继保四性](../10-theory/TH-012-protection-four-properties.md)（保护可靠性/快速性）、[TH-024 电力电子变换器与 PWM](../10-theory/TH-024-power-electronic-converters-and-pwm.md)（过程层电子互感器原理）、[TH-017 电缆波过程与 VFTO](../10-theory/TH-017-cable-wave-process-and-vfto.md)（GIS 中 VFTO 对二次设备影响）、[TH-043 AI 在电气工程应用基础](../10-theory/TH-043-ai-foundations-in-electrical-engineering.md)（智能站数字孪生）
+- 上游：[TH-012 继保四性](../10-theory/TH-012-protection-four-properties.md)（保护可靠性/快速性）、[TH-024 电力电子变换器与 PWM](../10-theory/TH-024-power-electronic-converters-and-pwm.md)（过程层电子互感器原理）、[TH-017 电缆波过程与 VFTO](../10-theory/TH-017-cable-wave-process-vfto.md)（GIS 中 VFTO 对二次设备影响）、[TH-043 AI 在电气工程应用基础](../10-theory/TH-043-ai-foundations-in-electrical-engineering.md)（智能站数字孪生）
 - 平行：[PR-DD-002 变电所布置与设备选型](PR-DD-002-substation-layout-and-equipment-selection.md)（一次设备布置与二次设备配合）、[PR-PE-001 继电保护配置](PR-PE-001-relay-protection-config.md)（保护装置配置）、[PR-PE-002 继电保护整定配合深化](PR-PE-002-relay-protection-coordination-deepening.md)（保护整定与自动化配合）、[PR-DD-004 配电网自动化与 SCADA](PR-DD-004-distribution-automation-and-scada.md)（主站-子站接口）
 - 下游：[CALC-SC-002 高压短路计算](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)（保护整定数据源）、[CALC-PT-001 保护整定](../40-calc/CALC-PT-001-protection-setting.md)（整定配合）
 

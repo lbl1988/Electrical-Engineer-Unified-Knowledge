@@ -1,7 +1,7 @@
 site_name: 电气工程全域知识库
 docs_dir: docs
 site_dir: _site
-site_url: https://kb-static.onrender.com
+site_url: https://kb-static-8zpj.onrender.com
 repo_url: https://github.com/lbl1988/Registered-Electrical-Engineer-Unified-Knowledge-Base
 edit_uri: edit/main/docs/
 
@@ -41,9 +41,6 @@ markdown_extensions:
       permalink: true
   - attr_list
   - md_in_html
-
-extra:
-  api_base: https://kb-rag-api-8zpj.onrender.com
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

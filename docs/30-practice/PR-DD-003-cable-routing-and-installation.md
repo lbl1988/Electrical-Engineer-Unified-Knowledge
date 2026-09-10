@@ -152,7 +152,7 @@ $\le5\%$ ✓
 
 ## 8. 关联条目
 
-- 上游：[TH-025 电缆热场与载流量](../10-theory/TH-025-cable-thermal-field-and-ampacity.md)（载流量物理推导）、[TH-019 输电线路参数](../10-theory/TH-019-transmission-line-parameters.md)（R/X 参数来源）、[TH-022 过电压与绝缘配合](../10-theory/TH-022-overvoltage-and-insulation-coordination.md)（电缆绝缘等级）
+- 上游：[TH-025 电缆热场与载流量](../10-theory/TH-025-cable-thermal-field-and-ampacity.md)（载流量物理推导）、[TH-019 输电线路参数](../10-theory/TH-019-transmission-line-parameters-long-line.md)（R/X 参数来源）、[TH-022 过电压与绝缘配合](../10-theory/TH-022-overvoltage-mechanism-and-insulation-coordination.md)（电缆绝缘等级）
 - 平行：[PR-DD-001 低压断路器选型](PR-DD-001-lv-breaker-selection.md)（馈线断路器与电缆配合）、[PR-PS-001 负荷分级](PR-PS-001-load-classification.md)（消防回路耐火电缆要求）、[PR-GR-001 防雷设计](PR-GR-001-lightning-protection-design.md)（桥架接地与等电位）
 - 下游：[CALC-SC-001 低压短路计算](../40-calc/CALC-SC-001-低压三相短路电流计算.md)（$I_k$ 数据源）、[CALC-LD-001 需要系数法](../40-calc/CALC-LD-001-demand-factor-method.md)（$I_B$ 数据源）
 

@@ -117,7 +117,7 @@ $$
 - **支撑条目 2**：[TH-020 电力系统稳定性分类](TH-020-power-system-stability-classification.md) 与 [TH-016 同步电机功角稳定](TH-016-synchronous-machine-power-angle-stability.md)——FACTS 通过功角特性曲线重塑提升暂态稳定，是抑制低频振荡与电压稳定的关键设备。
 - **支撑条目 3**：[PR-ES-001 储能接入](../30-practice/PR-ES-001-energy-storage-integration.md)——构网型 PCS 与 STATCOM 共享 VSG 控制原理，储能可兼做 STATCOM 功能。
 - **失效边界**：① SVC 在电压严重跌落（$U<0.6$ p.u.）时无功输出能力急剧下降，故障穿越不如 STATCOM；② STATCOM 直流电容须维持稳定，直流母线电压跌落会触发保护闭锁；③ 串联型 FACTS（TCSC）在短路时串联电容器承受过电压，须配合 MOV 限压与旁路间隙；④ UPFC 串联侧注入电压受耦合变压器绝缘水平限制，不适合 EHV/UHV 直接接入；⑤ FACTS 控制器与电网存在次同步谐振（SSR）风险，须抑制控制策略（详见 [TH-020 次同步振荡](TH-020-power-system-stability-classification.md)）。
-- **下游案例**：[CASE-005 谐波降容](../50-case/CASE-005-review-transformer-harmonic-derating.md)、[CASE-041 低压无源滤波失谐](../50-case/CASE-041-exam-2019-passive-filter-detuning-harmonic-amplification.md)、[CASE-048 新能源汇集站继保](../50-case/CASE-048-composite-renewable-collector-station-protection.md)
+- **下游案例**：[CASE-005 谐波降容](../50-case/CASE-005-review-transformer-harmonic-derating.md)、[CASE-041 低压无源滤波失谐](../50-case/CASE-041-review-passive-filter-detuning-harmonic-amplification.md)、[CASE-048 新能源汇集站继保](../50-case/CASE-048-composite-renewable-collector-station-protection.md)
 
 ## 5. 关联条目与变更记录
 

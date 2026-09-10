@@ -199,7 +199,7 @@ $$I_{rev,10kV}=722\times\frac{0.4}{10}=28.9\ \text{A}<92.4\ \text{A}$$
 
 - 上游：[PR-ES-001 储能接入](../30-practice/PR-ES-001-energy-storage-integration.md)（光伏+储能并离网）、[PR-PE-001 继电保护配置](../30-practice/PR-PE-001-relay-protection-config.md)（并网保护）、[PR-PQ-001 电能质量](../30-practice/PR-PQ-001-pq-compensation-design.md)（光伏电能质量）
 - 下游：[PR-PQ-001 电能质量](../30-practice/PR-PQ-001-pq-compensation-design.md)（光伏谐波）
-- 平行：[CASE-048 新能源汇集站](CASE-048-composite-renewable-collector-station-protection.md)（同源新能源并网）、[CASE-025 SVG谐波](CASE-025-dr-weld-harmonic-filter-detuned.md)（同源谐波治理）
+- 平行：[CASE-048 新能源汇集站](CASE-048-composite-renewable-collector-station-protection.md)（同源新能源并网）、CASE-025 SVG谐波（同源谐波治理）
 
 ## 9. 变更记录
 

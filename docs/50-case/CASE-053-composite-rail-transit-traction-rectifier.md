@@ -194,7 +194,7 @@ $$L_{max}=\frac{\Delta U_{allow}}{I_{return}\times R_{rail}}=\frac{100}{1333\tim
 
 - 上游：[TH-008 谐波产生](../10-theory/TH-008-harmonic-generation.md)（整流谐波）、[CALC-SC-002 高压短路](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)（整流变压器短路）、[PR-PQ-001 电能质量](../30-practice/PR-PQ-001-pq-compensation-design.md)（谐波治理）
 - 下游：[PR-DD-002 变电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（牵引所）
-- 平行：[CASE-032 SVG与谐波治理](CASE-032-dr-svg-harmonic-filter-mistuned.md)（同源谐波治理）、[CASE-044 数据中心](CASE-044-composite-data-center-cooling-power.md)（综合设计同源）
+- 平行：CASE-032 SVG与谐波治理（同源谐波治理）、CASE-044 数据中心（综合设计同源）
 
 ## 9. 变更记录
 

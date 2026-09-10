@@ -109,7 +109,7 @@ $$
 - **支撑条目 2**：[PR-DD-002 变配电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)——GIS 选型直接影响变电所占地面积与布置方案。
 - **支撑条目 3**：[TH-015 Park 方程](TH-015-synchronous-machine-park-equations.md) 与 [TH-011 同步电机次暂态电抗](TH-011-synchronous-machine-subtransient-reactance.md)——$X_d''$ 与 $T_a$ 是 GCB 短路电流校验的输入。
 - **失效边界**：① GCB 不能用常规断路器替代，直流分量与 TRV 校验须用 GB/T 14824 而非 GB 1984；② GIS 气室泄漏检测灵敏度须 $<10^{-3}$ Pa·m³/s，微小泄漏长期累积会导致绝缘下降；③ GIS 内部故障电弧（母线短路）使气室压力骤增，须有压力释放装置（膜片或阀门），否则外壳破裂；④ GIS 扩建停运时间长（24~72 h），设计阶段须预留间隔；⑤ SF₆ 是强温室气体（GWP=23500），泄漏率须 $<0.5\%$/年，环保法规趋严下逐步向 SF₆-free（如 C4F7N/CO₂ 混合气）发展。
-- **下游案例**：[CASE-027 真空截流过电压致电机击穿](../50-case/CASE-027-accident-vacuum-chopping-overvoltage.md)、[CASE-040 2019 非周期分量与开断校验](../50-case/CASE-040-exam-2019-dc-component-breaker-rating.md)、[CASE-047 低压柜电弧光](../50-case/CASE-047-accident-arc-flash-protection-missing-burn.md)
+- **下游案例**：[CASE-027 真空截流过电压致电机击穿](../50-case/CASE-027-accident-vacuum-chopping-overvoltage.md)、[CASE-040 2019 非周期分量与开断校验](../50-case/CASE-040-exam-short-circuit-dc-component-breaker.md)、[CASE-047 低压柜电弧光](../50-case/CASE-047-accident-arc-flash-protection-missing-burn.md)
 
 ## 5. 关联条目与变更记录
 

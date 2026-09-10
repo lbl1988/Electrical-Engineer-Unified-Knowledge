@@ -95,7 +95,7 @@ $$
 I_{tw}^2\,t_{tw} \ge I_k''^2\,t_k
 $$
 
-$t_k$ 为实际短路持续时间（继保动作时间 + 固有分闸时间，通常 0.1~0.5 s）。热稳定不满足须加大导体截面，详见 [CALC-CD-001 电缆热稳定](../40-calc/CALC-CD-001-cable-cross-section-and-derating.md)。
+$t_k$ 为实际短路持续时间（继保动作时间 + 固有分闸时间，通常 0.1~0.5 s）。热稳定不满足须加大导体截面，详见 [CALC-CD-001 电缆热稳定](../40-calc/CALC-CD-001-cable-ampacity-correction.md)。
 
 ### 3.4 TRV 预期标准值（GB 1984 附录）
 
@@ -112,11 +112,11 @@ $t_k$ 为实际短路持续时间（继保动作时间 + 固有分闸时间，�
 
 ## 4. 与工程实践的联系
 
-- **支撑条目 1**：[PR-BE-002 断路器选型](../30-practice/PR-BE-002-breaker-selection.md) 与 [PR-DD-002 变配电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)——本条给出四个额定值匹配原则与 TRV 校验，是设备选型表的物理源头。
+- **支撑条目 1**：PR-BE-002 断路器选型 与 [PR-DD-002 变配电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)——本条给出四个额定值匹配原则与 TRV 校验，是设备选型表的物理源头。
 - **支撑条目 2**：[PR-PE-001 继电保护配置](../30-practice/PR-PE-001-relay-protection-config.md) 与 [TH-013 开关电弧物理](TH-013-switching-arc-physics.md)——继保动作时间 $t_k$ 直接影响热稳定校验，本条给出 $I_{tw}^2 t_{tw}\ge I_k''^2 t_k$ 的耦合关系。
-- **支撑条目 3**：[CALC-SC-001 低压短路](../40-calc/CALC-SC-001-low-voltage-three-phase-short-circuit.md) 与 [CALC-SC-002 高压短路](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)——短路电流计算是开断电流校验的输入。
-- **失效边界**：① $\kappa$ 经验式适用于 $R/X<1$ 的常规系统，超高压长线路 $R/X$ 较大时需精确时域仿真；② TRV 标准值对应"预期恢复电压"——系统接线改变（如加装并联电抗器、长电缆）会改变实际 TRV；③ 真空断路器截流过电压（详见 [CASE-031 真空截流致电机击穿](../50-case/CASE-031-accident-vcb-restrike-motor-breakdown.md)）需配套避雷器，开断能力校验本身不覆盖此类操作过电压；④ 发电机机端短路直流分量衰减慢，$\kappa$ 可能超过 2.7，须专用发电机断路器（GB/T 14824）；⑤ 重合闸工况下累计开断次数与触头磨损需单独校核。
-- **下游案例**：[CASE-020 油浸变压器内部短路](../50-case/CASE-020-accident-oil-immersed-transformer-internal-short-circuit.md)、[CASE-027 10kV 断路器开断能力校验](../50-case/CASE-027-exam-2019-hv-breaker-breaking-capacity.md)、[CASE-031 真空断流致电机击穿](../50-case/CASE-031-accident-vcb-restrike-motor-breakdown.md)、[CASE-040 2019 非周期分量与开断校验](../50-case/CASE-040-exam-2019-dc-component-breaker-rating.md)
+- **支撑条目 3**：[CALC-SC-001 低压短路](../40-calc/CALC-SC-001-低压三相短路电流计算.md) 与 [CALC-SC-002 高压短路](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)——短路电流计算是开断电流校验的输入。
+- **失效边界**：① $\kappa$ 经验式适用于 $R/X<1$ 的常规系统，超高压长线路 $R/X$ 较大时需精确时域仿真；② TRV 标准值对应"预期恢复电压"——系统接线改变（如加装并联电抗器、长电缆）会改变实际 TRV；③ 真空断路器截流过电压（详见 CASE-031 真空截流致电机击穿）需配套避雷器，开断能力校验本身不覆盖此类操作过电压；④ 发电机机端短路直流分量衰减慢，$\kappa$ 可能超过 2.7，须专用发电机断路器（GB/T 14824）；⑤ 重合闸工况下累计开断次数与触头磨损需单独校核。
+- **下游案例**：[CASE-020 油浸变压器内部短路](../50-case/CASE-020-accident-oil-transformer-fire.md)、CASE-027 10kV 断路器开断能力校验、CASE-031 真空断流致电机击穿、[CASE-040 2019 非周期分量与开断校验](../50-case/CASE-040-exam-short-circuit-dc-component-breaker.md)
 
 ## 5. 关联条目与变更记录
 

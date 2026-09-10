@@ -75,7 +75,7 @@ $$
 I_{group}=k_g \cdot I_{single}\quad k_g<1
 $$
 
-托盘内并列间距 $s=d$（电缆外径）时 $k_g\approx 0.7$；间距 $s=2d$ 时 $k_g\approx 0.85$。详细查表见 [CALC-CD-001](../40-calc/CALC-CD-001-cable-cross-section-and-derating.md)。
+托盘内并列间距 $s=d$（电缆外径）时 $k_g\approx 0.7$；间距 $s=2d$ 时 $k_g\approx 0.85$。详细查表见 [CALC-CD-001](../40-calc/CALC-CD-001-cable-ampacity-correction.md)。
 
 ### 3.3 短时过载与应急负荷（GB/T 11017）
 
@@ -89,15 +89,15 @@ $$
 
 ## 4. 与工程实践的联系
 
-- **支撑条目 1**：[CALC-CD-001 电缆截面与降容](../40-calc/CALC-CD-001-cable-cross-section-and-derating.md)——本条给出 IEC 60287 通解与群集校正，是截面选取与降容系数查表的物理源头。
+- **支撑条目 1**：[CALC-CD-001 电缆截面与降容](../40-calc/CALC-CD-001-cable-ampacity-correction.md)——本条给出 IEC 60287 通解与群集校正，是截面选取与降容系数查表的物理源头。
 - **支撑条目 2**：[PR-DD-002 变配电所布置](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)——电缆桥架/排管敷设方式与群集系数直接影响所选截面。
-- **支撑条目 3**：[CASE-019 电缆载流量温度修正](../50-case/CASE-019-exam-cable-ampacity-temperature-correction.md) 与 [CASE-034 10kV 电缆终端击穿](../50-case/CASE-034-accident-10kv-cable-joint-breakdown.md)——本条给出温度修正与热失衡致局部过热的物理基础。
-- **失效边界**：① 公式假定稳态热平衡，启动初期（<3τ）误差大，须用暂态热路；② 土壤干燥失水时 $\lambda$ 急降（热阻升 2~3 倍），载流量可能下降 30%，须按干燥/潮湿双工况校核；③ 邻近热源（蒸汽管、热水管）会抬升 $\theta_a$，须叠加温升；④ 电缆密集交叉处局部热阻非均匀，须三维场仿真；⑤ 短路热稳定按绝热过程（详见 [CALC-CD-001 §热稳定](../40-calc/CALC-CD-001-cable-cross-section-and-derating.md)），与本条稳态热平衡属不同物理过程，不可混用。
-- **下游案例**：[CASE-019 电缆载流量真题](../50-case/CASE-019-exam-cable-ampacity-temperature-correction.md)、[CASE-029 2019 电缆载流量真题](../50-case/CASE-029-exam-cable-ampacity-2019.md)、[CASE-034 10kV 电缆终端击穿](../50-case/CASE-034-accident-10kv-cable-joint-breakdown.md)、[CASE-049 10kV 中间接头击穿](../50-case/CASE-049-accident-10kv-cable-joint-construction-defect.md)
+- **支撑条目 3**：CASE-019 电缆载流量温度修正 与 CASE-034 10kV 电缆终端击穿——本条给出温度修正与热失衡致局部过热的物理基础。
+- **失效边界**：① 公式假定稳态热平衡，启动初期（<3τ）误差大，须用暂态热路；② 土壤干燥失水时 $\lambda$ 急降（热阻升 2~3 倍），载流量可能下降 30%，须按干燥/潮湿双工况校核；③ 邻近热源（蒸汽管、热水管）会抬升 $\theta_a$，须叠加温升；④ 电缆密集交叉处局部热阻非均匀，须三维场仿真；⑤ 短路热稳定按绝热过程（详见 [CALC-CD-001 §热稳定](../40-calc/CALC-CD-001-cable-ampacity-correction.md)），与本条稳态热平衡属不同物理过程，不可混用。
+- **下游案例**：CASE-019 电缆载流量真题、CASE-029 2019 电缆载流量真题、CASE-034 10kV 电缆终端击穿、[CASE-049 10kV 中间接头击穿](../50-case/CASE-049-review-cable-joint-construction-defect.md)
 
 ## 5. 关联条目与变更记录
 
-- 关联：[TH-014 磁路饱和](TH-014-magnetic-circuit-saturation.md)（铁损与介质损类比）、[TH-008 谐波产生机理](TH-008-harmonic-generation.md)（谐波附加铜损）、[TH-019 输电线路参数](TH-019-transmission-line-parameters-long-line.md)（长电缆充电电流与分布参数）、[CALC-CD-001](../40-calc/CALC-CD-001-cable-cross-section-and-derating.md)、[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)
+- 关联：[TH-014 磁路饱和](TH-014-magnetic-circuit-saturation.md)（铁损与介质损类比）、[TH-008 谐波产生机理](TH-008-harmonic-generation.md)（谐波附加铜损）、[TH-019 输电线路参数](TH-019-transmission-line-parameters-long-line.md)（长电缆充电电流与分布参数）、[CALC-CD-001](../40-calc/CALC-CD-001-cable-ampacity-correction.md)、[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)
 - 下游案例：见 §4 列表。
 
 | 版本 | 日期 | 修改内容 | 修改人 |

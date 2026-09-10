@@ -156,7 +156,7 @@ SPD 前端保护器件须满足：
 
 ## 8. 关联条目
 
-- 上游：[TH-022 过电压与绝缘配合](../10-theory/TH-022-overvoltage-and-insulation-coordination.md)（$U_w$ 与绝缘配合 BIL）、[TH-005 接触/跨步电压](../10-theory/TH-005-touch-step-voltage.md)（SPD 接地与等电位）、[TH-017 电缆波过程与 VFTO](../10-theory/TH-017-cable-wave-process-and-vfto.md)（波过程与 SPD 残压叠加）
+- 上游：[TH-022 过电压与绝缘配合](../10-theory/TH-022-overvoltage-mechanism-and-insulation-coordination.md)（$U_w$ 与绝缘配合 BIL）、[TH-005 接触/跨步电压](../10-theory/TH-005-touch-step-voltage.md)（SPD 接地与等电位）、[TH-017 电缆波过程与 VFTO](../10-theory/TH-017-cable-wave-process-vfto.md)（波过程与 SPD 残压叠加）
 - 平行：[PR-GR-001 防雷设计](PR-GR-001-lightning-protection-design.md)（防护区划分与外部防雷）、[PR-GR-002 接地制式](PR-GR-002-earthing-arrangement.md)（SPD 接地与等电位联结）、[PR-PS-003 UPS 配置](PR-PS-003-ups-and-battery-design.md)（UPS 前端 SPD 保护）、[PR-DD-003 电缆敷设](PR-DD-003-cable-routing-and-installation.md)（SPD 与电缆波阻抗匹配）
 - 下游：[CALC-SC-001 低压短路计算](../40-calc/CALC-SC-001-低压三相短路电流计算.md)（SPD 前端保护校验）
 

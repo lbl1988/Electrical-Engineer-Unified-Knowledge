@@ -58,7 +58,7 @@ updated: 2026-09-09
 
 ## 4. 计算
 
-### 4.1 接触电阻温升估算（引自 [TH-011](../10-theory/TH-011-switching-arc-physics.md) §3 接触电阻机理）
+### 4.1 接触电阻温升估算（引自 [TH-011](../10-theory/TH-013-switching-arc-physics.md) §3 接触电阻机理）
 
 中间接头压接不良，接触电阻 $R_c$ 随运行时间因氧化/松动增大。稳态温升：
 
@@ -142,7 +142,7 @@ $$I_{0,set} = K_{rel}\times I_{0,max,external} = 1.2\times1.5 = 1.8\ \text{A}$$
 
 ## 8. 关联条目
 
-- 上游：[TH-011 开关电弧物理](../10-theory/TH-011-switching-arc-physics.md)（接触电阻机理）、[TH-005 接触/跨步电压](../10-theory/TH-005-touch-step-voltage.md)
+- 上游：[TH-011 开关电弧物理](../10-theory/TH-013-switching-arc-physics.md)（接触电阻机理）、[TH-005 接触/跨步电压](../10-theory/TH-005-touch-step-voltage.md)
 - 下游：[CALC-SC-002 高压短路计算](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)（单相接地）、[CALC-PT-001 保护整定](../40-calc/CALC-PT-001-protection-setting.md)（零序保护）、[PR-PE-001 继电保护配置](../30-practice/PR-PE-001-relay-protection-config.md)
 - 平行：[CASE-003 变压器涌流误动](CASE-003-accident-transformer-inrush.md)（保护四性）、[CASE-009 中性点接地方式](CASE-009-review-neutral-grounding.md)
 
