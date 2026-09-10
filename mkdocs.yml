@@ -1,4 +1,4 @@
-site_name: 电气工程全域知识库
+﻿site_name: 电气工程全域知识库
 docs_dir: docs
 site_dir: _site
 site_url: https://kb-static-8zpj.onrender.com
@@ -12,12 +12,19 @@ theme:
   font: false
   features:
     - navigation.tabs
+    - navigation.indexes
     - navigation.sections
     - navigation.expand
+    - navigation.top
+    - header.autohide
+    - footer
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
     - search.suggest
     - search.highlight
-    - content.code.copy
-    - content.action.edit
+    - search.share
   palette:
     - scheme: default
       primary: indigo
@@ -32,6 +39,15 @@ theme:
         icon: material/weather-sunny
         name: 切换亮色
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lbl1988/Registered-Electrical-Engineer-Unified-Knowledge-Base
+      name: 项目仓库
+    - icon: fontawesome/solid/book
+      link: https://kb-static-8zpj.onrender.com
+      name: 站点首页
+
 extra_css:
   - stylesheets/extra.css
 
@@ -42,8 +58,14 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.mark
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
   - toc:
       permalink: true
+      permalink_title: 🔗
   - attr_list
   - md_in_html
 

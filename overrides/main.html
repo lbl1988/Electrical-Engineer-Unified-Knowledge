@@ -1,1 +1,44 @@
 {% extends "base.html" %}
+
+{% block extrahead %}
+  <!-- 阅读进度条 & 数字计数 JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 阅读进度条（通过 CSS 变量 --scroll 传递给 extra.css）
+      function updateProgress() {
+        const el = document.documentElement;
+        const scrollTop = el.scrollTop || document.body.scrollTop;
+        const scrollHeight = el.scrollHeight - el.clientHeight;
+        const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+        el.style.setProperty('--scroll', pct + '%');
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+      updateProgress();
+
+      // Hero 区数字计数动画（简单版）
+      document.querySelectorAll('.kb-stat-num[data-count]').forEach(function (el) {
+        if (el.dataset.animated) return;
+        const target = parseInt(el.dataset.count, 10);
+        const duration = 1200;
+        const start = performance.now();
+        const isInt = Number.isInteger(target);
+        function tick(now) {
+          const t = Math.min((now - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - t, 3);
+          const val = target * ease;
+          el.textContent = isInt ? Math.round(val) : val.toFixed(1);
+          if (t < 1) requestAnimationFrame(tick);
+          else el.textContent = target;
+        }
+        requestAnimationFrame(tick);
+        el.dataset.animated = '1';
+      });
+    });
+  </script>
+{% endblock %}
+
+{% block footer %}
+  <!-- 调用 Material 原生 footer（已通过 extra.social 配置） -->
+  {{ super() }}
+{% endblock %}
