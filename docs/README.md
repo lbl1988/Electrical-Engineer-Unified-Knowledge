@@ -1,14 +1,18 @@
----
+***
+
 hide:
-  - navigation
-  - toc
----
+
+- navigation
+
+- toc
+
+***
 
 <div class="kb-hero">
   <h1>电气工程全域知识库</h1>
   <p>覆盖国内与国际标准、基础理论与工程实践的全域电气工程知识库。注册电气工程师备考 · 工程设计 · 校审 · 事故分析一站式参考。</p>
   <div class="kb-stats">
-    <div><div class="kb-stat-num">44</div><div class="kb-stat-label">基础理论</div></div>
+    <div><div class="kb-stat-num">48</div><div class="kb-stat-label">基础理论</div></div>
     <div><div class="kb-stat-num">208</div><div class="kb-stat-label">标准索引</div></div>
     <div><div class="kb-stat-num">20</div><div class="kb-stat-label">工程实践</div></div>
     <div><div class="kb-stat-num">17</div><div class="kb-stat-label">计算方法</div></div>
@@ -39,8 +43,8 @@ L0 元数据层（术语·编号·模板·规范）← 00-meta/
   </a>
   <a class="kb-card" href="10-theory/">
     <div class="kb-card-title">⚡ 基础理论</div>
-    <div class="kb-card-desc">电磁·电路·电机·电力系统·电力电子·接地·保护，44 篇核心理论</div>
-    <div class="kb-card-count">44 篇</div>
+    <div class="kb-card-desc">电磁·电路·电机·电力系统·电力电子·接地·保护，48 篇核心理论</div>
+    <div class="kb-card-count">48 篇</div>
   </a>
   <a class="kb-card" href="20-standards/">
     <div class="kb-card-title">📖 标准规范</div>
@@ -77,27 +81,33 @@ L0 元数据层（术语·编号·模板·规范）← 00-meta/
 ## 快速入口
 
 - **查标准** → [cn-01 强制规范与主干标准](20-standards/cn-01-强制性通用规范与主干标准.md) ｜ [cn-02 供配电考纲 74 本](20-standards/cn-02-供配电考纲口径索引.md) ｜ [cn-03 发输变电 67 本](20-standards/cn-03-发输变电考纲口径索引.md) ｜ [intl 国际索引](20-standards/intl-国际标准索引.md)
+
 - **查手册速查** → [手册速查索引](20-standards/handbook-quick-reference-index.md)
+
 - **中外差异** → [mapping 中外对照表（20 张）](20-standards/mapping-中外对照表.md)
+
 - **换版动态** → [changelog/](20-standards/changelog/)
+
 - **查术语** → [00-术语表（504 词条）](00-meta/00-术语表.md)
+
 - **看算例** → [CALC-SC-001 低压三相短路计算](40-calc/CALC-SC-001-低压三相短路电流计算.md)
+
 - **备考** → [2026 供配电考纲](60-exam/2026-供配电考纲初始化.md) ｜ [2026 发输变电考纲](60-exam/2026-发输变电考纲初始化.md)
 
 ## 验收统计
 
-| KPI 指标 | 目标 | 实际 | 状态 |
-|---|---|---|---|
-| 术语表 | ≥500 词条 | **504**（A~M 13 域） | ✅ |
-| 标准索引 | 200 本 | 约 208（国内 153 去重＋国际 55） | ✅ |
-| 中外对照表 | 20 张 | **20**（MAP-A~T） | ✅ |
-| 换版 changelog | 5 份 | **5**（4 国内＋1 国际） | ✅ |
-| 计算方法 | — | **17**（算例全部手工复算自洽） | ✅ |
-| 理论条目 | — | **44**（TH-001~044，五段式） | ✅ |
-| 实践条目 | — | **20**（九段式） | ✅ |
-| 案例条目 | — | **54**（真题×11/校审×20/事故×12/复合×11） | ✅ |
-| 2026 考纲目录 | 2 份 | **2**（含年度 diff） | ✅ |
-| 治理文档 | — | 3（数据源清单＋Q3 盘点＋交接报告） | ✅ |
+| KPI 指标       | 目标      | 实际                              | 状态 |
+| ------------ | ------- | ------------------------------- | -- |
+| 术语表          | ≥500 词条 | **504**（A\~M 13 域）              | ✅  |
+| 标准索引         | 200 本   | 约 208（国内 153 去重＋国际 55）          | ✅  |
+| 中外对照表        | 20 张    | **20**（MAP-A\~T）                | ✅  |
+| 换版 changelog | 5 份     | **5**（4 国内＋1 国际）                | ✅  |
+| 计算方法         | —       | **17**（算例全部手工复算自洽）              | ✅  |
+| 理论条目         | —       | **44**（TH-001\~044，五段式）         | ✅  |
+| 实践条目         | —       | **20**（九段式）                     | ✅  |
+| 案例条目         | —       | **54**（真题×11/校审×20/事故×12/复合×11） | ✅  |
+| 2026 考纲目录    | 2 份     | **2**（含年度 diff）                 | ✅  |
+| 治理文档         | —       | 3（数据源清单＋Q3 盘点＋交接报告）             | ✅  |
 
 ## 写作与贡献规则
 
@@ -105,3 +115,4 @@ L0 元数据层（术语·编号·模板·规范）← 00-meta/
 2. 状态机：`draft → review → published`，发布须双人（注册工程师）复核；
 3. 标准版本信息只认 [权威数据源清单](90-governance/权威数据源清单.md) 白名单；
 4. Git 提交信息：`{条目ID}: {动作} {说明}`。
+
