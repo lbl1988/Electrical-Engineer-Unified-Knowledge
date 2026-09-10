@@ -16,7 +16,7 @@ hide:
     <div><div class="kb-stat-num">208</div><div class="kb-stat-label">标准索引</div></div>
     <div><div class="kb-stat-num">25</div><div class="kb-stat-label">工程实践</div></div>
     <div><div class="kb-stat-num">22</div><div class="kb-stat-label">计算方法</div></div>
-    <div><div class="kb-stat-num">54</div><div class="kb-stat-label">工程案例</div></div>
+    <div><div class="kb-stat-num">60</div><div class="kb-stat-label">工程案例</div></div>
     <div><div class="kb-stat-num">504</div><div class="kb-stat-label">术语词条</div></div>
   </div>
 </div>
@@ -115,6 +115,7 @@ L0 元数据层（术语·编号·模板·规范）← 00-meta/
 2. 状态机：`draft → review → published`，发布须双人（注册工程师）复核；
 3. 标准版本信息只认 [权威数据源清单](90-governance/权威数据源清单.md) 白名单；
 4. Git 提交信息：`{条目ID}: {动作} {说明}`。
+
 
 
 
