@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>window.KB_API_BASE = "{{ config.extra.api_base }}";</script>
+{% endblock %}

@@ -1,7 +1,24 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-.pytest_cache/
-data/
-.env
 *.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# MkDocs 静态站点构建产物
+_site/
+site/
+
+# Chroma 向量库持久化数据
+data/
+
+# 环境变量
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/

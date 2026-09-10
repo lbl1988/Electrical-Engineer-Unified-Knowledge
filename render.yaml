@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: kb-rag-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r api/requirements.txt
+    startCommand: uvicorn api.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: KB_ROOT
+        value: ./docs
+      - key: VECTOR_STORE
+        value: chroma
+      - key: CHROMA_DIR
+        value: ./data/chroma
+      - key: EMBEDDING_PROVIDER
+        value: openai
+      - key: OPENAI_API_BASE
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_EMBEDDING_MODEL
+        sync: false
+      - key: TOP_K
+        value: "5"
+      - key: SIMILARITY_THRESHOLD
+        value: "0.3"
+      - key: GRAPH_HOPS
+        value: "2"
+      - key: CORS_ORIGINS
+        value: https://kb-static.onrender.com
+
+  - type: web
+    name: kb-static
+    runtime: static
+    buildCommand: pip install mkdocs mkdocs-material && mkdocs build
+    publishDir: _site
+    autoDeploy: true

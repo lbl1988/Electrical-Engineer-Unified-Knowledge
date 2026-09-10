@@ -1,0 +1,67 @@
+site_name: 电气工程全域知识库
+docs_dir: docs
+site_dir: _site
+site_url: https://kb-static.onrender.com
+repo_url: https://github.com/lbl1988/Registered-Electrical-Engineer-Unified-Knowledge-Base
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: 切换暗色
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: 切换亮色
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.mark
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+extra:
+  api_base: https://kb-rag-api.onrender.com
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search:
+      lang:
+        - ja
+        - en
+
+nav:
+  - 首页: README.md
+  - RAG 检索: 搜索.md
+  - 元数据层: 00-meta/
+  - 基础理论: 10-theory/
+  - 标准规范: 20-standards/
+  - 工程实践: 30-practice/
+  - 计算方法: 40-calc/
+  - 工程案例: 50-case/
+  - 考纲目录: 60-exam/
+  - 治理: 90-governance/
