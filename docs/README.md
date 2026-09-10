@@ -15,7 +15,7 @@ hide:
     <div><div class="kb-stat-num">60</div><div class="kb-stat-label">基础理论</div></div>
     <div><div class="kb-stat-num">208</div><div class="kb-stat-label">标准索引</div></div>
     <div><div class="kb-stat-num">20</div><div class="kb-stat-label">工程实践</div></div>
-    <div><div class="kb-stat-num">17</div><div class="kb-stat-label">计算方法</div></div>
+    <div><div class="kb-stat-num">22</div><div class="kb-stat-label">计算方法</div></div>
     <div><div class="kb-stat-num">54</div><div class="kb-stat-label">工程案例</div></div>
     <div><div class="kb-stat-num">504</div><div class="kb-stat-label">术语词条</div></div>
   </div>
@@ -59,7 +59,7 @@ L0 元数据层（术语·编号·模板·规范）← 00-meta/
   <a class="kb-card" href="40-calc/">
     <div class="kb-card-title">🧮 计算方法</div>
     <div class="kb-card-desc">短路电流·负荷计算·保护整定·蓄电池·照度·无功补偿·电缆·接地，全部带手工复算算例</div>
-    <div class="kb-card-count">17 篇</div>
+    <div class="kb-card-count">22 篇</div>
   </a>
   <a class="kb-card" href="50-case/">
     <div class="kb-card-title">💼 工程案例</div>
@@ -102,7 +102,7 @@ L0 元数据层（术语·编号·模板·规范）← 00-meta/
 | 标准索引         | 200 本   | 约 208（国内 153 去重＋国际 55）          | ✅  |
 | 中外对照表        | 20 张    | **20**（MAP-A\~T）                | ✅  |
 | 换版 changelog | 5 份     | **5**（4 国内＋1 国际）                | ✅  |
-| 计算方法         | —       | **17**（算例全部手工复算自洽）              | ✅  |
+| 计算方法         | —       | **22**（算例全部手工复算自洽）              | ✅  |
 | 理论条目         | —       | **60**（TH-001~060，五段式）         | ✅  |
 | 实践条目         | —       | **20**（九段式）                     | ✅  |
 | 案例条目         | —       | **54**（真题×11/校审×20/事故×12/复合×11） | ✅  |
@@ -115,6 +115,8 @@ L0 元数据层（术语·编号·模板·规范）← 00-meta/
 2. 状态机：`draft → review → published`，发布须双人（注册工程师）复核；
 3. 标准版本信息只认 [权威数据源清单](90-governance/权威数据源清单.md) 白名单；
 4. Git 提交信息：`{条目ID}: {动作} {说明}`。
+
+
 
 
 
