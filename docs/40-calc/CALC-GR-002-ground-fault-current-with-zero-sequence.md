@@ -1,5 +1,5 @@
 ---
-id: CALC-GR-001
+id: CALC-GR-002
 title: 接地故障电流精确计算（含零序网络/变压器接地方式/中性点设备影响）
 domain: CALC
 subdomain: GR（接地故障）

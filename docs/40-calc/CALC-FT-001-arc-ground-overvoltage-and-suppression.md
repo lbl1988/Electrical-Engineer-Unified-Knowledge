@@ -48,7 +48,7 @@ $$I_L = \frac{U_{\mathrm{ph}}}{\omega L} = (1 + \nu) I_C$$
 $$L = \frac{U_{\mathrm{ph}}}{\omega (1 + \nu) I_C} = \frac{1}{3 \omega^2 (1 + \nu) C_{\Sigma}}$$
 
 其中：
-- $I_C$ = 系统对地总电容电流（见 CALC-GR-001 IT 系统部分）
+- $I_C$ = 系统对地总电容电流（见 CALC-GR-002 IT 系统部分）
 - $I_L$ = 消弧线圈电感电流
 - $C_{\Sigma}$ = 全系统对地总电容
 - $\nu = (I_L - I_C)/I_C$ = 过补偿度（通常 +5~+10%）

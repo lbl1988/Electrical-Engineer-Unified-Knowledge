@@ -51,7 +51,7 @@ $$C_{\Sigma} = 3 \times (0.4 \times 100 + 0.1 \times 100) = 3 \times 50 = 150 \m
 
 $$I_C = \sqrt{3} \times 314 \times 150 \times 10^{-6} \times 10 = \sqrt{3} \times 0.471 = 0.816 \text{ A}$$
 
-> 注：此处用的是经典公式 $I_C = \sqrt{3} \omega C U$（U 为线电压），与 CALC-GR-001 中的简化公式一致。
+> 注：此处用的是经典公式 $I_C = \sqrt{3} \omega C U$（U 为线电压），与 CALC-GR-002 中的简化公式一致。
 
 ### 3.2 问题 2：消弧线圈选型
 
@@ -111,7 +111,7 @@ $$B_{\mathrm{dc}} = \frac{\mu_0 N_1 I_{dc}}{l} = \frac{4\pi \times 10^{-7} \time
 | 关联 | 说明 |
 |---|---|
 | [CALC-FT-001](../40-calc/CALC-FT-001-arc-ground-overvoltage-and-suppression.md) | IT 系统弧光过电压 + 消弧线圈完整设计 |
-| [CALC-GR-001](../40-calc/CALC-GR-001-ground-fault-current-with-zero-sequence.md) | IT 系统电容电流计算 |
+| [CALC-GR-001](../40-calc/CALC-GR-002-ground-fault-current-with-zero-sequence.md) | IT 系统电容电流计算 |
 | [TH-021](../10-theory/TH-021-neutral-grounding-and-zero-sequence-network.md) | 中性点接地方式理论 |
 | [TH-027](../10-theory/TH-027-hvdc-transmission-lcc-vsc.md) | HVDC 单极运行偏磁源头 |
 | [TH-053](../10-theory/TH-053-transformer-dc-magnetization-and-residual-flux.md) | 变压器直流偏磁完整机理 |
