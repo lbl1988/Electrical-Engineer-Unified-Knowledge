@@ -1,4 +1,4 @@
----
+﻿---
 id: CALC-SC-004
 title: 高压短路 IEC 60909 暂态电动势计算（发电机/变压器/电动机综合贡献）
 domain: CALC
@@ -158,4 +158,5 @@ $$S_{\mathrm{sc,total}} = \sqrt{3} \times 525 \times 20.7 = 18.8 \text{ GVA}$$
 
 ---
 
-**关联条目**：[TH-010](../10-theory/TH-010-transformer-short-circuit-impedance.md)（变压器短路阻抗理论）·[TH-011](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)（同步机次暂态电抗）·[CALC-SC-002](CALC-SC-002-hv-short-circuit-iec60909.md)（IEC 60909 网络法完整流程）·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（设备选型）
+**关联条目**：[TH-010](../10-theory/TH-006-transformer-leakage-impedance.md)（变压器短路阻抗理论）·[TH-011](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)（同步机次暂态电抗）·[CALC-SC-002](CALC-SC-002-hv-short-circuit-iec60909.md)（IEC 60909 网络法完整流程）·[PR-DD-002](../30-practice/PR-DD-002-substation-layout-and-equipment-selection.md)（设备选型）
+
