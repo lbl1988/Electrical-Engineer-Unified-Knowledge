@@ -81,7 +81,15 @@ plugins:
 nav:
   - 首页: README.md
   - 全站检索: 搜索.md
-  - 元数据层: 00-meta/README.md
+  - 元数据层:
+    - 00-meta/README.md
+    - 引用图谱: 00-meta/引用图谱.md
+    - 核心闭环: 00-meta/图谱-01-核心闭环.md
+    - 新能源 + 储能: 00-meta/图谱-02-新能源储能.md
+    - 数据中心 + 工业配电: 00-meta/图谱-03-数据中心工业配电.md
+    - 变配电一次设备选型链: 00-meta/图谱-04-变配电一次设备选型链.md
+    - 电力系统稳定链: 00-meta/图谱-05-电力系统稳定链.md
+    - 医院 IT 系统链: 00-meta/图谱-06-医院IT系统链.md
   - 基础理论: 10-theory/README.md
   - 标准规范: 20-standards/README.md
   - 工程实践: 30-practice/README.md
