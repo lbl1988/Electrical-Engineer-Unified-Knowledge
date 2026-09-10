@@ -143,4 +143,4 @@ $$R_N = \frac{5774}{400} = 14.4 \Omega$$
 
 ---
 
-**关联条目**：[TH-022](../10-theory/TH-022-overvoltage-mechanism-and-insulation-coordination.md)（过电压机理理论）·[TH-021](../10-theory/TH-021-neutral-grounding-and-zero-sequence-network.md)（中性点接地方式）·[CALC-GR-001](CALC-GR-001-ground-fault-current-with-zero-sequence.md)（IT 系统电容电流）
+**关联条目**：[TH-022](../10-theory/TH-022-overvoltage-mechanism-and-insulation-coordination.md)（过电压机理理论）·[TH-021](../10-theory/TH-021-neutral-grounding-and-zero-sequence-network.md)（中性点接地方式）·[CALC-GR-001](CALC-GR-002-ground-fault-current-with-zero-sequence.md)（IT 系统电容电流）

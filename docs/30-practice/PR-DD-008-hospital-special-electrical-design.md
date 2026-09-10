@@ -140,4 +140,4 @@ $$P_{\mathrm{UPS}} = (175 + 100) \times 1.25 = 344 \text{ kVA}$$
 
 ---
 
-**关联条目**：[TH-021](../10-theory/TH-021-neutral-grounding-and-zero-sequence-network.md)（IT 系统接地）·[PR-DD-002](PR-DD-002-substation-layout-and-equipment-selection.md)（变配电）·[PR-PS-003](PR-PS-003-ups-and-battery-design.md)（UPS 通用设计）·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)（柴油机）·[CALC-GR-001](../40-calc/CALC-GR-001-ground-fault-current-with-zero-sequence.md)（接地故障）
+**关联条目**：[TH-021](../10-theory/TH-021-neutral-grounding-and-zero-sequence-network.md)（IT 系统接地）·[PR-DD-002](PR-DD-002-substation-layout-and-equipment-selection.md)（变配电）·[PR-PS-003](PR-PS-003-ups-and-battery-design.md)（UPS 通用设计）·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)（柴油机）·[CALC-GR-001](../40-calc/CALC-GR-002-ground-fault-current-with-zero-sequence.md)（接地故障）
