@@ -12,7 +12,7 @@ hide:
     <div><div class="kb-stat-num">208</div><div class="kb-stat-label">标准索引</div></div>
     <div><div class="kb-stat-num">29</div><div class="kb-stat-label">工程实践</div></div>
     <div><div class="kb-stat-num">22</div><div class="kb-stat-label">计算方法</div></div>
-    <div><div class="kb-stat-num">60</div><div class="kb-stat-label">工程案例</div></div>
+    <div><div class="kb-stat-num">64</div><div class="kb-stat-label">工程案例</div></div>
     <div><div class="kb-stat-num">523</div><div class="kb-stat-label">术语词条</div></div>
   </div>
 </div>
