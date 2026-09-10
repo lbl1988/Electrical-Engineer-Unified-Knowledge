@@ -1,7 +1,0 @@
-﻿services:
-  - type: web
-    name: electrical-engineer-unified-knowledge
-    runtime: static
-    rootDir: kb
-    buildCommand: pip install mkdocs mkdocs-material pymdownx-extensions && mkdocs build --clean
-    staticPublishPath: kb/_site
