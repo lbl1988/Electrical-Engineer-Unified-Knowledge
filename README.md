@@ -69,6 +69,14 @@ kb/
 
 查看 Actions 状态：<https://github.com/lbl1988/Electrical-Engineer-Unified-Knowledge/actions>
 
+## 📅 治理文件更新提醒
+
+| 文件            | 更新频率     | 下次更新           |
+| ------------- | -------- | -------------- |
+| HANDOVER 交接报告 | 每次大批量开发后 | 2027-03（Q1 盘点） |
+| 盘点记录          | 季度       | 2026-12（Q4 盘点） |
+| 权威数据源清单       | 月度/季度/半年 | 按白名单监控节奏       |
+
 ## 📄 许可证
 
 MIT License
