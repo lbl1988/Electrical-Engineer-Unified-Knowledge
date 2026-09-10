@@ -16,9 +16,9 @@ services:
       - key: EMBEDDING_PROVIDER
         value: openai
       - key: OPENAI_API_BASE
-        value: https://api.siliconflow.cn/v1
+        value: https://dashscope.aliyuncs.com/compatible-mode/v1
       - key: OPENAI_EMBEDDING_MODEL
-        value: BAAI/bge-m3
+        value: text-embedding-v3
       - key: TOP_K
         value: "5"
       - key: SIMILARITY_THRESHOLD
