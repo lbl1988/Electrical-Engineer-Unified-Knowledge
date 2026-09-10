@@ -1,31 +1,36 @@
----
+***
+
 id: TH-049
 title: 可再生能源出力预测与不确定性建模（风/光概率预测/场景生成/鲁棒优化）
 domain: 基础理论
 subdomain: 电力系统分析
-voltage_levels: [HV, EHV]
-lifecycle: [规划, 设计, 运维]
+voltage\_levels: \[HV, EHV]
+lifecycle: \[规划, 设计, 运维]
 standards:
-  - { code: GB/T 40425-2021, clause: "§5 新能源并网", note: "电力系统安全稳定控制技术导则：含新能源出力不确定性应对" }
-  - { code: GB/T 38755-2019, clause: "§6 稳定计算", note: "电力系统安全稳定导则：要求考虑新能源出力波动" }
-  - { code: GB/T 40595-2021, clause: "全文", note: "并网电源一次调频试验技术规定（含出力波动模拟）" }
-status: draft
-reviewers: []
-version: 0.1
-updated: 2026-09-10
----
+
+- { code: GB/T 40425-2021, clause: "§5 新能源并网", note: "电力系统安全稳定控制技术导则：含新能源出力不确定性应对" }
+
+- { code: GB/T 38755-2019, clause: "§6 稳定计算", note: "电力系统安全稳定导则：要求考虑新能源出力波动" }
+
+- { code: GB/T 40595-2021, clause: "全文", note: "并网电源一次调频试验技术规定（含出力波动模拟）" }
+  status: draft
+  reviewers: \[]
+  version: 0.1
+  updated: 2026-09-10
+
+***
 
 # 可再生能源出力预测与不确定性建模
 
 ## 1. 定义
 
-可再生能源出力预测（Renewable Energy Forecasting, REF）是对**风电、光伏**等可再生能源电站在未来一段时间内的**出力曲线**进行估计的技术。与传统火电不同，可再生能源出力受**气象条件（风速、辐照、温度）**直接驱动，具有**间歇性、波动性、随机性**三大特征。
+可再生能源出力预测（Renewable Energy Forecasting, REF）是对**风电、光伏**等可再生能源电站在未来一段时间内的**出力曲线**进行估计的技术。与传统火电不同，可再生能源出力受**气象条件（风速、辐照、温度）直接驱动，具有**间歇性、波动性、随机性三大特征。
 
-| 时间尺度 | 预测周期 | 典型用途 | 预测难度 |
-|---|---|---|---|
-| **超短期** | 15 min ~ 1 h | 实时调度、AGC/AVC 控制 | 低（气象惯性） |
-| **短期** | 1 h ~ 72 h | 日前/日内市场出清、机组组合 | 中（数值天气预报 NWP 驱动） |
-| **中长期** | 数周 ~ 数月 | 月度检修计划、容量规划 | 高（季节性 + 气候异常） |
+| 时间尺度    | 预测周期          | 典型用途            | 预测难度             |
+| ------- | ------------- | --------------- | ---------------- |
+| **超短期** | 15 min \~ 1 h | 实时调度、AGC/AVC 控制 | 低（气象惯性）          |
+| **短期**  | 1 h \~ 72 h   | 日前/日内市场出清、机组组合  | 中（数值天气预报 NWP 驱动） |
+| **中长期** | 数周 \~ 数月      | 月度检修计划、容量规划     | 高（季节性 + 气候异常）    |
 
 预测方法按建模思路分为**点预测**（给一个最可能值）和**概率预测**（给一条概率分布曲线）。现代电力系统越来越倾向于概率预测，因为调度需要知道的不仅是"预测值"，还有"预测值可能偏到哪里"。
 
@@ -64,46 +69,52 @@ updated: 2026-09-10
 
 光伏出力基本模型：
 
-$$P_{\mathrm{PV}} = P_{\mathrm{STC}} \cdot \frac{G_{\mathrm{POA}}}{G_{\mathrm{STC}}} \cdot \left[1 + \gamma (T_{\mathrm{cell}} - T_{\mathrm{STC}})\right] \cdot \eta_{\mathrm{sys}}$$
+$$P\_{\mathrm{PV}} = P\_{\mathrm{STC}} \cdot \frac{G\_{\mathrm{POA}}}{G\_{\mathrm{STC}}} \cdot \left\[1 + \gamma (T\_{\mathrm{cell}} - T\_{\mathrm{STC}})\right] \cdot \eta\_{\mathrm{sys}}$$
 
 其中：
-- $P_{\mathrm{STC}}$ = 标准条件额定功率（kW）
-- $G_{\mathrm{POA}}$ = 组件面辐照度（W/m²，NWP 预测）
-- $G_{\mathrm{STC}}$ = 1000 W/m²
-- $\gamma$ = 温度系数（通常 -0.3~-0.5 %/°C）
-- $T_{\mathrm{cell}}$ = 组件温度 ≈ $T_{\mathrm{amb}} + k \cdot G_{\mathrm{POA}}$（$k \approx 0.03$）
-- $\eta_{\mathrm{sys}}$ = 系统综合效率（0.75~0.85，含逆变器、线损、尘污）
+
+- $P\_{\mathrm{STC}}$ = 标准条件额定功率（kW）
+
+- $G\_{\mathrm{POA}}$ = 组件面辐照度（W/m²，NWP 预测）
+
+- $G\_{\mathrm{STC}}$ = 1000 W/m²
+
+- $\gamma$ = 温度系数（通常 -0.3\~-0.5 %/°C）
+
+- $T\_{\mathrm{cell}}$ = 组件温度 ≈ $T\_{\mathrm{amb}} + k \cdot G\_{\mathrm{POA}}$（$k \approx 0.03$）
+
+- $\eta\_{\mathrm{sys}}$ = 系统综合效率（0.75\~0.85，含逆变器、线损、尘污）
 
 **简化线性模型**（工程实用）：
 
-$$P_{\mathrm{PV,forecast}} = a \cdot G_{\mathrm{NWP}} + b \cdot T_{\mathrm{NWP}} + c$$
+$$P\_{\mathrm{PV,forecast}} = a \cdot G\_{\mathrm{NWP}} + b \cdot T\_{\mathrm{NWP}} + c$$
 
 系数 $a, b, c$ 用历史数据最小二乘拟合。
 
 #### 3.1.2 风电出力预测
 
-风机功率曲线（$v_{\mathrm{in}} \sim v_{\mathrm{rated}} \sim v_{\mathrm{out}}$ 分段）：
+风机功率曲线（$v\_{\mathrm{in}} \sim v\_{\mathrm{rated}} \sim v\_{\mathrm{out}}$ 分段）：
 
-$$P_{\mathrm{WT}} = \begin{cases} 0 & v < v_{\mathrm{in}} \\ P_{\mathrm{rated}} \cdot \left(\frac{v - v_{\mathrm{in}}}{v_{\mathrm{rated}} - v_{\mathrm{in}}}\right)^3 & v_{\mathrm{in}} \leq v < v_{\mathrm{rated}} \\ P_{\mathrm{rated}} & v_{\mathrm{rated}} \leq v < v_{\mathrm{out}} \\ 0 & v \geq v_{\mathrm{out}} \end{cases}$$
+$$P\_{\mathrm{WT}} = \begin{cases} 0 & v < v\_{\mathrm{in}} \ P\_{\mathrm{rated}} \cdot \left(\frac{v - v\_{\mathrm{in}}}{v\_{\mathrm{rated}} - v\_{\mathrm{in}}}\right)^3 & v\_{\mathrm{in}} \leq v < v\_{\mathrm{rated}} \ P\_{\mathrm{rated}} & v\_{\mathrm{rated}} \leq v < v\_{\mathrm{out}} \ 0 & v \geq v\_{\mathrm{out}} \end{cases}$$
 
-**关键修正**：风速需要做**地形修正**（NWP 输出是 10 m 高度风速，风机轮毂通常 80~100 m）：
+**关键修正**：风速需要做**地形修正**（NWP 输出是 10 m 高度风速，风机轮毂通常 80\~100 m）：
 
-$$v_{\mathrm{hub}} = v_{\mathrm{NWP}} \cdot \left(\frac{h_{\mathrm{hub}}}{h_{\mathrm{NWP}}}\right)^\alpha$$
+$$v\_{\mathrm{hub}} = v\_{\mathrm{NWP}} \cdot \left(\frac{h\_{\mathrm{hub}}}{h\_{\mathrm{NWP}}}\right)^\alpha$$
 
 其中 $\alpha \approx 0.143$（中性大气条件），山区可达 0.25。
 
 ### 3.2 概率预测模型
 
-概率预测的输出不是一个点，而是**分位数曲线** $P_{\tau}(t)$，$\tau \in [0.05, 0.95]$ 表示置信度。
+概率预测的输出不是一个点，而是**分位数曲线** $P\_{\tau}(t)$，$\tau \in \[0.05, 0.95]$ 表示置信度。
 
 常用方法：
 
-| 方法 | 原理 | 适用场景 |
-|---|---|---|
-| **分位数回归（Quantile Regression）** | 对每个 $\tau$ 拟合条件分位数函数 | 短期点预测后扩展 |
-| **场景生成（Scenario Generation）** | 基于预测均值 + 协方差矩阵采样生成 N 条可能轨迹 | 鲁棒调度、机组组合 |
-| **贝叶斯神经网络（BNN）** | 权重分布而非固定值，自然输出预测不确定性 | 小样本场景 |
-| **集成预测（Ensemble）** | NWP 多个成员 + 多个预测模型加权平均 | 中长期预测 |
+| 方法                             | 原理                         | 适用场景      |
+| ------------------------------ | -------------------------- | --------- |
+| **分位数回归（Quantile Regression）** | 对每个 $\tau$ 拟合条件分位数函数       | 短期点预测后扩展  |
+| **场景生成（Scenario Generation）**  | 基于预测均值 + 协方差矩阵采样生成 N 条可能轨迹 | 鲁棒调度、机组组合 |
+| **贝叶斯神经网络（BNN）**               | 权重分布而非固定值，自然输出预测不确定性       | 小样本场景     |
+| **集成预测（Ensemble）**             | NWP 多个成员 + 多个预测模型加权平均      | 中长期预测     |
 
 **场景生成**的简化过程：
 
@@ -122,11 +133,11 @@ $$v_{\mathrm{hub}} = v_{\mathrm{NWP}} \cdot \left(\frac{h_{\mathrm{hub}}}{h_{\ma
 
 ### 3.3 预测误差的统计特征
 
-| 误差指标 | 公式 | 典型风电值 | 典型光伏值 |
-|---|---|---|---|
-| MAE（平均绝对误差） | $\frac{1}{N}\sum \|y_i - \hat{y}_i\|$ | 3~8% 额定 | 2~6% 额定 |
-| RMSE（均方根误差） | $\sqrt{\frac{1}{N}\sum (y_i - \hat{y}_i)^2}$ | 5~12% 额定 | 4~9% 额定 |
-| nRMSE（归一化） | RMSE / $P_{\mathrm{rated}}$ | 10~20% | 8~15% |
+| 误差指标        | 公式                                             | 典型风电值     | 典型光伏值    |
+| ----------- | ---------------------------------------------- | --------- | -------- |
+| MAE（平均绝对误差） | $\frac{1}{N}\sum \|y\_i - \hat{y}\_i\|$        | 3\~8% 额定  | 2\~6% 额定 |
+| RMSE（均方根误差） | $\sqrt{\frac{1}{N}\sum (y\_i - \hat{y}\_i)^2}$ | 5\~12% 额定 | 4\~9% 额定 |
+| nRMSE（归一化）  | RMSE / $P\_{\mathrm{rated}}$                   | 10\~20%   | 8\~15%   |
 
 **误差分布**：通常近似正态分布，但**尾部分布更胖**（极端天气时误差远超 3σ）——这对鲁棒调度设计很重要，不能简单假设正态。
 
@@ -134,20 +145,20 @@ $$v_{\mathrm{hub}} = v_{\mathrm{NWP}} \cdot \left(\frac{h_{\mathrm{hub}}}{h_{\ma
 
 ### 4.1 应用场景
 
-| 应用 | 依赖条目 | 标准依据 |
-|---|---|---|
-| 日前市场机组组合 | TH-042（电力市场/LMP）、TH-048（黑启动） | GB/T 40425-2021 |
-| 储能容量配置（确定性 + 不确定性场景） | TH-038（频率稳定）、PR-ES-001（储能接入）、TH-041（DG 承载力） | GB/T 51048-2025 |
-| 微电网独立运行调度 | TH-029（微电网控制） | GB/T 36547-2024 |
-| AI 辅助预测（深度学习/LSTM/PINN） | TH-043（AI 基础） | — |
+| 应用                      | 依赖条目                                        | 标准依据            |
+| ----------------------- | ------------------------------------------- | --------------- |
+| 日前市场机组组合                | TH-042（电力市场/LMP）、TH-048（黑启动）                | GB/T 40425-2021 |
+| 储能容量配置（确定性 + 不确定性场景）    | TH-038（频率稳定）、PR-ES-001（储能接入）、TH-041（DG 承载力） | GB/T 51048-2025 |
+| 微电网独立运行调度               | TH-029（微电网控制）                               | GB/T 36547-2024 |
+| AI 辅助预测（深度学习/LSTM/PINN） | TH-043（AI 基础）                               | —               |
 
 ### 4.2 失效边界
 
-| 边界条件 | 后果 | 工程速记 |
-|---|---|---|
-| 极端天气（台风、暴雪） | NWP 误差剧增到 30%+，鲁棒调度被突破 | 鲁棒系数 $\Gamma$ 取 2~3（覆盖 95% 尾部） |
-| 光伏电站大面积限发 | 训练数据中缺失限发记录，模型在高辐照区间预测偏高 | 对限发时段做掩膜处理 |
-| NWP 数据缺失 | 超短期预测只能靠外推，误差翻倍 | 配置备用气象站 |
+| 边界条件        | 后果                       | 工程速记                            |
+| ----------- | ------------------------ | ------------------------------- |
+| 极端天气（台风、暴雪） | NWP 误差剧增到 30%+，鲁棒调度被突破   | 鲁棒系数 $\Gamma$ 取 2\~3（覆盖 95% 尾部） |
+| 光伏电站大面积限发   | 训练数据中缺失限发记录，模型在高辐照区间预测偏高 | 对限发时段做掩膜处理                      |
+| NWP 数据缺失    | 超短期预测只能靠外推，误差翻倍          | 配置备用气象站                         |
 
 ### 4.3 工程速记
 
@@ -155,13 +166,16 @@ $$v_{\mathrm{hub}} = v_{\mathrm{NWP}} \cdot \left(\frac{h_{\mathrm{hub}}}{h_{\ma
 
 ## 5. 关联与变更
 
-| 关联 | 说明 |
-|---|---|
-| [TH-038](TH-038-high-renewable-frequency-stability-inertia.md) | 预测误差直接影响频率稳定（RoCoF） |
-| [TH-041](TH-041-distribution-grid-high-penetration-dg-hosting-capacity.md) | 承载力计算必须考虑出力不确定性 |
-| [TH-042](TH-042-electricity-market-and-carbon-trading-engineering-mapping.md) | 电力市场出清依赖概率预测 |
-| [TH-043](TH-043-ai-foundations-in-electrical-engineering.md) | AI 方法可提升预测精度 |
-| [PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md) | 储能容量配置需考虑预测误差 |
+| 关联                                                                            | 说明                  |
+| ----------------------------------------------------------------------------- | ------------------- |
+| [TH-038](TH-038-high-renewable-frequency-stability-inertia.md)                | 预测误差直接影响频率稳定（RoCoF） |
+| [TH-041](TH-041-distribution-grid-high-penetration-dg-hosting-capacity.md)    | 承载力计算必须考虑出力不确定性     |
+| [TH-042](TH-042-electricity-market-and-carbon-trading-engineering-mapping.md) | 电力市场出清依赖概率预测        |
+| [TH-043](TH-043-ai-foundations-in-electrical-engineering.md)                  | AI 方法可提升预测精度        |
+| [PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md)           | 储能容量配置需考虑预测误差       |
 
 **变更记录**：
+
 - 2026-09-10：首版草稿
+
+<br />
