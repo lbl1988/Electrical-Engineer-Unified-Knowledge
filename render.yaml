@@ -1,6 +1,7 @@
-services:
+﻿services:
   - type: web
-    name: kb-static
+    name: electrical-engineer-unified-knowledge
     runtime: static
-    buildCommand: pip install mkdocs mkdocs-material && mkdocs build
-    staticPublishPath: _site
+    rootDir: kb
+    buildCommand: pip install mkdocs mkdocs-material pymdownx-extensions && mkdocs build --clean
+    staticPublishPath: kb/_site

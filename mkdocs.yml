@@ -1,7 +1,7 @@
 ﻿site_name: 电气工程全域知识库
 docs_dir: docs
 site_dir: _site
-site_url: https://kb-static-8zpj.onrender.com
+site_url: https://electrical-engineer-unified-knowledge.onrender.com
 repo_url: https://github.com/lbl1988/Registered-Electrical-Engineer-Unified-Knowledge-Base
 edit_uri: edit/main/docs/
 
@@ -89,3 +89,4 @@ nav:
   - 工程案例: 50-case/README.md
   - 考纲目录: 60-exam/README.md
   - 治理: 90-governance/README.md
+
