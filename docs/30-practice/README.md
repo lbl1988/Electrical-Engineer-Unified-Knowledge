@@ -1,4 +1,4 @@
-# L3 工程实践层（30-practice）
+﻿# L3 工程实践层（30-practice）
 
 > 定位：设计、选型、施工、验收、运维的工程方法条目，采用 [九段式模板](../00-meta/03-模板-实践类九段式.md)（摘要→术语→原理公式→标准依据→要点→常见错误→完整算例→关联→变更）。
 > 每条工程结论强制挂"标准号-年份＋条款号"，算例全部手工复算。
@@ -66,6 +66,27 @@ TH-009 雷电物理 ─→ PR-GR-001 防雷分类（N=kNgAe 算例）
 | [PR-DD-004](PR-DD-004-distribution-automation-and-scada.md) | 配电网自动化与 SCADA 系统设计 | GB/T 35695-2017, DL/T 814-2020, DL/T 721-2014, GB/T 36572-2018 | 规划, 设计, 运维 | [TH-012](../10-theory/TH-012-protection-four-properties.md)·[TH-030](../10-theory/TH-030-distributed-generation-protection-and-islanding-detection.md)·[TH-043](../10-theory/TH-043-ai-foundations-in-electrical-engineering.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md) |
 | [PR-DD-005](PR-DD-005-substation-automation-system.md) | 变电所综合自动化系统设计 | DL/T 5149-2020, DL/T 5216-2017, DL/T 860-2015, DL/T 634.5101-2020, GB/T 36049-2018 | 设计, 验收, 运维 | [TH-012](../10-theory/TH-012-protection-four-properties.md)·[TH-024](../10-theory/TH-024-power-electronic-converters-and-pwm.md)·[TH-017](../10-theory/TH-017-cable-wave-process-vfto.md)·[TH-043](../10-theory/TH-043-ai-foundations-in-electrical-engineering.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[CALC-PT-001](../40-calc/CALC-PT-001-protection-setting.md) |
 
-## 后续规划（四期）
+
+## 四期成果（5 条）
+
+| ID | 主题 | 主要标准依据 | 生命周期 | 支撑的计算/理论条目 |
+|---|---|---|---|---|
+| [PR-ES-003](PR-ES-003-photovoltaic-grid-connection-deepening.md) | 地面/分布式光伏并网深化设计 | GB/T 19964-2024, GB/T 40567-2021, GB/T 37268-2018, NB/T 10394-2020 | 规划, 设计, 采购, 验收 | [TH-024](../10-theory/TH-024-power-electronic-converters-and-pwm.md)·[TH-041](../10-theory/TH-041-distribution-grid-high-penetration-dg-hosting-capacity.md)·[PR-ES-001](PR-ES-001-energy-storage-integration.md)·[PR-ES-002](PR-ES-002-distributed-generation-grid-connection.md)·[CALC-SC-002](../40-calc/CALC-SC-002-hv-short-circuit-iec60909.md)·[CALC-HM-001](../40-calc/CALC-HM-001-harmonic-power-flow.md) |
+| [PR-EV-002](PR-EV-002-battery-swap-station-power-distribution.md) | 电动汽车换电站供配电设计 | GB 51503-2020, GB/T 40422-2021, GB/T 18488.1-2023, GB 51348-2019 | 规划, 设计, 验收, 运维 | [TH-024](../10-theory/TH-024-power-electronic-converters-and-pwm.md)·[TH-042](../10-theory/TH-042-electricity-market-and-carbon-trading-engineering-mapping.md)·[PR-ES-001](PR-ES-001-energy-storage-integration.md)·[PR-ES-003](PR-ES-003-photovoltaic-grid-connection-deepening.md)·[CALC-HM-001](../40-calc/CALC-HM-001-harmonic-power-flow.md)·[CALC-SC-001](../40-calc/CALC-SC-001-低压三相短路电流计算.md) |
+| [PR-DD-006](PR-DD-006-metro-traction-power-supply.md) | 地铁牵引供电系统设计 | GB 50157-2013, GB/T 28026-2011, CJJ/T 189-2021, TB/T 3348-2014 | 规划, 设计, 验收 | [TH-003](../10-theory/TH-003-symmetrical-components.md)·[TH-022](../10-theory/TH-022-overvoltage-mechanism-and-insulation-coordination.md)·[TH-024](../10-theory/TH-024-power-electronic-converters-and-pwm.md)·[PR-DD-002](PR-DD-002-substation-layout-and-equipment-selection.md)·[CALC-HM-001](../40-calc/CALC-HM-001-harmonic-power-flow.md)·[CALC-SC-004](../40-calc/CALC-SC-004-transient-emf-iec60909.md) |
+| [PR-PS-004](PR-PS-004-ems-for-smart-park.md) | 智慧园区能管系统（EMS）设计 | GB/T 36572-2018, GB/T 38842-2020, DL/T 1917-2018 | 规划, 设计, 运维 | [TH-029](../10-theory/TH-029-microgrid-control-and-grid-mode-switching.md)·[TH-042](../10-theory/TH-042-electricity-market-and-carbon-trading-engineering-mapping.md)·[TH-056](../10-theory/TH-056-virtual-synchronous-generator-parameter-design-and-stability.md)·[PR-ES-001](PR-ES-001-energy-storage-integration.md)·[PR-ES-003](PR-ES-003-photovoltaic-grid-connection-deepening.md)·[PR-EV-002](PR-EV-002-battery-swap-station-power-distribution.md) |
+| [PR-PQ-003](PR-PQ-003-electricity-market-participation-design.md) | 工商业用户电力市场参与方案 | GB/T 44281-2024, GB/T 42378-2023, 发改委电价文件 | 规划, 运维 | [TH-038](../10-theory/TH-038-high-renewable-frequency-stability-inertia.md)·[TH-042](../10-theory/TH-042-electricity-market-and-carbon-trading-engineering-mapping.md)·[TH-049](../10-theory/TH-049-renewable-energy-forecasting-and-uncertainty-modeling.md)·[TH-056](../10-theory/TH-056-virtual-synchronous-generator-parameter-design-and-stability.md)·[PR-ES-001](PR-ES-001-energy-storage-integration.md)·[PR-PS-004](PR-PS-004-ems-for-smart-park.md) |
+
+**实践层已建成 25 条（含四期 5 条），完成度 100%。**
+
+剩余可按需扩展方向：
+
+- 数据中心供配电深化设计（UPS 冗余 + 高压直供 + 能效 PUE）
+- 医院电气设计（双路供电 + 柴油发电机 + IT 系统）
+- 大型会展/体育场馆临时供电方案
+- 航空港/铁路枢纽站供配电
+- 碳中和/近零碳园区综合设计
+
 
 光伏并网深化、电动汽车换电站、地铁牵引供电、智慧园区能管系统、电力市场参与方案。
+
