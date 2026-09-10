@@ -16,11 +16,9 @@ services:
       - key: EMBEDDING_PROVIDER
         value: openai
       - key: OPENAI_API_BASE
-        sync: false
-      - key: OPENAI_API_KEY
-        sync: false
+        value: https://api.siliconflow.cn/v1
       - key: OPENAI_EMBEDDING_MODEL
-        sync: false
+        value: BAAI/bge-m3
       - key: TOP_K
         value: "5"
       - key: SIMILARITY_THRESHOLD
