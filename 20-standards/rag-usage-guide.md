@@ -15,6 +15,7 @@ updated: 2026-09-10
 # RAG 检索使用指南（四维检索架构与操作流程）
 
 > **用途**：说明知识库四维检索架构的设计、数据流、操作流程与部署指南，配合 [RAG元数据索引](rag-metadata-index.md) 和 [知识图谱邻接表](knowledge-graph-adjacency.md) 使用。
+> **代码级接入**：详见 [RAG 框架接入指南](rag-framework-integration-guide.md)（LangChain/LlamaIndex + Chroma/Milvus 完整代码）。
 
 ## 1. 四维检索架构
 
