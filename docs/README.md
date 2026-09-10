@@ -1,4 +1,4 @@
----
+﻿---
 hide:
   - navigation
   - toc
@@ -13,7 +13,7 @@ hide:
     <div><div class="kb-stat-num">29</div><div class="kb-stat-label">工程实践</div></div>
     <div><div class="kb-stat-num">22</div><div class="kb-stat-label">计算方法</div></div>
     <div><div class="kb-stat-num">60</div><div class="kb-stat-label">工程案例</div></div>
-    <div><div class="kb-stat-num">504</div><div class="kb-stat-label">术语词条</div></div>
+    <div><div class="kb-stat-num">523</div><div class="kb-stat-label">术语词条</div></div>
   </div>
 </div>
 
@@ -84,7 +84,7 @@ L0 元数据层（术语·编号·模板·规范）← 00-meta/
 
 - **换版动态** → [changelog/](20-standards/changelog/)
 
-- **查术语** → [00-术语表（504 词条）](00-meta/00-术语表.md)
+- **查术语** → [00-术语表（523 词条）](00-meta/00-术语表.md)
 
 - **看算例** → [CALC-SC-001 低压三相短路计算](40-calc/CALC-SC-001-低压三相短路电流计算.md)
 
