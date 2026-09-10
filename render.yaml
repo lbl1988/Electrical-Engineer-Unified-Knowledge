@@ -28,7 +28,7 @@ services:
       - key: GRAPH_HOPS
         value: "2"
       - key: CORS_ORIGINS
-        value: https://kb-static.onrender.com
+        value: https://kb-static-8zpj.onrender.com
 
   - type: web
     name: kb-static
