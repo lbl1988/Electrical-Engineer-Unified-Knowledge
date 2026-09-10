@@ -1,0 +1,6 @@
+﻿services:
+  - name: Electrical-Engineer-Unified-Knowledge
+    type: static
+    buildCommand: pip install mkdocs mkdocs-material pymdownx-extensions && mkdocs build --clean
+    staticPublishPath: _site
+    pullRequestPreviewsEnabled: false
