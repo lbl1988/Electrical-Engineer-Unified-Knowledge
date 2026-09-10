@@ -1,0 +1,188 @@
+﻿id,prefix,title,domain,status,version,updated,lines,path
+CALC-BT-001,CALC,蓄电池容量计算（建筑应急照明集中电源与电力工程直流系统双体系）,CALC,published,1.0,2026-09-08,124,docs\40-calc\CALC-BT-001-battery-capacity.md
+CALC-BT-002,CALC,UPS蓄电池autonomy校核（数据中心在线式UPS）,CALC,draft,0.1,2026-09-09,128,docs\40-calc\CALC-BT-002-ups-battery-autonomy.md
+CALC-CD-001,CALC,电缆载流量计算与校正系数体系,CALC,draft,0.1,2026-09-09,170,docs\40-calc\CALC-CD-001-cable-ampacity-correction.md
+CALC-DG-001,CALC,柴油发电机容量选择与启动校验,CALC,draft,0.1,2026-09-09,198,docs\40-calc\CALC-DG-001-diesel-generator-capacity.md
+CALC-FT-001,CALC,弧光接地过电压计算（IT 系统间歇电弧/重燃系数/抑制措施选型）,CALC,draft,0.1,2026-09-10,147,docs\40-calc\CALC-FT-001-arc-ground-overvoltage-and-suppression.md
+CALC-GR-001,CALC,变电站接地网设计计算（GB/T 50065 / IEEE 80）,CALC,draft,0.1,2026-09-09,200,docs\40-calc\CALC-GR-001-grounding-grid-design.md
+CALC-GR-002,CALC,接地故障电流精确计算（含零序网络/变压器接地方式/中性点设备影响）,CALC,draft,0.1,2026-09-10,131,docs\40-calc\CALC-GR-002-ground-fault-current-with-zero-sequence.md
+CALC-HM-001,CALC,谐波潮流计算与电能质量校核,CALC,draft,0.1,2026-09-09,153,docs\40-calc\CALC-HM-001-harmonic-power-flow.md
+CALC-LD-001,CALC,需要系数法负荷计算（含功率因数补偿校核）,CALC,published,1.0,2026-09-08,128,docs\40-calc\CALC-LD-001-demand-factor-method.md
+CALC-LT-001,CALC,利用系数法照度计算（LED 时代校准）,CALC,published,1.0,2026-09-08,119,docs\40-calc\CALC-LT-001-lumen-method.md
+CALC-LT-002,CALC,照度逐点校验法（点照度法）,CALC,draft,0.1,2026-09-09,116,docs\40-calc\CALC-LT-002-point-illuminance-method.md
+CALC-MS-001,CALC,电动机启动压降校验,CALC,draft,0.1,2026-09-09,193,docs\40-calc\CALC-MS-001-motor-starting-voltage-drop.md
+CALC-MS-002,CALC,电动机温升计算与绝缘等级校核,CALC,draft,0.1,2026-09-09,143,docs\40-calc\CALC-MS-002-motor-temperature-rise.md
+CALC-MS-003,CALC,电动机软启动器选型计算（变频/固态/自耦 三种方案比较）,CALC,draft,0.1,2026-09-10,166,docs\40-calc\CALC-MS-003-motor-soft-starter-selection.md
+CALC-PT-001,CALC,低压断路器保护整定与灵敏度校验,CALC,published,1.0,2026-09-08,153,docs\40-calc\CALC-PT-001-protection-setting.md
+CALC-PT-002,CALC,高压线路距离保护整定（三段式距离保护）,CALC,draft,0.1,2026-09-09,143,docs\40-calc\CALC-PT-002-distance-protection-setting.md
+CALC-RC-001,CALC,无功补偿容量计算与电抗率选择,CALC,published,1.0,2026-09-08,138,docs\40-calc\CALC-RC-001-reactive-compensation.md
+CALC-SC-001,CALC,低压系统三相短路电流计算（等效电压源法）,CALC,published,1.0,2026-09-08,173,docs\40-calc\CALC-SC-001-低压三相短路电流计算.md
+CALC-SC-002,CALC,高压系统三相短路电流计算（IEC 60909 网络法）,CALC,draft,0.1,2026-09-09,184,docs\40-calc\CALC-SC-002-hv-short-circuit-iec60909.md
+CALC-SC-003,CALC,短路电流直流分量（非周期分量）衰减计算（派克方程应用/断路器直流分量耐受校验）,CALC,draft,0.1,2026-09-10,157,docs\40-calc\CALC-SC-003-dc-component-decay-and-breaker-dc-rating.md
+CALC-VL-001,CALC,电压偏差与电压损失计算,CALC,draft,0.1,2026-09-09,164,docs\40-calc\CALC-VL-001-voltage-deviation-and-loss.md
+CASE-001,CASE,2026供配电真题拆解：综合楼负荷分级与需要系数法,CASE,draft,0.1,2026-09-09,119,docs\50-case\CASE-001-exam-load-classification.md
+CASE-002,CASE,校审驳回：应急照明仅配双电源未设蓄电池,CASE,draft,0.1,2026-09-09,109,docs\50-case\CASE-002-review-emergency-lighting.md
+CASE-003,CASE,事故复盘：10kV变压器空投涌流致差动保护误动,CASE,draft,0.1,2026-09-09,113,docs\50-case\CASE-003-accident-transformer-inrush.md
+CASE-004,CASE,综合案例：1MW/2MWh用户侧储能接入多专业协同,CASE,draft,0.1,2026-09-09,127,docs\50-case\CASE-004-composite-energy-storage.md
+CASE-005,CASE,校审驳回：整流负荷变压器未按K因子降容,CASE,draft,0.1,2026-09-09,163,docs\50-case\CASE-005-review-transformer-harmonic-derating.md
+CASE-006,CASE,事故复盘：10kV电缆中间接头过热引发火灾,CASE,draft,0.1,2026-09-09,154,docs\50-case\CASE-006-accident-cable-joint-fire.md
+CASE-007,CASE,2024供配电真题拆解：独立避雷针接地与跨步电压校验,CASE,draft,0.1,2026-09-09,172,docs\50-case\CASE-007-exam-lightning-grounding.md
+CASE-008,CASE,综合案例：A级数据中心2N供配电多专业协同,CASE,draft,0.1,2026-09-09,180,docs\50-case\CASE-008-composite-data-center.md
+CASE-009,CASE,校审驳回：医疗2类场所误选TN-S未设IT系统,CASE,draft,0.1,2026-09-09,156,docs\50-case\CASE-009-review-neutral-grounding.md
+CASE-010,CASE,校审驳回：低压柜PE线截面未按相线截面匹配,CASE,draft,0.1,2026-09-09,148,docs\50-case\CASE-010-review-pe-conductor-size.md
+CASE-011,CASE,事故复盘：变电站直流系统一点接地致保护误动,CASE,draft,0.1,2026-09-09,149,docs\50-case\CASE-011-accident-dc-ground-fault.md
+CASE-012,CASE,2022供配电真题拆解：电缆截面选择与电压降校验,CASE,draft,0.1,2026-09-09,179,docs\50-case\CASE-012-exam-cable-voltage-drop.md
+CASE-013,CASE,综合案例：工业园区光储充微电网协同设计,CASE,draft,0.1,2026-09-09,205,docs\50-case\CASE-013-composite-pv-es-eva-microgrid.md
+CASE-014,CASE,校审驳回：消防泵房未设末端双电源自动切换,CASE,draft,0.1,2026-09-09,145,docs\50-case\CASE-014-review-fire-pump-end-transfer.md
+CASE-015,CASE,校审驳回：变配电所未深入负荷中心致电压降超标,CASE,draft,0.1,2026-09-09,173,docs\50-case\CASE-015-review-substation-location-voltage.md
+CASE-016,CASE,事故复盘：0.4kV低压柜带电作业电弧光短路烧伤,CASE,draft,0.1,2026-09-09,188,docs\50-case\CASE-016-accident-arc-flash-burn.md
+CASE-017,CASE,2020供配电真题拆解：电动机启动压降校验与启动方式选择,CASE,draft,0.1,2026-09-09,188,docs\50-case\CASE-017-exam-motor-starting-voltage-drop.md
+CASE-018,CASE,综合案例：工业园区10/0.4kV变电所多专业协同设计,CASE,draft,0.1,2026-09-09,249,docs\50-case\CASE-018-composite-industrial-substation.md
+CASE-019,CASE,校审驳回：电缆敷设跨越防火分区未做防火封堵,CASE,draft,0.1,2026-09-09,212,docs\50-case\CASE-019-review-cable-fire-compartmentation.md
+CASE-020,CASE,事故复盘：35/10kV油浸变压器内部短路起火爆炸,CASE,draft,0.1,2026-09-09,232,docs\50-case\CASE-020-accident-oil-transformer-fire.md
+CASE-021,CASE,事故复盘：施工现场重复接地缺失致跨步电压致死,CASE,draft,0.1,2026-09-09,214,docs\50-case\CASE-021-accident-step-voltage-electrocution.md
+CASE-022,CASE,2021供配电真题拆解：短路电流计算与继电保护整定,CASE,draft,0.1,2026-09-09,275,docs\50-case\CASE-022-exam-short-circuit-protection.md
+CASE-023,CASE,综合案例：轨道交通直流牵引变电所多专业协同设计,CASE,draft,0.1,2026-09-09,251,docs\50-case\CASE-023-composite-metro-traction-substation.md
+CASE-024,CASE,校审驳回：防雷接地电阻不达标与SPD配合不当,CASE,draft,0.1,2026-09-09,223,docs\50-case\CASE-024-review-lightning-grounding-spd.md
+CASE-025,CASE,2023供配电真题拆解：并联电容器无功补偿与谐波谐振校验,CASE,draft,0.1,2026-09-09,209,docs\50-case\CASE-025-exam-reactive-compensation-harmonic-resonance.md
+CASE-026,CASE,校审驳回：A级数据中心UPS蓄电池自主时间不足与维护旁路缺失,CASE,draft,0.1,2026-09-09,197,docs\50-case\CASE-026-review-ups-bypass-battery-autonomy.md
+CASE-027,CASE,事故复盘：真空断路器截流过电压致高压电动机绕组击穿,CASE,draft,0.1,2026-09-09,225,docs\50-case\CASE-027-accident-vacuum-chopping-overvoltage.md
+CASE-028,CASE,综合案例：海上风电场升压站电气-结构-海工多专业协同设计,CASE,draft,0.1,2026-09-09,241,docs\50-case\CASE-028-composite-offshore-wind-substation.md
+CASE-029,CASE,校审驳回：柴油发电机房通风散热不足与排烟系统设计不当,CASE,draft,0.1,2026-09-09,235,docs\50-case\CASE-029-review-diesel-generator-room-ventilation.md
+CASE-030,CASE,2019供配电真题拆解：10kV电缆载流量温度修正与截面选择,CASE,draft,0.1,2026-09-09,207,docs\50-case\CASE-030-exam-cable-ampacity-section.md
+CASE-031,CASE,校审驳回：变电所直流操作电源系统未设绝缘监测装置,CASE,draft,0.1,2026-09-09,200,docs\50-case\CASE-031-review-dc-insulation-monitoring.md
+CASE-032,CASE,事故复盘：10kV交联电缆终端应力锥安装不良致击穿爆炸,CASE,draft,0.1,2026-09-09,198,docs\50-case\CASE-032-accident-cable-termination-breakdown.md
+CASE-033,CASE,综合案例：5MW/10MWh工商业储能电站全流程设计（消防+EMS+并网保护）,CASE,draft,0.1,2026-09-09,239,docs\50-case\CASE-033-composite-energy-station-full-process.md
+CASE-034,CASE,校审驳回：10kV系统中性点经小电阻接地电阻器选型不当,CASE,draft,0.1,2026-09-09,224,docs\50-case\CASE-034-review-neutral-resistor-grounding.md
+CASE-035,CASE,2018供配电真题拆解：10kV高压电动机保护整定与热稳定校验,CASE,draft,0.1,2026-09-09,230,docs\50-case\CASE-035-exam-motor-protection-setting.md
+CASE-036,CASE,校审驳回：变压器差动保护低压侧CT极性接反致空投误动,CASE,draft,0.1,2026-09-09,208,docs\50-case\CASE-036-review-ct-polarity-differential-malfunction.md
+CASE-037,CASE,事故复盘：10kV不接地系统铁磁谐振过电压致电压互感器烧毁,CASE,draft,0.1,2026-09-09,201,docs\50-case\CASE-037-accident-ferroresonance-pt-burnout.md
+CASE-038,CASE,综合案例：A级数据中心冷却系统电气-暖通-消防多专业协同设计,CASE,draft,0.1,2026-09-09,230,docs\50-case\CASE-038-composite-data-center-cooling-collaboration.md
+CASE-039,CASE,校审驳回：应急电源ATS切换时间与UPS备电时序不匹配,CASE,draft,0.1,2026-09-09,210,docs\50-case\CASE-039-review-ats-switching-time-mismatch.md
+CASE-040,CASE,2019发输变电真题拆解：短路电流非周期分量衰减与断路器开断能力校验,CASE,draft,0.1,2026-09-09,197,docs\50-case\CASE-040-exam-short-circuit-dc-component-breaker.md
+CASE-041,CASE,校审驳回：低压无源滤波器支路失谐致5次谐波电流放大,CASE,draft,0.1,2026-09-09,229,docs\50-case\CASE-041-review-passive-filter-detuning-harmonic-amplification.md
+CASE-042,CASE,事故复盘：10kV并联电容器组合闸涌流与操作过电压致熔断器群爆,CASE,draft,0.1,2026-09-09,225,docs\50-case\CASE-042-accident-capacitor-inrush-fuse-burst.md
+CASE-043,CASE,综合案例：光储柴微电网并离网切换多专业协同设计,CASE,draft,0.1,2026-09-09,235,docs\50-case\CASE-043-composite-pv-storage-diesel-microgrid.md
+CASE-044,CASE,校审驳回：10kV并联电容器组过电压保护与避雷器参数配合不当,CASE,draft,0.1,2026-09-09,215,docs\50-case\CASE-044-review-capacitor-overvoltage-spd-coordination.md
+CASE-045,CASE,2017供配电真题拆解：应急照明蓄电池容量与持续时间校验,CASE,draft,0.1,2026-09-09,196,docs\50-case\CASE-045-exam-emergency-lighting-battery-capacity.md
+CASE-046,CASE,校审驳回：变电所直流操作电源绝缘监测装置与系统对地电容不匹配致误告警,CASE,draft,0.1,2026-09-09,209,docs\50-case\CASE-046-review-dc-insurance-monitoring-capacitance-mismatch.md
+CASE-047,CASE,事故复盘：低压配电柜内部短路电弧光持续燃烧致检修人员严重烧伤（电弧光保护缺失）,CASE,draft,0.1,2026-09-09,208,docs\50-case\CASE-047-accident-arc-flash-protection-missing-burn.md
+CASE-048,CASE,综合案例：新能源汇集站光伏+风电并网保护与电能质量多专业协同,CASE,draft,0.1,2026-09-09,228,docs\50-case\CASE-048-composite-renewable-collector-station-protection.md
+CASE-049,CASE,校审驳回：10kV交联电缆中间接头施工工艺缺陷致电场集中与绝缘击穿,CASE,draft,0.1,2026-09-09,201,docs\50-case\CASE-049-review-cable-joint-construction-defect.md
+CASE-050,CASE,2016供配电真题拆解：办公建筑照度计算与照明功率密度校验,CASE,draft,0.1,2026-09-09,181,docs\50-case\CASE-050-exam-illuminance-lpd-calculation.md
+CASE-051,CASE,校审驳回：110kV输电线路距离保护整定不配合致下级变电站越级跳闸,CASE,draft,0.1,2026-09-09,189,docs\50-case\CASE-051-review-distance-protection-coordination-cascade-trip.md
+CASE-052,CASE,事故复盘：变电站直流系统正极电缆短路致阀控铅酸蓄电池起火,CASE,draft,0.1,2026-09-09,179,docs\50-case\CASE-052-accident-dc-short-circuit-battery-fire.md
+CASE-053,CASE,综合设计：城市轨道交通牵引供电整流机组选型与钢轨电位限制,CASE,draft,0.1,2026-09-09,204,docs\50-case\CASE-053-composite-rail-transit-traction-rectifier.md
+CASE-054,CASE,校审驳回：工商业光伏并网未配置防孤岛保护与防逆流致倒送电风险,CASE,draft,0.1,2026-09-09,209,docs\50-case\CASE-054-review-pv-anti-islanding-reverse-power.md
+CASE-055,CASE,2025发输变电真题拆解：三相短路直流分量衰减与断路器开断能力校验,CASE,draft,0.1,2026-09-10,133,docs\50-case\CASE-055-exam-2025-fa-high-voltage-dc-component.md
+CASE-056,CASE,2018供配电真题拆解：10 kV IT系统弧光接地过电压与HVDC换流站直流偏磁抑制,CASE,draft,0.1,2026-09-10,118,docs\50-case\CASE-056-exam-2018-pd-arc-overvoltage-and-hvdc-dc-bias.md
+CASE-057,CASE,校审意见：高压配电间电缆防火封堵三项常见错误与整改,CASE,draft,0.1,2026-09-10,80,docs\50-case\CASE-057-review-cable-fireproof-seal-common-errors.md
+CASE-058,CASE,校审意见：光伏并网联络线保护整定三项常见误动/拒动隐患,CASE,draft,0.1,2026-09-10,96,docs\50-case\CASE-058-review-pv-grid-connection-protection-misoperation.md
+CASE-059,CASE,事故复盘：HVDC 换相失败引发受端电网 220 kV 变电站母线失压,CASE,draft,0.1,2026-09-10,110,docs\50-case\CASE-059-accident-hvdc-commutation-failure-cascade.md
+CASE-060,CASE,综合协同：工业光储柴微电网黑启动与稳定运行完整方案,CASE,draft,0.1,2026-09-10,157,docs\50-case\CASE-060-composite-optical-storage-diesel-microgrid.md
+CASE-062,CASE,事故复盘：电化学储能电站 PACK 级热失控级联蔓延（爆炸事故）,CASE,draft,0.1,2026-09-10,105,docs\50-case\CASE-062-accident-battery-thermal-propagation.md
+CASE-063,CASE,事故复盘：台风登陆叠加负荷高峰，配电网大面积停电 8 小时（21 万用户）,CASE,draft,0.1,2026-09-10,102,docs\50-case\CASE-063-accident-distribution-grid-large-outage.md
+CASE-064,CASE,事故复盘：数据中心精密空调故障叠加 ATS 切换时序错误，服务器高温停机 45 min,CASE,draft,0.1,2026-09-10,98,docs\50-case\CASE-064-accident-data-center-cooling-failure.md
+CHG-0001,CHG,GB/T 50034-2024《建筑照明设计标准》换版记录,,published,,,53,docs\20-standards\changelog\CHG-001-GBT50034-2024.md
+CHG-0002,CHG,GB/T 51048-2025《电化学储能电站设计标准》换版记录,,published,,,52,docs\20-standards\changelog\CHG-002-GBT51048-2025.md
+CHG-0003,CHG,GB/T 50966-2024《电动汽车充电站设计标准》换版记录,,published,,,52,docs\20-standards\changelog\CHG-003-GBT50966-2024.md
+CHG-0004,CHG,GB 55038-2025《住宅项目规范》发布记录（全文强制）,,published,,,53,docs\20-standards\changelog\CHG-004-GB55038-2025.md
+CHG-0005,CHG,IEC 60364-1:2025 (ED6)《建筑物电气装置 第 1 部分》换版记录,,published,,,52,docs\20-standards\changelog\CHG-005-IEC60364-1-2025.md
+EXAM-GT-001,EXAM,2026 年注册电气工程师（发输变电）考纲目录初始化,EXAM,published,1.1,2026-09-10,67,docs\60-exam\2026-发输变电考纲初始化.md
+EXAM-PD-001,EXAM,2026 年注册电气工程师（供配电）考纲目录初始化,EXAM,published,1.1,2026-09-10,64,docs\60-exam\2026-供配电考纲初始化.md
+GOV-001,GOV,权威数据源清单与核验红线,GOV,published,1.0,2026-09-08,50,docs\90-governance\权威数据源清单.md
+GOV-002,GOV,2026 年第三季度首次标准盘点记录,GOV,published,1.0,2026-09-08,61,docs\90-governance\2026Q3-首次盘点记录.md
+KB-GRAPH,KB,案例关联图谱（引用闭环可视化）,REF,published,1.0,2026-09-10,179,docs\00-meta\引用图谱.md
+KB-SEARCH,KB,全站检索,REF,published,2.0,2026-09-10,54,docs\搜索.md
+PR-BE-001,PR,消防应急照明和疏散指示系统设计要点,PR,published,1.0,2026-09-08,102,docs\30-practice\PR-BE-001-emergency-lighting.md
+PR-CM-001,PR,火灾自动报警与消防联动控制系统设计,CM,draft,0.1,2026-09-09,184,docs\30-practice\PR-CM-001-fire-protection-interlocking.md
+PR-DD-001,PR,低压断路器选型与级间选择性,PR,published,1.0,2026-09-08,111,docs\30-practice\PR-DD-001-lv-breaker-selection.md
+PR-DD-002,PR,10/0.4kV 变配电所布置与设备选型,DD,draft,0.1,2026-09-09,166,docs\30-practice\PR-DD-002-substation-layout-and-equipment-selection.md
+PR-DD-003,PR,电缆敷设方式选择与载流量校正,PR,draft,0.1,2026-09-09,164,docs\30-practice\PR-DD-003-cable-routing-and-installation.md
+PR-DD-004,PR,配电网自动化与 SCADA 系统设计,PR,draft,0.1,2026-09-09,156,docs\30-practice\PR-DD-004-distribution-automation-and-scada.md
+PR-DD-005,PR,变电所综合自动化系统设计,PR,draft,0.1,2026-09-09,167,docs\30-practice\PR-DD-005-substation-automation-system.md
+PR-DD-006,PR,城市轨道交通（地铁）牵引供电系统设计（直流牵引/牵引变压器/杂散电流防护）,DD,draft,0.1,2026-09-10,166,docs\30-practice\PR-DD-006-metro-traction-power-supply.md
+PR-DD-007,PR,数据中心供配电深化设计（双路市电+UPS 2N+柴发+高压直供+PUE 优化）,DD,draft,0.1,2026-09-10,161,docs\30-practice\PR-DD-007-data-center-power-distribution-deepening.md
+PR-DD-008,PR,医院供配电与医用特殊系统设计（双路市电+IT 系统+应急电源+医用接地）,DD,draft,0.1,2026-09-10,144,docs\30-practice\PR-DD-008-hospital-special-electrical-design.md
+PR-DD-009,PR,航空港航站楼供配电设计（一级负荷+柴油+不间断照明+行李系统）,DD,draft,0.1,2026-09-10,131,docs\30-practice\PR-DD-009-airport-terminal-power-supply.md
+PR-ES-001,PR,电化学储能电站接入设计,ES,draft,0.1,2026-09-09,180,docs\30-practice\PR-ES-001-energy-storage-integration.md
+PR-ES-002,PR,分布式电源接入配电网设计（光伏/风电/微燃机）,PR,draft,0.1,2026-09-09,170,docs\30-practice\PR-ES-002-distributed-generation-grid-connection.md
+PR-ES-003,PR,地面/分布式光伏并网深化设计（组件选型/PCS 配置/并网电气校验）,ES,draft,0.1,2026-09-10,171,docs\30-practice\PR-ES-003-photovoltaic-grid-connection-deepening.md
+PR-ES-004,PR,碳中和/近零碳园区综合能源设计（光储直柔+碳排核算+PUE≤1.15）,ES,draft,0.1,2026-09-10,163,docs\30-practice\PR-ES-004-near-zero-carbon-park.md
+PR-EV-001,PR,电动汽车充电设施供配电与安全配置,EV,draft,0.1,2026-09-09,181,docs\30-practice\PR-EV-001-ev-charging-infrastructure.md
+PR-EV-002,PR,电动汽车换电站供配电系统设计（交流/直流供电/容量配置/谐波治理）,EV,draft,0.1,2026-09-10,139,docs\30-practice\PR-EV-002-battery-swap-station-power-distribution.md
+PR-GR-001,PR,建筑物防雷分类与接闪器设计,PR,published,1.0,2026-09-08,133,docs\30-practice\PR-GR-001-lightning-protection-design.md
+PR-GR-002,PR,低压接地制式选择与等电位联结,PR,published,1.0,2026-09-08,103,docs\30-practice\PR-GR-002-earthing-arrangement.md
+PR-GR-003,PR,SPD 选型与级间配合设计,PR,draft,0.1,2026-09-09,168,docs\30-practice\PR-GR-003-spd-selection-and-coordination.md
+PR-PE-001,PR,电力线路与变压器继电保护配置与整定配合,PE,draft,0.1,2026-09-09,203,docs\30-practice\PR-PE-001-relay-protection-config.md
+PR-PE-002,PR,继电保护整定配合深化（阶梯时限/零序方向/距离保护与重合闸配合）,PR,draft,0.1,2026-09-09,169,docs\30-practice\PR-PE-002-relay-protection-coordination-deepening.md
+PR-PQ-001,PR,无功补偿与谐波治理设计要点,PR,published,1.0,2026-09-08,109,docs\30-practice\PR-PQ-001-pq-compensation-design.md
+PR-PQ-002,PR,电能质量监测系统设计与治理评估,PR,draft,0.1,2026-09-09,150,docs\30-practice\PR-PQ-002-power-quality-monitoring-and-mitigation.md
+PR-PQ-003,PR,工商业用户电力市场参与方案设计（中长期合约/现货市场/辅助服务/绿电交易）,PQ,draft,0.1,2026-09-10,144,docs\30-practice\PR-PQ-003-electricity-market-participation-design.md
+PR-PS-001,PR,负荷分级与供电电源配置,PR,published,1.0,2026-09-08,121,docs\30-practice\PR-PS-001-load-classification.md
+PR-PS-002,PR,电动机控制与启动方式选择,PR,draft,0.1,2026-09-09,137,docs\30-practice\PR-PS-002-motor-control-and-starting.md
+PR-PS-003,PR,UPS 配置与蓄电池组选择,PR,draft,0.1,2026-09-09,157,docs\30-practice\PR-PS-003-ups-and-battery-design.md
+PR-PS-004,PR,智慧园区能源管理系统设计（EMS 架构/能耗监测/负荷调度/峰谷套利）,PS,draft,0.1,2026-09-10,163,docs\30-practice\PR-PS-004-ems-for-smart-park.md
+REF-HB-001,REF,设计手册速查索引（常用公式 / 典型值 / 章节映射）,REF,published,1.0,2026-09-09,307,docs\20-standards\handbook-quick-reference-index.md
+REF-KG-001,REF,知识图谱邻接表（条目间关系图）,REF,published,1.0,2026-09-10,238,docs\20-standards\knowledge-graph-adjacency.md
+STD-MAP-000,STD,中外标准对照表（20 张）,,published,1.0,,230,docs\20-standards\mapping-中外对照表.md
+TH-001,TH,似稳场与集总参数电路近似,基础理论,published,1.0,2026-09-08,62,docs\10-theory\TH-001-quasi-static-approximation.md
+TH-002,TH,相量法与正弦稳态分析,基础理论,published,1.0,2026-09-08,60,docs\10-theory\TH-002-phasor-analysis.md
+TH-003,TH,对称分量法,基础理论,published,1.0,2026-09-08,62,docs\10-theory\TH-003-symmetrical-components.md
+TH-004,TH,电流对人体的效应：时间/电流分区与人体阻抗,基础理论,published,1.0,2026-09-08,75,docs\10-theory\TH-004-current-effects-human-body.md
+TH-005,TH,接地故障的地表电位分布与接触/跨步电压,基础理论,published,1.0,2026-09-08,64,docs\10-theory\TH-005-touch-step-voltage.md
+TH-006,TH,变压器短路阻抗的物理来源（漏磁场与 uk%）,基础理论,published,1.0,2026-09-08,61,docs\10-theory\TH-006-transformer-leakage-impedance.md
+TH-007,TH,感应电动机启动电流的机理,基础理论,published,1.0,2026-09-08,63,docs\10-theory\TH-007-induction-motor-starting.md
+TH-008,TH,谐波的产生机理与特征谐波,基础理论,published,1.0,2026-09-08,60,docs\10-theory\TH-008-harmonic-generation.md
+TH-009,TH,雷电放电物理与雷电参数,基础理论,published,1.0,2026-09-08,67,docs\10-theory\TH-009-lightning-physics.md
+TH-010,TH,无功功率的物理意义与现代扩展,基础理论,published,1.0,2026-09-08,62,docs\10-theory\TH-010-reactive-power.md
+TH-011,TH,同步电机暂态与次暂态电抗,基础理论,draft,0.1,2026-09-09,116,docs\10-theory\TH-011-synchronous-machine-subtransient-reactance.md
+TH-012,TH,继电保护四性（可靠性/选择性/灵敏性/速动性）,基础理论,draft,0.1,2026-09-09,109,docs\10-theory\TH-012-protection-four-properties.md
+TH-013,TH,开关电弧物理与交流电流零点熄弧,基础理论,draft,0.1,2026-09-09,103,docs\10-theory\TH-013-switching-arc-physics.md
+TH-014,TH,磁路与铁磁饱和,基础理论,draft,0.1,2026-09-09,86,docs\10-theory\TH-014-magnetic-circuit-saturation.md
+TH-015,TH,同步电机暂态深入（Park 方程与暂态电磁过程）,基础理论,draft,0.1,2026-09-09,136,docs\10-theory\TH-015-synchronous-machine-park-equations.md
+TH-016,TH,同步电机功角稳定基础,基础理论,draft,0.1,2026-09-09,138,docs\10-theory\TH-016-synchronous-machine-power-angle-stability.md
+TH-017,TH,电缆波过程与 VFTO（暂态过电压）,基础理论,draft,0.1,2026-09-09,155,docs\10-theory\TH-017-cable-wave-process-vfto.md
+TH-018,TH,瞬时功率 p-q 理论（赤木变换）,基础理论,draft,0.1,2026-09-09,148,docs\10-theory\TH-018-instantaneous-power-pq-theory.md
+TH-019,TH,输电线路参数与长线方程,基础理论,draft,0.1,2026-09-09,150,docs\10-theory\TH-019-transmission-line-parameters-long-line.md
+TH-020,TH,电力系统稳定性分类（功角/电压/频率/次同步）,基础理论,draft,0.1,2026-09-09,119,docs\10-theory\TH-020-power-system-stability-classification.md
+TH-021,TH,中性点接地方式与零序网络,基础理论,draft,0.1,2026-09-09,155,docs\10-theory\TH-021-neutral-grounding-and-zero-sequence-network.md
+TH-022,TH,过电压机理与绝缘配合,基础理论,draft,0.1,2026-09-09,144,docs\10-theory\TH-022-overvoltage-mechanism-and-insulation-coordination.md
+TH-023,TH,变压器并列运行条件与环流,基础理论,draft,0.1,2026-09-09,132,docs\10-theory\TH-023-transformer-parallel-operation-and-circulating-current.md
+TH-024,TH,电力电子变换器基础拓扑与 PWM,基础理论,draft,0.1,2026-09-09,137,docs\10-theory\TH-024-power-electronic-converters-and-pwm.md
+TH-025,TH,电缆热场与载流量计算基础,基础理论,draft,0.1,2026-09-09,106,docs\10-theory\TH-025-cable-thermal-field-and-ampacity.md
+TH-026,TH,开关电器选型与开断能力物理基础,基础理论,draft,0.1,2026-09-09,129,docs\10-theory\TH-026-switchgear-selection-and-breaking-capacity.md
+TH-027,TH,高压直流输电（LCC/VSC-HVDC）,基础理论,draft,0.1,2026-09-09,129,docs\10-theory\TH-027-hvdc-transmission-lcc-vsc.md
+TH-028,TH,柔性交流输电（FACTS）,基础理论,draft,0.1,2026-09-09,130,docs\10-theory\TH-028-facts-flexible-ac-transmission.md
+TH-029,TH,微电网控制与并离网切换,基础理论,draft,0.1,2026-09-09,130,docs\10-theory\TH-029-microgrid-control-and-grid-mode-switching.md
+TH-030,TH,分布式电源并网保护与孤岛检测,基础理论,draft,0.1,2026-09-09,143,docs\10-theory\TH-030-distributed-generation-protection-and-islanding-detection.md
+TH-031,TH,接地变压器与接地电阻选型,基础理论,draft,0.1,2026-09-09,122,docs\10-theory\TH-031-grounding-transformer-and-resistor-selection.md
+TH-032,TH,同步电机进相与调相运行,基础理论,draft,0.1,2026-09-09,137,docs\10-theory\TH-032-synchronous-machine-leading-and-condensing-operation.md
+TH-033,TH,异步电机变频调速控制策略,基础理论,draft,0.1,2026-09-09,140,docs\10-theory\TH-033-induction-motor-vfd-control-strategy.md
+TH-034,TH,电力变压器励磁涌流机理与差动保护防涌流,基础理论,draft,0.1,2026-09-09,119,docs\10-theory\TH-034-transformer-inrush-current-and-differential-protection.md
+TH-035,TH,电力系统次同步谐振（SSR/SSCI）机理,基础理论,draft,0.1,2026-09-09,115,docs\10-theory\TH-035-sub-synchronous-resonance-ssr-ssci.md
+TH-036,TH,发电机励磁系统建模与 AVR/PSS,基础理论,draft,0.1,2026-09-09,121,docs\10-theory\TH-036-excitation-system-avr-pss.md
+TH-037,TH,变压器有载调压与动态无功协调,基础理论,draft,0.1,2026-09-09,134,docs\10-theory\TH-037-tap-changer-and-dynamic-reactive-coordination.md
+TH-038,TH,新能源高占比系统频率稳定与惯量支撑,基础理论,draft,0.1,2026-09-09,132,docs\10-theory\TH-038-high-renewable-frequency-stability-inertia.md
+TH-039,TH,高压断路器选型深入（发电机断路器与 GIS）,基础理论,draft,0.1,2026-09-09,122,docs\10-theory\TH-039-generator-breaker-and-gis-selection.md
+TH-040,TH,交直流混联电网稳定机理（LCC/VSC 换流站耦合、多馈入短路比与相互作用）,基础理论,draft,0.1,2026-09-09,139,docs\10-theory\TH-040-hybrid-ac-dc-grid-stability.md
+TH-041,TH,配电网高渗透率分布式电源承载力机理（静态/动态承载力与电压约束）,基础理论,draft,0.1,2026-09-09,133,docs\10-theory\TH-041-distribution-grid-high-penetration-dg-hosting-capacity.md
+TH-042,TH,电力市场与碳交易工程映射（LMP/辅助服务/CCER 与电气成本映射）,基础理论,draft,0.1,2026-09-09,129,docs\10-theory\TH-042-electricity-market-and-carbon-trading-engineering-mapping.md
+TH-043,TH,人工智能在电气工程应用基础（机器学习/深度学习/物理信息神经网络 PINN）,基础理论,draft,0.1,2026-09-09,161,docs\10-theory\TH-043-ai-foundations-in-electrical-engineering.md
+TH-044,TH,电力电子化电力系统低惯量与宽频振荡机理（PLL 耦合/次同步/超同步/控制引发振荡）,基础理论,draft,0.1,2026-09-09,140,docs\10-theory\TH-044-power-electronics-dominated-system-low-inertia-wideband-oscillation.md
+TH-045,TH,电力系统动态等值与降阶方法（电网等值/机组聚合/模态降阶/时变等值）,基础理论,draft,0.1,2026-09-10,179,docs\10-theory\TH-045-power-system-dynamic-equivalence-and-model-reduction.md
+TH-046,TH,锂离子电池热失控机理与预警（SEI膜分解/正负极反应/产气/热扩散）,基础理论,draft,0.1,2026-09-10,164,docs\10-theory\TH-046-battery-thermal-runaway-mechanism-and-early-warning.md
+TH-047,TH,中高压 XLPE 电缆水树老化机理与绝缘诊断（水树生长/电树枝/PD 信号/在线监测）,基础理论,draft,0.1,2026-09-10,150,docs\10-theory\TH-047-xlpe-cable-water-tree-aging-and-insulation-diagnosis.md
+TH-048,TH,电力系统恢复控制与黑启动优化（自愈电网/黑启动电源/恢复时序/应急控制）,基础理论,draft,0.1,2026-09-10,174,docs\10-theory\TH-048-power-system-restoration-and-black-start-optimization.md
+TH-049,TH,可再生能源出力预测与不确定性建模（风/光概率预测/场景生成/鲁棒优化）,基础理论,draft,0.1,2026-09-10,180,docs\10-theory\TH-049-renewable-energy-forecasting-and-uncertainty-modeling.md
+TH-050,TH,电力系统动态等值与降阶方法（电网等值/机组聚合/模态降阶/时变等值）,基础理论,draft,0.1,2026-09-10,151,docs\10-theory\TH-050-transformer-capacitive-bushing-failure-and-diagnosis.md
+TH-051,TH,电力电子化设备宽频阻抗建模（PCS 阻抗/有源阻尼/PLL 耦合/阻抗稳定判据）,基础理论,draft,0.1,2026-09-10,152,docs\10-theory\TH-051-power-electronics-wideband-impedance-modeling.md
+TH-052,TH,柔性直流多端 MTDC 故障穿越与恢复（MMC 故障处理/直流断路器/限流电抗器）,基础理论,draft,0.1,2026-09-10,148,docs\10-theory\TH-052-mtdc-fault-ride-through-and-recovery.md
+TH-053,TH,变压器铁芯直流偏磁与剩磁机理及其工程危害（直流输电/地磁暴/逆变器三次谐波）,基础理论,draft,0.1,2026-09-10,168,docs\10-theory\TH-053-transformer-dc-magnetization-and-residual-flux.md
+TH-054,TH,SF₆ 气体分解产物诊断与环保替代研究（局部放电分解/PD/热解/环保绝缘气体）,基础理论,draft,0.1,2026-09-10,138,docs\10-theory\TH-054-sf6-decomposition-products-and-eco-friendly-substitutes.md
+TH-055,TH,电化学储能系统级联故障与热蔓延动力学（簇级火灾/多电芯传播/消防协同）,基础理论,draft,0.1,2026-09-10,143,docs\10-theory\TH-055-cascading-failure-and-thermal-propagation.md
+TH-056,TH,虚拟同步机（VSG）参数设计与稳定性（惯量/阻尼/下垂系数/自适应整定）,基础理论,draft,0.1,2026-09-10,164,docs\10-theory\TH-056-virtual-synchronous-generator-parameter-design-and-stability.md
+TH-057,TH,新能源场站虚拟惯量协调控制与惯量调度（多场站共享/分区惯量平衡）,基础理论,draft,0.1,2026-09-10,160,docs\10-theory\TH-057-virtual-inertia-coordination-and-dispatch.md
+TH-058,TH,电力系统频率响应精细化建模（一次调频/二次调频/AGC 协调）,基础理论,draft,0.1,2026-09-10,167,docs\10-theory\TH-058-frequency-response-detailed-modeling-primary-secondary-AGC.md
+TH-059,TH,主动配电网故障定位与隔离（分布式电源接入后 ADN 保护挑战）,基础理论,draft,0.1,2026-09-10,169,docs\10-theory\TH-059-active-distribution-network-fault-location-and-isolation.md
+TH-060,TH,电力电子化系统频率响应测试方法（RoCoF 注入试验/虚拟惯量实测/对比指标）,基础理论,draft,0.1,2026-09-10,148,docs\10-theory\TH-060-frequency-response-testing-method-for-power-electronic-systems.md
