@@ -1,28 +1,33 @@
----
+***
+
 id: CASE-055
 title: 2025发输变电真题拆解：三相短路直流分量衰减与断路器开断能力校验
 domain: CASE
 subdomain: EX
-case_type: exam
-year_source: 2025
+case\_type: exam
+year\_source: 2025
 desensitized: true
-voltage_levels: [HV, EHV]
-lifecycle: [设计, 验收]
+voltage\_levels: \[HV, EHV]
+lifecycle: \[设计, 验收]
 standards:
-  - { code: GB/T 15544.1-2013, clause: "§5.3", note: "短路电流直流分量计算" }
-  - { code: GB 1984-2014, clause: "§5", note: "高压交流断路器额定直流分量" }
-  - { code: DL/T 5222-2021, clause: "第6章", note: "导体和电器选择设计规程" }
-status: draft
-reviewers: []
-version: 0.1
-updated: 2026-09-10
----
+
+- { code: GB/T 15544.1-2013, clause: "§5.3", note: "短路电流直流分量计算" }
+
+- { code: GB 1984-2014, clause: "§5", note: "高压交流断路器额定直流分量" }
+
+- { code: DL/T 5222-2021, clause: "第6章", note: "导体和电器选择设计规程" }
+  status: draft
+  reviewers: \[]
+  version: 0.1
+  updated: 2026-09-10
+
+***
 
 # 2025发输变电真题拆解：三相短路直流分量衰减与断路器校验
 
 ## 1. 摘要
 
-本案例拆解 2025 年度注册电气工程师（发输变电）专业考试"三相短路直流分量衰减"高频计算题。某 500 kV 变电站主变高压侧三相短路，已知系统 $S_{\mathrm{sc}} = 20$ GVA、发电机 $X_d'' = 0.15$ pu、$T_a = 0.05$ s，断路器动作时间 40 ms。考三问：$I''_k$、开断时刻直流分量百分比、断路器直流分量额定值校核。**教训：$T_a$ 近似值不可乱取、断路器开断相位决定直流分量大小、$X/R$ 比影响 $T_a$ 计算精度。**
+本案例拆解 2025 年度注册电气工程师（发输变电）专业考试"三相短路直流分量衰减"高频计算题。某 500 kV 变电站主变高压侧三相短路，已知系统 $S\_{\mathrm{sc}} = 20$ GVA、发电机 $X\_d'' = 0.15$ pu、$T\_a = 0.05$ s，断路器动作时间 40 ms。考三问：$I''\_k$、开断时刻直流分量百分比、断路器直流分量额定值校核。**教训：$T\_a$ 近似值不可乱取、断路器开断相位决定直流分量大小、$X/R$ 比影响 $T\_a$ 计算精度。**
 
 ## 2. 背景
 
@@ -32,22 +37,22 @@ updated: 2026-09-10
 
 ### 3.1 题面数据
 
-| 参数 | 值 | 说明 |
-|---|---|---|
-| 电压等级 | 500 kV | 断路器安装处 |
-| 基准容量 | $S_{\mathrm{base}} = 1000$ MVA | |
-| 故障前电压 | $U_f = 1.1 \times 525 = 577.5$ kV | $c = 1.10$ |
-| 系统侧短路容量 | $S_{\mathrm{sc,grid}} = 20000$ MVA | 大系统 |
-| 系统侧 $X/R$ | 10 | |
-| 主变 750 MVA × 2 并列 | $u_k = 14\%$，$X/R = 8$ | |
-| 发电机（低压侧 2×600 MW） | $X_d'' = 0.15$ pu，$T_a = 0.05$ s | |
-| 断路器动作时间 | 40 ms | 速动保护 |
-| 断路器额定开断电流 | 63 kA | |
-| 断路器直流分量额定值 | 50% | GB 1984 |
+| 参数                | 值                                   | 说明         |
+| ----------------- | ----------------------------------- | ---------- |
+| 电压等级              | 500 kV                              | 断路器安装处     |
+| 基准容量              | $S\_{\mathrm{base}} = 1000$ MVA     | <br />     |
+| 故障前电压             | $U\_f = 1.1 \times 525 = 577.5$ kV  | $c = 1.10$ |
+| 系统侧短路容量           | $S\_{\mathrm{sc,grid}} = 20000$ MVA | 大系统        |
+| 系统侧 $X/R$         | 10                                  | <br />     |
+| 主变 750 MVA × 2 并列 | $u\_k = 14%$，$X/R = 8$              | <br />     |
+| 发电机（低压侧 2×600 MW） | $X\_d'' = 0.15$ pu，$T\_a = 0.05$ s  | <br />     |
+| 断路器动作时间           | 40 ms                               | 速动保护       |
+| 断路器额定开断电流         | 63 kA                               | <br />     |
+| 断路器直流分量额定值        | 50%                                 | GB 1984    |
 
 ### 3.2 问题
 
-1. 求高压侧三相短路次暂态电流 $I''_k$（kA）
+1. 求高压侧三相短路次暂态电流 $I''\_k$（kA）
 2. 最恶劣相位下（$\alpha = 90°$），断路器开断时刻（40 ms）直流分量百分比
 3. 断路器直流分量耐受校验
 
@@ -59,51 +64,51 @@ updated: 2026-09-10
 
 系统侧：
 
-$$Z_{\mathrm{grid}} = \frac{S_{\mathrm{base}}}{S_{\mathrm{sc}}} = \frac{1000}{20000} = 0.05 \text{ pu}$$
+$$Z\_{\mathrm{grid}} = \frac{S\_{\mathrm{base}}}{S\_{\mathrm{sc}}} = \frac{1000}{20000} = 0.05 \text{ pu}$$
 
-$$R_{\mathrm{grid}} = 0.05 / \sqrt{1^2 + 10^2} = 0.05 / 10.05 = 0.00497 \text{ pu}$$
+$$R\_{\mathrm{grid}} = 0.05 / \sqrt{1^2 + 10^2} = 0.05 / 10.05 = 0.00497 \text{ pu}$$
 
 主变（2 台并列）：
 
-$$Z_T = \frac{u_k \cdot S_{\mathrm{base}}}{2 \cdot S_{N,T}} = \frac{0.14 \times 1000}{2 \times 750} = 0.0933 \text{ pu}$$
+$$Z\_T = \frac{u\_k \cdot S\_{\mathrm{base}}}{2 \cdot S\_{N,T}} = \frac{0.14 \times 1000}{2 \times 750} = 0.0933 \text{ pu}$$
 
-$$R_T = 0.0933 / \sqrt{1 + 8^2} = 0.0933 / 8.06 = 0.0116 \text{ pu}$$
+$$R\_T = 0.0933 / \sqrt{1 + 8^2} = 0.0933 / 8.06 = 0.0116 \text{ pu}$$
 
 发电机支路（经主变）：
 
-$$Z_G = X_d'' \cdot \frac{S_{\mathrm{base}}}{S_{N,G}} + Z_T = 0.15 \times \frac{1000}{600} + 0.0933 = 0.25 + 0.0933 = 0.3433 \text{ pu}$$
+$$Z\_G = X\_d'' \cdot \frac{S\_{\mathrm{base}}}{S\_{N,G}} + Z\_T = 0.15 \times \frac{1000}{600} + 0.0933 = 0.25 + 0.0933 = 0.3433 \text{ pu}$$
 
 **合并**：系统 + 发电机 2 支路并联。由于发电机支路阻抗远大于系统（0.34 vs 0.14），发电机贡献较小，简化：
 
-$$Z_{\Sigma} \approx Z_{\mathrm{grid}} \parallel Z_T \approx \frac{0.05 + 0.0933}{2} \parallel Z_G \approx 0.143 \text{ pu}$$
+$$Z\_{\Sigma} \approx Z\_{\mathrm{grid}} \parallel Z\_T \approx \frac{0.05 + 0.0933}{2} \parallel Z\_G \approx 0.143 \text{ pu}$$
 
 取精确：
 
-$$Z_{\Sigma} = \left( \frac{1}{0.05 + 0.0933} + \frac{2}{0.3433} \right)^{-1} = (7.0 + 5.83)^{-1} = 0.0778 \text{ pu}$$
+$$Z\_{\Sigma} = \left( \frac{1}{0.05 + 0.0933} + \frac{2}{0.3433} \right)^{-1} = (7.0 + 5.83)^{-1} = 0.0778 \text{ pu}$$
 
-> 注：2 台发电机各 600 MW，所以发电机支路是 2 条并联，每条阻抗 0.3433 pu，所以并联后 0.1717 pu，再和系统+主变（0.1433 pu）并联 → $Z_\Sigma = 0.1433 \parallel 0.1717 = 0.0778$ pu ✓
+> 注：2 台发电机各 600 MW，所以发电机支路是 2 条并联，每条阻抗 0.3433 pu，所以并联后 0.1717 pu，再和系统+主变（0.1433 pu）并联 → $Z\_\Sigma = 0.1433 \parallel 0.1717 = 0.0778$ pu ✓
 
 **步骤 2：次暂态电流**
 
-$$I''_k = \frac{U_f / \sqrt{3}}{|Z_{\Sigma}|} \cdot I_{\mathrm{base}} = \frac{577.5 / \sqrt{3}}{0.0778} \cdot \frac{1000}{\sqrt{3} \times 525} = \frac{333.5}{0.0778} \times 1.099 = 4689 \text{ A} \approx 4.69 \text{ kA}$$
+$$I''_k = \frac{U\_f / \sqrt{3}}{|Z_{\Sigma}|} \cdot I\_{\mathrm{base}} = \frac{577.5 / \sqrt{3}}{0.0778} \cdot \frac{1000}{\sqrt{3} \times 525} = \frac{333.5}{0.0778} \times 1.099 = 4689 \text{ A} \approx 4.69 \text{ kA}$$
 
 ### 4.2 问题 2：直流分量百分比
 
-**步骤 1：时间常数 $T_a$**
+**步骤 1：时间常数 $T\_a$**
 
-$$T_a = \frac{X_{\Sigma}}{\omega R_{\Sigma}} = \frac{0.0778}{314 \times 0.00497} = \frac{0.0778}{1.56} = 0.0499 \text{ s} \approx 0.05 \text{ s}$$
+$$T\_a = \frac{X\_{\Sigma}}{\omega R\_{\Sigma}} = \frac{0.0778}{314 \times 0.00497} = \frac{0.0778}{1.56} = 0.0499 \text{ s} \approx 0.05 \text{ s}$$
 
 **步骤 2：最恶劣相位直流分量**
 
-$$I_{dc,0} = I''_k \sin(90°) = I''_k$$
+$$I\_{dc,0} = I''\_k \sin(90°) = I''\_k$$
 
 断路器开断时刻 $t = 0.04$ s：
 
-$$I_{dc,\mathrm{break}} = I''_k e^{-t/T_a} = I''_k e^{-0.04/0.05} = I''_k e^{-0.8} = I''_k \times 0.449$$
+$$I\_{dc,\mathrm{break}} = I''\_k e^{-t/T\_a} = I''\_k e^{-0.04/0.05} = I''\_k e^{-0.8} = I''\_k \times 0.449$$
 
 直流分量百分比：
 
-$$\frac{I_{dc,\mathrm{break}}}{\sqrt{2} I''_k} = \frac{0.449}{\sqrt{2}} \times 100\% = 31.7\%$$
+$$\frac{I\_{dc,\mathrm{break}}}{\sqrt{2} I''\_k} = \frac{0.449}{\sqrt{2}} \times 100% = 31.7%$$
 
 ### 4.3 问题 3：断路器直流分量耐受校验
 
@@ -113,16 +118,17 @@ $$\frac{I_{dc,\mathrm{break}}}{\sqrt{2} I''_k} = \frac{0.449}{\sqrt{2}} \times 1
 
 **峰值校验**：
 
-$$i_{\max} = \sqrt{2} I''_k \times \sqrt{1 + 2 e^{-2t/T_a}} = \sqrt{2} \times 4.69 \times \sqrt{1 + 2 \times 0.202} = 6.63 \times 1.185 = 7.86 \text{ kA}$$
+$$i\_{\max} = \sqrt{2} I''\_k \times \sqrt{1 + 2 e^{-2t/T\_a}} = \sqrt{2} \times 4.69 \times \sqrt{1 + 2 \times 0.202} = 6.63 \times 1.185 = 7.86 \text{ kA}$$
 
-断路器额定峰值耐受电流 $I_m = 2.5 \times 63 = 157.5$ kA ✓ 远大于 7.86 kA。
+断路器额定峰值耐受电流 $I\_m = 2.5 \times 63 = 157.5$ kA ✓ 远大于 7.86 kA。
 
 ## 5. 关联
 
-| 关联 | 说明 |
-|---|---|
-| [CALC-SC-003](../40-calc/CALC-SC-003-dc-component-decay-and-breaker-dc-rating.md) | 直流分量衰减完整推导 |
-| [CALC-SC-004](../40-calc/CALC-SC-004-transient-emf-iec60909.md) | 暂态电动势与多电源贡献 |
-| [TH-015](../10-theory/TH-015-synchronous-machine-park-equations.md) | 派克方程的 $T_a$ 理论基础 |
-| [TH-013](../10-theory/TH-013-switching-arc-physics.md) | 断路器开断与直流分量相互影响 |
-| TH-039 | 高压断路器选型与额定参数 |
+| 关联                                                                                | 说明                |
+| --------------------------------------------------------------------------------- | ----------------- |
+| [CALC-SC-003](../40-calc/CALC-SC-003-dc-component-decay-and-breaker-dc-rating.md) | 直流分量衰减完整推导        |
+| [CALC-SC-004](../40-calc/CALC-SC-004-transient-emf-iec60909.md)                   | 暂态电动势与多电源贡献       |
+| [TH-015](../10-theory/TH-015-synchronous-machine-park-equations.md)               | 派克方程的 $T\_a$ 理论基础 |
+| [TH-013](../10-theory/TH-013-switching-arc-physics.md)                            | 断路器开断与直流分量相互影响    |
+| TH-039                                                                            | 高压断路器选型与额定参数      |
+
