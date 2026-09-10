@@ -1,5 +1,4 @@
-***
-
+---
 id: TH-013
 title: 开关电弧物理与交流电流零点熄弧
 domain: 基础理论
@@ -17,8 +16,7 @@ standards:
   reviewers: \[]
   version: 0.1
   updated: 2026-09-09
-
-***
+---
 
 # 开关电弧物理与交流电流零点熄弧
 
