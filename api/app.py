@@ -16,7 +16,7 @@ from typing import Optional
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
-from .startup import build_retriever, get_retriever, get_chunk_index, get_graph
+from .startup import build_retriever, get_retriever, get_chunk_index, get_graph, is_fake
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 logger = logging.getLogger("kb.api")
@@ -48,6 +48,7 @@ def health():
     return {
         "status": "ok" if r is not None else "building",
         "chunks": len(r.all_chunks) if r else 0,
+        "fake_embeddings": is_fake(),
     }
 
 

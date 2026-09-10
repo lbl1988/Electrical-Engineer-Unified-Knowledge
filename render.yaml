@@ -6,6 +6,7 @@ services:
     buildCommand: pip install -r api/requirements.txt
     startCommand: uvicorn api.app:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
+    healthCheckGracePeriodSeconds: 180
     autoDeploy: true
     envVars:
       - key: KB_ROOT
@@ -37,4 +38,6 @@ services:
     plan: free
     buildCommand: pip install mkdocs mkdocs-material && mkdocs build
     startCommand: cd _site && python -m http.server $PORT
+    healthCheckPath: /
+    healthCheckGracePeriodSeconds: 60
     autoDeploy: true
