@@ -1,8 +1,10 @@
-# 电气工程全域知识库
+﻿# 电气工程全域知识库
 
 > 注册电气工程师 · 理论 + 计算 + 实践 + 案例 四维知识体系
 
-**🟢 在线访问**：[https://lbl1988.github.io/Electrical-Engineer-Unified-Knowledge/](https://lbl1988.github.io/Electrical-Engineer-Unified-Knowledge/)
+**🟢 主站点（GitHub Pages，推荐）**：[https://lbl1988.github.io/Electrical-Engineer-Unified-Knowledge/](https://lbl1988.github.io/Electrical-Engineer-Unified-Knowledge/)
+
+**🟢 镜像站点（Render）**：[https://electrical-engineer-unified-knowledge.onrender.com/](https://electrical-engineer-unified-knowledge.onrender.com/)
 
 ## 📊 知识库规模
 
@@ -67,3 +69,4 @@ kb/
 ## 📄 许可证
 
 MIT License
+
