@@ -1,4 +1,4 @@
-﻿# L3 工程实践层（30-practice）
+# L3 工程实践层（30-practice）
 
 > 定位：设计、选型、施工、验收、运维的工程方法条目，采用 [九段式模板](../00-meta/03-模板-实践类九段式.md)（摘要→术语→原理公式→标准依据→要点→常见错误→完整算例→关联→变更）。
 > 每条工程结论强制挂"标准号-年份＋条款号"，算例全部手工复算。
@@ -77,17 +77,22 @@ TH-009 雷电物理 ─→ PR-GR-001 防雷分类（N=kNgAe 算例）
 | [PR-PS-004](PR-PS-004-ems-for-smart-park.md) | 智慧园区能管系统（EMS）设计 | GB/T 36572-2018, GB/T 38842-2020, DL/T 1917-2018 | 规划, 设计, 运维 | [TH-029](../10-theory/TH-029-microgrid-control-and-grid-mode-switching.md)·[TH-042](../10-theory/TH-042-electricity-market-and-carbon-trading-engineering-mapping.md)·[TH-056](../10-theory/TH-056-virtual-synchronous-generator-parameter-design-and-stability.md)·[PR-ES-001](PR-ES-001-energy-storage-integration.md)·[PR-ES-003](PR-ES-003-photovoltaic-grid-connection-deepening.md)·[PR-EV-002](PR-EV-002-battery-swap-station-power-distribution.md) |
 | [PR-PQ-003](PR-PQ-003-electricity-market-participation-design.md) | 工商业用户电力市场参与方案 | GB/T 44281-2024, GB/T 42378-2023, 发改委电价文件 | 规划, 运维 | [TH-038](../10-theory/TH-038-high-renewable-frequency-stability-inertia.md)·[TH-042](../10-theory/TH-042-electricity-market-and-carbon-trading-engineering-mapping.md)·[TH-049](../10-theory/TH-049-renewable-energy-forecasting-and-uncertainty-modeling.md)·[TH-056](../10-theory/TH-056-virtual-synchronous-generator-parameter-design-and-stability.md)·[PR-ES-001](PR-ES-001-energy-storage-integration.md)·[PR-PS-004](PR-PS-004-ems-for-smart-park.md) |
 
-**实践层已建成 25 条（含四期 5 条），完成度 100%。**
+## 五期成果（4 条）
+
+| ID | 主题 | 主要标准依据 | 生命周期 | 支撑的计算/理论条目 |
+|---|---|---|---|---|
+| [PR-DD-007](PR-DD-007-data-center-power-distribution-deepening.md) | 数据中心供配电深化设计（双路市电+UPS 2N+柴发+高压直供+PUE 优化） | GB 50174-2017, GB 51348-2019, ANSI/TIA-942-B-2024, GB/T 42373-2022, NFPA 75-2024 | 规划, 设计, 验收 | [TH-024](../10-theory/TH-024-power-electronic-converters-and-pwm.md)·[PR-DD-002](PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-PS-003](PR-PS-003-ups-and-battery-design.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[CALC-BT-002](../40-calc/CALC-BT-002-ups-battery-autonomy.md) |
+| [PR-DD-008](PR-DD-008-hospital-special-electrical-design.md) | 医院供配电与医用特殊系统设计（双路市电+IT 系统+应急电源+医用接地） | GB 51039-2014, GB 51348-2019, JGJ 312-2013, YY/T 0709-2021, GB 50591-2010 | 规划, 设计, 验收 | [TH-021](../10-theory/TH-021-neutral-grounding-and-zero-sequence-network.md)·[TH-004](../10-theory/TH-004-current-effects-human-body.md)·[PR-DD-002](PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-PS-003](PR-PS-003-ups-and-battery-design.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md)·[CALC-GR-002](../40-calc/CALC-GR-002-ground-fault-current-with-zero-sequence.md) |
+| [PR-ES-004](PR-ES-004-near-zero-carbon-park.md) | 碳中和/近零碳园区综合能源设计（光储直柔+碳排核算+PUE≤1.15） | GB/T 41197-2021, GB/T 41196-2021, ISO 50001-2018, ISO 14064-1:2018, DL/T 1917-2018 | 规划, 设计, 运维 | [TH-042](../10-theory/TH-042-electricity-market-and-carbon-trading-engineering-mapping.md)·[TH-055](../10-theory/TH-055-cascading-failure-and-thermal-propagation.md)·[TH-056](../10-theory/TH-056-virtual-synchronous-generator-parameter-design-and-stability.md)·[PR-ES-001](PR-ES-001-energy-storage-integration.md)·[PR-ES-003](PR-ES-003-photovoltaic-grid-connection-deepening.md)·[PR-PS-004](PR-PS-004-ems-for-smart-park.md) |
+| [PR-DD-009](PR-DD-009-airport-terminal-power-supply.md) | 航空港枢纽站供配电设计 | GB 51348-2019, GB 50052-2009, MH/T 5038-2019 | 规划, 设计, 验收 | [PR-DD-002](PR-DD-002-substation-layout-and-equipment-selection.md)·[PR-PS-001](PR-PS-001-load-classification.md)·[CALC-DG-001](../40-calc/CALC-DG-001-diesel-generator-capacity.md) |
+
+**实践层已建成 29 条（含五期 4 条），完成度 100%。**
 
 剩余可按需扩展方向：
 
-- 数据中心供配电深化设计（UPS 冗余 + 高压直供 + 能效 PUE）
-- 医院电气设计（双路供电 + 柴油发电机 + IT 系统）
 - 大型会展/体育场馆临时供电方案
-- 航空港/铁路枢纽站供配电
-- 碳中和/近零碳园区综合设计
-
-
-光伏并网深化、电动汽车换电站、地铁牵引供电、智慧园区能管系统、电力市场参与方案。
+- 铁路枢纽站供配电深化
+- 工业园区微电网多能互补
+- 智慧港口岸电系统
 
 
