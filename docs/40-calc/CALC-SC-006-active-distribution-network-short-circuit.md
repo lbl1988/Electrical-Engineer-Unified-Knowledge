@@ -1,0 +1,272 @@
+---
+id: CALC-SC-006
+title: 有源配电网短路电流计算（含 PCS/逆变器短路贡献，IEC 60909 + IEEE 1547 修正法）
+domain: CALC
+subdomain: SC（短路计算）
+voltage_levels: [LV, MV]
+lifecycle: [设计, 验收]
+standards:
+  - { code: IEC 60909-0:2016, clause: "§3.4, §6", note: "三相工业电力系统短路电流计算：含电源修正系数 c 与发电机近端短路" }
+  - { code: IEEE 1547-2018, clause: "§6, Clause 5", note: "DG 并网技术要求：短路电流贡献 1.0~1.5 pu，持续 5 周波" }
+  - { code: GB/T 19964-2024, clause: "§4 LVRT", note: "光伏发电站接入电力系统技术规定：低电压穿越期间无功电流注入" }
+  - { code: GB/T 19963-2019, clause: "§4 LVRT", note: "风电场接入电力系统技术规定：故障期间有功/无功响应" }
+  - { code: GB/T 36121-2018, clause: "§6", note: "配电网分布式电源接入原则：短路容量校验" }
+  - { code: GB/T 40567-2021, clause: "§5", note: "分布式能源接入电网承载力评估方法：短路约束" }
+  - { code: GB/T 50065-2011, clause: "§4, §5", note: "交流电气装置的接地设计：接触电位差与短路校验" }
+  - { code: GB/T 14285-2006, clause: "§4", note: "继电保护和安全自动装置技术规程：DG 配合" }
+status: draft
+reviewers: []
+version: 0.1
+updated: 2026-09-11
+---
+
+# 有源配电网短路电流计算
+
+## 1. 算例背景
+
+传统配电网短路计算只考虑**系统侧电源**（上级电网经变压器馈入），DG 接入后存在三类新问题：
+
+1. **双向短路电流**：DG 在故障期间向故障点注入短路电流，馈线保护可能误动/拒动；
+2. **逆变器限流特性**：PCS/光伏逆变器在电网短路时受 LVRT 控制，输出电流被限制在 1.0~1.5 pu，**不是恒定电势源**，传统恒压源模型失真；
+3. **故障清除后孤岛风险**：DG 持续注入可能维持非计划孤岛（详见 [TH-030](../10-theory/TH-030-distributed-generation-protection-and-islanding-detection.md)）。
+
+**本条目解决**：含光伏/储能/风电 PCS 的有源配电网三相短路电流计算，基于 IEC 60909 标准框架 + IEEE 1547 的 DG 短路贡献修正法，给出保护定值校验与断路器选型。
+
+## 2. 核心公式
+
+### 2.1 IEC 60909 基础框架
+
+IEC 60909 采用**等效电压源法**：在故障点接入等效电压源 $cU_n/\sqrt{3}$，所有电源置零（电压源短路），求解初始对称短路电流 $I_k''$：
+
+$$I_k'' = \frac{c \cdot U_n}{\sqrt{3} \cdot Z_{eq}}$$
+
+| 符号 | 含义 | 单位 |
+|---|---|---|
+| $c$ | 电压修正系数（MV 取 1.05，LV 取 1.05/1.10） | - |
+| $U_n$ | 系统标称电压（线电压） | kV |
+| $Z_{eq}$ | 故障点等效阻抗（含所有电源支路并联） | Ω |
+
+### 2.2 DG 短路贡献模型（IEEE 1547 修正法）
+
+DG 短路贡献与电源类型强相关：
+
+| DG 类型 | 短路模型 | 稳态贡献电流 $I_{k,DG}$ | 衰减特性 |
+|---|---|---|---|
+| **旋转电机（同步发电机）** | 恒压源 + 次暂态电抗 $X_d''$ | $E''/X_d''$（5~7 pu） | 直流分量衰减，时间常数 $T_d''$（30~80 ms） |
+| **感应电机/双馈风机** | 恒压源 + 暂态阻抗 | $E''/X'$（3~5 pu） | 快速衰减，时间常数 50~100 ms |
+| **光伏/储能 PCS（构网型）** | 受控电流源（LVRT 注入） | $I_{LVRT} = k \cdot I_n$，$k = 1.0~1.5$ | 持续 5~10 周波（受 LVRT 控制） |
+| **光伏/储能 PCS（跟网型）** | 受控电流源（PLL 失锁后退出） | $I_{fault} \approx 1.1~1.2 I_n$ | 100~200 ms 后闭锁 |
+
+#### 关键修正：PCS 不贡献峰值短路电流
+
+传统恒压源 DG（同步机）贡献峰值短路电流 $i_p = \kappa \cdot \sqrt{2} I_k''$，但 PCS 受 LVRT 控制：
+
+- **峰值系数 $\kappa_{PCS} \approx 1.0$**：无直流分量、无超调；
+- **稳态贡献 $I_{k,PCS} = k_{LVRT} \cdot I_n$**：取 1.1~1.5 pu；
+- **持续时间**：≥ 5 周波（100 ms，配合保护动作）。
+
+#### 同步发电机 DG 的次暂态修正
+
+同步发电机近端短路时，IEC 60909 §6 给出修正：
+
+$$I_{k,G}'' = \frac{c \cdot U_n}{\sqrt{3} \cdot X_d'' \cdot (1 + R_G/X_d'')}$$
+
+其中 $R_G$ 为发电机定子电阻，$X_d''$ 为次暂态电抗（取 0.10~0.20 pu）。
+
+### 2.3 多源并联合成
+
+有源配电网故障点等效阻抗为多源并联：
+
+$$\frac{1}{Z_{eq}} = \frac{1}{Z_{grid}} + \frac{1}{Z_{DG1}} + \frac{1}{Z_{DG2}} + \cdots$$
+
+对应初始对称短路电流：
+
+$$I_k'' = I_{k,grid}'' + I_{k,DG1}'' + I_{k,DG2}'' + \cdots$$
+
+#### 峰值短路电流合成（保守叠加）
+
+$$i_p = i_{p,grid} + \sum i_{p,DG}$$
+
+> 注：IEEE 1547 §6 规定 DG 峰值贡献取保守上限 1.5 pu，叠加到电网峰值上。
+
+### 2.4 保护定值校验
+
+| 校验项 | 判据 | 标准 |
+|---|---|---|
+| 馈线断路器开断能力 | $I_{cu} \geq 1.2 \times I_k''_{total}$ | GB/T 14048.2 |
+| 馈线保护灵敏度 | $I_{k,min}'' \geq 1.3 \times I_{pick}$ | GB/T 14285 |
+| DG 反向短路贡献 | $I_{k,DG}'' \geq 1.5$ pu（应整定防孤岛） | IEEE 1547 |
+| 上级保护配合 | DG 切除时间 ≤ 2 s（非计划孤岛） | GB/T 19939 |
+
+## 3. 标准依据表
+
+| 标准号-年份 | 条款 | 要求要点 | 适用边界 |
+|---|---|---|---|
+| IEC 60909-0:2016 | §3.4, §6 | 三相工业电力系统短路电流计算基础（含发电机近端修正） | 35 kV 及以下配电网 |
+| IEEE 1547-2018 | §6, Clause 5 | DG 并网技术要求：短路贡献 1.0~1.5 pu，持续 5 周波 | 10 kV 及以下 DG 接入 |
+| GB/T 19964-2024 | §4 | 光伏 LVRT：故障期间注入无功电流 $I_T \geq 1.0$ pu | 光伏并网 |
+| GB/T 19963-2019 | §4 | 风电 LVRT：故障不脱网 + 无功支撑 | 风电并网 |
+| GB/T 36121-2018 | §6 | 配电网 DG 接入：短路容量校验与承载力 | 配电网规划 |
+| GB/T 40567-2021 | §5 | 分布式能源承载力评估：短路约束 | 承载力评估 |
+| GB/T 50065-2011 | §4, §5 | 交流电气装置接地：接触电位差校验 | 接地设计 |
+| GB/T 14285-2006 | §4 | 继电保护技术规程：DG 配合 | 保护定值 |
+
+## 4. 完整算例
+
+### 算例 A：10 kV 馈线末端三相短路（含光伏 PCS + 同步燃气 DG）
+
+#### 已知条件
+
+| 参数 | 值 | 说明 |
+|---|---|---|
+| 系统标称电压 | 10 kV | 中压配电网 |
+| 上级电网短路容量 $S_{sc,grid}$ | 200 MVA | 变电站 10 kV 母线 |
+| 系统阻抗 $Z_{grid}$ | 0.577 Ω（主要是电抗） | $U_n^2/S_{sc} = 100/200$ |
+| 馈线阻抗 $Z_{line}$ | 1.20 Ω（0.15+j1.19） | 10 km 架空线 LGJ-95 |
+| 光伏 PCS | 500 kVA，$I_n = 28.9$ A | 跟网型，LVRT 注入 1.1 pu |
+| 燃气同步 DG | 1 MVA，$X_d'' = 0.15$ pu | 10 kV 接入 |
+| 馈线断路器 | 待选 | 开断能力 ≥ ? |
+
+#### 步骤 1：电网侧初始对称短路电流
+
+故障点电网等效阻抗：
+
+$$Z_{eq,grid} = Z_{grid} + Z_{line} = 0.577 + 1.20 = 1.777 \text{ Ω}$$
+
+$$I_{k,grid}'' = \frac{1.05 \times 10000}{\sqrt{3} \times 1.777} = \frac{10500}{3.079} = 3409 \text{ A} \approx 3.41 \text{ kA}$$
+
+#### 步骤 2：燃气同步 DG 短路贡献
+
+DG 次暂态电抗归算到 10 kV 侧：
+
+$$X_{G,10kV} = X_d'' \cdot \frac{U_n^2}{S_n} = 0.15 \times \frac{100}{1} = 15 \text{ Ω}$$
+
+DG 短路贡献（近端修正系数 1.0）：
+
+$$I_{k,G}'' = \frac{1.05 \times 10000}{\sqrt{3} \times 15} = \frac{10500}{25.98} = 404 \text{ A} \approx 0.40 \text{ kA}$$
+
+#### 步骤 3：光伏 PCS 短路贡献
+
+跟网型 PCS 受 LVRT 控制，注入 1.1 pu 额定电流：
+
+$$I_{k,PCS} = 1.1 \times I_n = 1.1 \times 28.9 = 31.8 \text{ A} \approx 0.032 \text{ kA}$$
+
+#### 步骤 4：总初始对称短路电流
+
+$$I_k''_{total} = 3.41 + 0.40 + 0.032 = 3.84 \text{ kA}$$
+
+#### 步骤 5：峰值短路电流
+
+- 电网侧峰值系数 $\kappa_{grid} = 1.8$（高 $R/X$ 比架空线，查 IEC 60909 表 1）
+- 同步 DG 峰值系数 $\kappa_G = 1.9$（低 $R_G/X_d''$）
+- PCS 峰值系数 $\kappa_{PCS} = 1.0$（无直流分量）
+
+$$i_p = 1.8 \times \sqrt{2} \times 3.41 + 1.9 \times \sqrt{2} \times 0.40 + 1.0 \times \sqrt{2} \times 0.032$$
+
+$$= 8.67 + 1.07 + 0.045 = 9.79 \text{ kA}$$
+
+#### 步骤 6：馈线断路器选型
+
+$$I_{cu} \geq 1.2 \times 3.84 = 4.61 \text{ kA}$$
+
+选 **12 kV 真空断路器：630 A / 16 kA（开断）** ✓
+
+> 注：DG 接入使短路电流从 3.41 kA 上升到 3.84 kA，增幅 12.6%。10 kV 馈线断路器裕量充足，但若 DG 总容量 > 5 MVA，需重新校验。
+
+### 算例 B：储能 PCS 集中接入 0.4 kV 母线（短路配合）
+
+#### 已知条件
+
+| 参数 | 值 | 说明 |
+|---|---|---|
+| 系统标称电压 | 0.4 kV | 低压 |
+| 变压器 | 1600 kVA，$u_k = 6\%$ | 10/0.4 kV |
+| 储能 PCS | 1 MW，$I_n = 1443$ A | 构网型，LVRT 注入 1.5 pu |
+| 母线短路阻抗 | $Z_{bus} = 3.5$ mΩ | 变压器 + 电缆 |
+
+#### 步骤 1：电网侧短路电流
+
+$$I_{k,grid}'' = \frac{1.0 \times 400}{\sqrt{3} \times 0.0035} = \frac{400}{0.00606} = 66.0 \text{ kA}$$
+
+#### 步骤 2：构网型 PCS 短路贡献
+
+构网型 PCS 在 LVRT 期间注入 1.5 pu：
+
+$$I_{k,PCS} = 1.5 \times 1443 = 2164 \text{ A} = 2.16 \text{ kA}$$
+
+#### 步骤 3：总短路电流
+
+$$I_k''_{total} = 66.0 + 2.16 = 68.2 \text{ kA}$$
+
+#### 步骤 4：低压主断路器选型
+
+$$I_{cu} \geq 1.2 \times 68.2 = 81.8 \text{ kA}$$
+
+选 **ACB：3200 A / 100 kA（Icu）** ✓
+
+> 注：构网型 PCS 短路贡献占比 3.2%，对低压母线影响小，但反向保护必须配置（详见 [TH-030](../10-theory/TH-030-distributed-generation-protection-and-islanding-detection.md)）。
+
+### 算例 C：10 kV 馈线中途两相短路（保护灵敏度校验）
+
+#### 步骤 1：两相短路电流（IEC 60909）
+
+$$I_{k,2\phi}'' = \frac{\sqrt{3}}{2} I_{k,3\phi}'' = 0.866 \times 3.84 = 3.33 \text{ kA}$$
+
+#### 步骤 2：DG 两相短路贡献
+
+旋转 DG 负序阻抗 ≈ 正序，贡献保持；PCS 负序控制可能注入 0.5 pu：
+
+$$I_{k,DG,2\phi} = 0.40 + 0.5 \times 0.032 = 0.416 \text{ kA}$$
+
+#### 步骤 3：总两相短路电流
+
+$$I_{k,2\phi,total}'' = 3.33 + 0.416 = 3.75 \text{ kA}$$
+
+#### 步骤 4：馈线保护灵敏度校验
+
+过流保护整定 $I_{pick} = 1.2 \times I_{load,max} = 1.2 \times 300 = 360$ A：
+
+$$K_{sen} = \frac{I_{k,2\phi,min}''}{I_{pick}} = \frac{3750}{360} = 10.4 \geq 1.3 \quad ✓$$
+
+## 5. 结果汇总
+
+| 算例场景 | 电网侧 $I_k''$ | DG 贡献 | 总 $I_k''$ | 总 $i_p$ | 选型断路器 |
+|---|---|---|---|---|---|
+| 10 kV 馈线末端（光伏+燃气DG） | 3.41 kA | +0.43 kA | 3.84 kA | 9.79 kA | 630 A/16 kA |
+| 0.4 kV 储能 PCS 集中接入 | 66.0 kA | +2.16 kA | 68.2 kA | - | 3200 A/100 kA |
+| 10 kV 两相短路（灵敏度） | 3.33 kA | +0.42 kA | 3.75 kA | - | 灵敏度 10.4 |
+
+## 6. 下游应用
+
+| 应用 | 依赖条目 |
+|---|---|
+| 配电网馈线保护定值与 DG 配合 | [CALC-PT-001](CALC-PT-001-protection-setting.md)（保护定值）·[TH-030](../10-theory/TH-030-distributed-generation-protection-and-islanding-detection.md)（孤岛检测）·GB/T 14285 |
+| DG 承载力评估 | [TH-041](../10-theory/TH-041-distribution-grid-high-penetration-dg-hosting-capacity.md)（DG 承载力）·GB/T 40567 |
+| 储能并网短路校验 | [PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md)（储能接入）·[CALC-SC-005](CALC-SC-005-dc-system-short-circuit.md)（直流侧）·GB/T 42288 |
+| 分布式光伏并网设计 | [PR-ES-003](../30-practice/PR-ES-003-photovoltaic-grid-connection-deepening.md)（光伏并网）·GB/T 19964 |
+| 接地电位差校验 | [CALC-GR-002](CALC-GR-002-ground-fault-current-with-zero-sequence.md)·GB/T 50065 |
+
+## 7. 工程注意点
+
+| 要点 | 说明 |
+|---|---|
+| **PCS 不贡献峰值** | 跟网型 PCS 受 PLL 与 LVRT 控制，无直流分量叠加，峰值系数取 1.0；不可套用同步机的 $\kappa = 1.8~2.0$ |
+| **DG 容量阈值** | 当 DG 总容量超过主变压器容量 15% 时，必须重新校验短路电流与保护定值（GB/T 36121） |
+| **LVRT 期间无功注入** | GB/T 19964 规定光伏 LVRT 期间注入无功电流 $I_T \geq 1.0$ pu，可能抬升故障相电压，影响保护动作逻辑 |
+| **DG 切除时间** | 非计划孤岛检测切除时间应 ≤ 2 s，否则可能危及检修人员（详见 TH-030） |
+| **保护配合级差** | DG 接入后馈线保护必须加装**方向元件**（GB/T 14285 §4），避免反向短路电流误动 |
+| **构网型 vs 跟网型** | 构网型 PCS 短路贡献 1.5 pu，跟网型仅 1.1 pu，建模时必须区分（详见 TH-056） |
+| **多 DG 叠加保守性** | 多 DG 并联时峰值电流保守叠加，可能高估；精确计算需时序仿真（PSCAD/DIgSILENT） |
+| **电缆电容影响** | 长电缆线路对地电容在故障初瞬释放电荷，可能短时抬高峰值，10 kV 馈线 > 20 km 时应考虑 |
+
+## 8. 关联条目
+
+- 上游：[TH-030](../10-theory/TH-030-distributed-generation-protection-and-islanding-detection.md)（DG 保护与孤岛）·[TH-041](../10-theory/TH-041-distribution-grid-high-penetration-dg-hosting-capacity.md)（DG 承载力）·[TH-011](../10-theory/TH-011-synchronous-machine-subtransient-reactance.md)（同步机次暂态）·[TH-024](../10-theory/TH-024-power-electronic-converters-and-pwm.md)（电力电子变换器）·[TH-056](../10-theory/TH-056-virtual-synchronous-generator-parameter-design-and-stability.md)（VSG/构网型）·[TH-003](../10-theory/TH-003-symmetrical-components.md)（对称分量法）
+- 下游：[PR-ES-001](../30-practice/PR-ES-001-energy-storage-integration.md)（储能接入）·[PR-ES-003](../30-practice/PR-ES-003-photovoltaic-grid-connection-deepening.md)（光伏并网）·[PR-DD-005](../30-practice/PR-DD-005-substation-automation-system.md)（综自系统）·CASE-031（DG 接入校审）·CASE-040（光伏 LVRT 事故）
+- 平行：[CALC-SC-001](CALC-SC-001-低压三相短路电流计算.md)（低压交流短路）·[CALC-SC-002](CALC-SC-002-hv-short-circuit-iec60909.md)（高压交流短路）·[CALC-SC-005](CALC-SC-005-dc-system-short-circuit.md)（直流短路）·[CALC-PT-001](CALC-PT-001-protection-setting.md)（保护定值）
+
+## 9. 变更记录
+
+| 版本 | 日期 | 修改内容 | 修改人 |
+|---|---|---|---|
+| 0.1 | 2026-09-11 | 初版建成：IEC 60909 + IEEE 1547 修正法 + 10 kV/0.4 kV/两相三算例 | TRAE |

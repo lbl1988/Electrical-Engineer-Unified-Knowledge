@@ -117,14 +117,19 @@
 | [TH-059](TH-059-active-distribution-network-fault-location-and-isolation.md) | 主动配电网故障定位与隔离（DG 双向短路/行波定位/多源融合） | TH-003（对称分量）、TH-012（保护四性）、TH-017（行波物理）、TH-030（DG 孤岛）、PR-DD-004（配网自动化） |
 | [TH-060](TH-060-frequency-response-testing-method-for-power-electronic-systems.md) | 电力电子化系统频率响应测试（RoCoF 注入/虚拟惯量实测/对比指标） | TH-056（VSG 参数）、TH-057（惯量调度）、TH-058（频率响应）、GB/T 40595 |
 
-**理论层已建成 60 条，完成度 100%。**
+## 十一期成果（2 条）
+
+| ID | 主题 | 核心机理/方法 | 主要标准依据 | 下游应用条目 |
+|---|---|---|---|---|
+| [TH-061](TH-061-vsg-parameter-ai-adaptive-tuning.md) | VSG 参数 AI 自适应整定（强化学习 + 物理信息约束 + 数字孪生闭环） | PPO 策略梯度 + PINN 物理残差约束 + SCR 在线辨识；状态 $s=[\omega, \Delta\omega, P, Q, SCR, d]$；动作 $a=[\Delta J_v, \Delta D_v]$；奖励 $r=-\alpha|\Delta f|^2 - \beta|\Delta P|^2$ | GB/T 19963.1-2021, GB/T 40595-2021, GB/T 42018-2022, DL/T 2547-2022, IEC 62332:2024, GB/T 41307-2022 | TH-056（VSG 固定参数）·TH-043（AI 基础）·TH-062（数字孪生平台）·PR-ES-001（储能接入） |
+| [TH-062](TH-062-bess-cascading-failure-digital-twin.md) | 电化学储能系统级联故障数字孪生建模（多物理场耦合 + 在线状态预测 + 消防协同） | 电-热-力-化四场耦合：$mc_p dT/dt = I^2R + Q_{side}(T) - hA(T-T_{amb})$；LSTM 时序预测 + GNN 传播路径 + PINN 物理约束；消防决策优化 | GB/T 44240-2024, GB/T 42288-2022, NFPA 855-2023, ISO 23247-1:2021, GB/T 41773-2022, DL/T 2547-2022, IEC 62660-3:2020, GB/T 36272-2018 | TH-055（级联故障机理）·TH-046（热失控）·TH-043（AI 基础）·PR-ES-001（储能）·CALC-SC-005（直流短路） |
+
+**理论层已建成 62 条（含十一期 2 条），完成度 100%。**
 
 剩余可按需扩展方向（不再标"后续规划"，作为备选）：
 
 - 新能源场站惯量容量市场机制设计
 - 直流偏磁的在线监测算法（FFT + 小波分解）
 - SF₆ 替代气体局部放电特性
-- 储能系统级联故障的数字孪生建模
-- VSG 参数的 AI 自适应整定（强化学习）
 - 主动配电网孤岛运行的频率/电压控制
 - 高压直流 MTDC 换相失败连锁抑制策略
